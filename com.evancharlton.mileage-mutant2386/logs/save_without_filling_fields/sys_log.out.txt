@@ -1,0 +1,67 @@
+--------- beginning of main
+12-09 07:40:15.331 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 171ms
+--------- beginning of system
+12-09 07:40:15.406 I/WindowManager( 1592): Screenshot max retries 4 of Token{a5a3668 ActivityRecord{328958b u0 com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.StatusReporterActivity t335 f}} appWin=Window{64df77b u0 Starting com.evancharlton.mileage.test} drawState=3
+12-09 07:40:15.412 W/art     ( 1592): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=1 for 830ms
+12-09 07:40:15.421 W/art     ( 1592): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=0 for 1.567s
+12-09 07:40:16.069 D/AndroidRuntime( 4763): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:40:16.075 D/AndroidRuntime( 4763): CheckJNI is ON
+12-09 07:40:16.099 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 136ms
+12-09 07:40:16.115 D/ICU     ( 4763): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:40:16.398 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 143ms
+12-09 07:40:16.483 E/memtrack( 4763): Couldn't load memtrack module (No such file or directory)
+12-09 07:40:16.483 E/android.os.Debug( 4763): failed to load memtrack module: -2
+12-09 07:40:16.485 I/Radio-JNI( 4763): register_android_hardware_Radio DONE
+12-09 07:40:16.513 D/AndroidRuntime( 4763): Calling main entry com.android.commands.am.Am
+12-09 07:40:16.892 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=1 for 1.472s
+12-09 07:40:16.892 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=1 for 1.471s
+12-09 07:40:16.893 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=2 for 1.227s
+12-09 07:40:16.894 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=3 for 312ms
+12-09 07:40:16.894 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10117 user=0: start instr
+12-09 07:40:16.894 I/ActivityManager( 1592): Killing 4733:com.evancharlton.mileage/u0a117 (adj 0): stop com.evancharlton.mileage
+12-09 07:40:17.091 W/ActivityManager( 1592): Crash of app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.ClearAppData2}
+12-09 07:40:17.091 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10117 user=0: finished inst
+--------- beginning of crash
+12-09 07:40:17.202 F/libc    ( 4772): Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7fdaecec0000 in tid 4772 (main)
+12-09 07:40:17.215 I/ActivityManager( 1592): Start proc 4772:com.evancharlton.mileage/u0a117 for added application com.evancharlton.mileage
+12-09 07:40:17.215 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=4 for 374ms
+12-09 07:40:17.216 D/AndroidRuntime( 4763): Shutting down VM
+12-09 07:40:17.216 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=5 for 335ms
+12-09 07:40:17.216 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=4 for 324ms
+12-09 07:40:17.230 W/art     ( 1592): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=4 for 309ms
+12-09 07:40:17.238 W/InputMethodManagerService( 1592): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4f175d6 attribute=null, token = android.os.BinderProxy@425b890
+12-09 07:40:17.241 W/ActivityManager( 1592): Spurious death for ProcessRecord{63a9057 0:com.evancharlton.mileage/u0a117}, curProc for 4733: null
+12-09 07:40:17.311 I/SELinux ( 1306): SELinux: Loaded file_contexts contexts from /file_contexts.
+12-09 07:40:17.312 F/DEBUG   ( 1306): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+12-09 07:40:17.312 F/DEBUG   ( 1306): Build fingerprint: 'Android/sdk_google_phone_x86_64/generic_x86_64:6.0/MASTER/5056751:userdebug/test-keys'
+12-09 07:40:17.312 F/DEBUG   ( 1306): Revision: '0'
+12-09 07:40:17.312 F/DEBUG   ( 1306): ABI: 'x86_64'
+12-09 07:40:17.313 F/DEBUG   ( 1306): pid: 4772, tid: 4772, name: main  >>> zygote64 <<<
+12-09 07:40:17.313 F/DEBUG   ( 1306): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7fdaecec0000
+12-09 07:40:17.329 F/DEBUG   ( 1306):     rax 000000000000000f  rbx 00007fdaf57d2240  rcx 0000000000000000  rdx 6761656c696d2e6e
+12-09 07:40:17.330 F/DEBUG   ( 1306):     rsi 00007fdaecebfff8  rdi 00007fff8face3d0
+12-09 07:40:17.346 F/DEBUG   ( 1306):     r8  000000000000000f  r9  0000000000000000  r10 0000000000000017  r11 00007fdaf8f57320
+12-09 07:40:17.346 F/DEBUG   ( 1306):     r12 00007fdaecebfe60  r13 00007fff8face3d0  r14 0000000000000000  r15 00007fff8face3b0
+12-09 07:40:17.346 F/DEBUG   ( 1306):     cs  0000000000000033  ss  000000000000002b
+12-09 07:40:17.346 F/DEBUG   ( 1306):     rip 00007fdaf8ea2790  rbp 00007fdaee7d7a20  rsp 00007fff8face338  eflags 0000000000010212
+12-09 07:40:17.347 F/DEBUG   ( 1306): 
+12-09 07:40:17.347 F/DEBUG   ( 1306): backtrace:
+12-09 07:40:17.347 F/DEBUG   ( 1306):     #00 pc 0000000000021790  /system/lib64/libc.so (strlcpy+2768)
+12-09 07:40:17.347 F/DEBUG   ( 1306):     #01 pc 000000000014e039  /system/lib64/libandroid_runtime.so
+12-09 07:40:17.347 F/DEBUG   ( 1306):     #02 pc 000000000014ec3f  /system/lib64/libandroid_runtime.so
+12-09 07:40:17.347 F/DEBUG   ( 1306):     #03 pc 0000000073d33016  /data/dalvik-cache/x86_64/system@framework@boot.oat (offset 0x1ed6000)
+12-09 07:40:17.445 F/DEBUG   ( 1306): 
+12-09 07:40:17.445 F/DEBUG   ( 1306): Tombstone written to: /data/tombstones/tombstone_01
+12-09 07:40:17.445 E/DEBUG   ( 1306): AM write failed: Broken pipe
+12-09 07:40:17.445 I/BootReceiver( 1592): Copying /data/tombstones/tombstone_01 to DropBox (SYSTEM_TOMBSTONE)
+12-09 07:40:17.479 W/ActivityManager( 1592): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 07:40:17.479 W/ActivityManager( 1592):   Native crash
+12-09 07:40:17.479 W/ActivityManager( 1592):   Native crash: Segmentation fault
+12-09 07:40:17.479 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10117 user=0: finished inst
+12-09 07:40:17.480 I/ActivityManager( 1592): Killing 4772:com.evancharlton.mileage/u0a117 (adj -100): stop com.evancharlton.mileage
+12-09 07:40:17.968 I/AccountManagerService( 1592): getTypesVisibleToCaller: isPermitted? true
+12-09 07:40:18.093 I/AccountManagerService( 1592): getTypesVisibleToCaller: isPermitted? true
+12-09 07:40:19.001 I/ContentMaintenance( 2382): Internal cache bytes used: 0; limit: 40626585; download size: 0
+12-09 07:40:19.019 I/RealtimeCacheCleanup( 2382): Beginning Realtime garbage collection.
+12-09 07:40:19.019 I/RealtimeCacheCleanup( 2382): Finished Realtime garbage collection.
+12-09 07:41:00.360 D/hwcomposer( 1219): hw_composer sent 103 syncs in 60s

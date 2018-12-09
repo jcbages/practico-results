@@ -1,0 +1,46 @@
+--------- beginning of main
+12-09 07:41:36.585 D/AndroidRuntime( 4798): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:41:36.591 D/AndroidRuntime( 4798): CheckJNI is ON
+12-09 07:41:36.604 D/ICU     ( 4798): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:41:36.820 E/memtrack( 4798): Couldn't load memtrack module (No such file or directory)
+12-09 07:41:36.826 E/android.os.Debug( 4798): failed to load memtrack module: -2
+12-09 07:41:36.835 I/Radio-JNI( 4798): register_android_hardware_Radio DONE
+12-09 07:41:36.858 D/AndroidRuntime( 4798): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 07:41:36.951 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10117 user=0: start instr
+12-09 07:41:36.971 I/ActivityManager( 1592): Start proc 4807:com.evancharlton.mileage/u0a117 for added application com.evancharlton.mileage
+12-09 07:41:36.972 D/AndroidRuntime( 4798): Shutting down VM
+--------- beginning of crash
+12-09 07:41:36.975 F/libc    ( 4807): Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7fdaecec0000 in tid 4807 (main)
+12-09 07:41:37.082 F/DEBUG   ( 1306): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+12-09 07:41:37.082 F/DEBUG   ( 1306): Build fingerprint: 'Android/sdk_google_phone_x86_64/generic_x86_64:6.0/MASTER/5056751:userdebug/test-keys'
+12-09 07:41:37.082 F/DEBUG   ( 1306): Revision: '0'
+12-09 07:41:37.082 F/DEBUG   ( 1306): ABI: 'x86_64'
+12-09 07:41:37.082 F/DEBUG   ( 1306): pid: 4807, tid: 4807, name: main  >>> zygote64 <<<
+12-09 07:41:37.083 F/DEBUG   ( 1306): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7fdaecec0000
+12-09 07:41:37.085 F/DEBUG   ( 1306):     rax 000000000000000f  rbx 00007fdaf57d2240  rcx 0000000000000000  rdx 6761656c696d2e6e
+12-09 07:41:37.085 F/DEBUG   ( 1306):     rsi 00007fdaecebfff8  rdi 00007fff8face3d0
+12-09 07:41:37.085 F/DEBUG   ( 1306):     r8  000000000000000f  r9  0000000000000000  r10 0000000000000017  r11 00007fdaf8f57320
+12-09 07:41:37.085 F/DEBUG   ( 1306):     r12 00007fdaecebfe60  r13 00007fff8face3d0  r14 0000000000000000  r15 00007fff8face3b0
+12-09 07:41:37.085 F/DEBUG   ( 1306):     cs  0000000000000033  ss  000000000000002b
+12-09 07:41:37.085 F/DEBUG   ( 1306):     rip 00007fdaf8ea2790  rbp 00007fdaee7d7be0  rsp 00007fff8face338  eflags 0000000000010212
+12-09 07:41:37.085 F/DEBUG   ( 1306): 
+12-09 07:41:37.085 F/DEBUG   ( 1306): backtrace:
+12-09 07:41:37.086 F/DEBUG   ( 1306):     #00 pc 0000000000021790  /system/lib64/libc.so (strlcpy+2768)
+12-09 07:41:37.094 F/DEBUG   ( 1306):     #01 pc 000000000014e039  /system/lib64/libandroid_runtime.so
+12-09 07:41:37.094 F/DEBUG   ( 1306):     #02 pc 000000000014ec3f  /system/lib64/libandroid_runtime.so
+12-09 07:41:37.094 F/DEBUG   ( 1306):     #03 pc 0000000073d33016  /data/dalvik-cache/x86_64/system@framework@boot.oat (offset 0x1ed6000)
+12-09 07:41:37.162 F/DEBUG   ( 1306): 
+12-09 07:41:37.162 F/DEBUG   ( 1306): Tombstone written to: /data/tombstones/tombstone_02
+12-09 07:41:37.183 W/ActivityManager( 1592): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 07:41:37.183 W/ActivityManager( 1592):   Native crash
+12-09 07:41:37.183 W/ActivityManager( 1592):   Native crash: Segmentation fault
+12-09 07:41:37.183 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10117 user=0: finished inst
+12-09 07:41:37.183 I/ActivityManager( 1592): Killing 4807:com.evancharlton.mileage/u0a117 (adj -100): stop com.evancharlton.mileage
+12-09 07:41:37.193 I/BootReceiver( 1592): Copying /data/tombstones/tombstone_02 to DropBox (SYSTEM_TOMBSTONE)
+12-09 07:41:37.862 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=1 for 186ms
+12-09 07:41:37.887 W/art     ( 1592): Suspending all threads took: 5.552ms
+12-09 07:41:37.903 I/art     ( 1592): Background sticky concurrent mark sweep GC freed 19788(1607KB) AllocSpace objects, 21(1588KB) LOS objects, 27% free, 9MB/13MB, paused 6.970ms total 38.771ms
+12-09 07:41:37.909 I/AccountManagerService( 1592): getTypesVisibleToCaller: isPermitted? true
+12-09 07:41:37.932 I/AccountManagerService( 1592): getTypesVisibleToCaller: isPermitted? true
+12-09 07:42:00.238 D/hwcomposer( 1219): hw_composer sent 4 syncs in 60s

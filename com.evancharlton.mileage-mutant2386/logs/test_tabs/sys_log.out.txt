@@ -1,0 +1,42 @@
+--------- beginning of main
+12-09 07:50:10.163 D/AndroidRuntime( 5059): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:50:10.164 D/AndroidRuntime( 5059): CheckJNI is ON
+12-09 07:50:10.183 D/ICU     ( 5059): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:50:10.311 E/memtrack( 5059): Couldn't load memtrack module (No such file or directory)
+12-09 07:50:10.311 E/android.os.Debug( 5059): failed to load memtrack module: -2
+12-09 07:50:10.312 I/Radio-JNI( 5059): register_android_hardware_Radio DONE
+12-09 07:50:10.334 D/AndroidRuntime( 5059): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 07:50:10.428 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10117 user=0: start instr
+--------- beginning of crash
+12-09 07:50:10.439 F/libc    ( 5068): Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7fdaecec0000 in tid 5068 (main)
+12-09 07:50:10.502 W/NativeCrashListener( 1592): Couldn't find ProcessRecord for pid 5068
+12-09 07:50:10.503 F/DEBUG   ( 4921): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+12-09 07:50:10.503 E/DEBUG   ( 4921): AM write failed: Broken pipe
+12-09 07:50:10.503 F/DEBUG   ( 4921): Build fingerprint: 'Android/sdk_google_phone_x86_64/generic_x86_64:6.0/MASTER/5056751:userdebug/test-keys'
+12-09 07:50:10.503 F/DEBUG   ( 4921): Revision: '0'
+12-09 07:50:10.503 F/DEBUG   ( 4921): ABI: 'x86_64'
+12-09 07:50:10.503 F/DEBUG   ( 4921): pid: 5068, tid: 5068, name: main  >>> zygote64 <<<
+12-09 07:50:10.503 F/DEBUG   ( 4921): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7fdaecec0000
+12-09 07:50:10.505 F/DEBUG   ( 4921):     rax 000000000000000f  rbx 00007fdaf57d2240  rcx 0000000000000000  rdx 6761656c696d2e6e
+12-09 07:50:10.505 F/DEBUG   ( 4921):     rsi 00007fdaecebfff8  rdi 00007fff8face3d0
+12-09 07:50:10.505 F/DEBUG   ( 4921):     r8  000000000000000f  r9  0000000000000000  r10 0000000000000017  r11 00007fdaf8f57320
+12-09 07:50:10.505 F/DEBUG   ( 4921):     r12 00007fdaecebfe60  r13 00007fff8face3d0  r14 0000000000000000  r15 00007fff8face3b0
+12-09 07:50:10.505 F/DEBUG   ( 4921):     cs  0000000000000033  ss  000000000000002b
+12-09 07:50:10.505 F/DEBUG   ( 4921):     rip 00007fdaf8ea2790  rbp 00007fdaf57d94a0  rsp 00007fff8face338  eflags 0000000000010212
+12-09 07:50:10.511 F/DEBUG   ( 4921): 
+12-09 07:50:10.511 F/DEBUG   ( 4921): backtrace:
+12-09 07:50:10.511 F/DEBUG   ( 4921):     #00 pc 0000000000021790  /system/lib64/libc.so (strlcpy+2768)
+12-09 07:50:10.511 F/DEBUG   ( 4921):     #01 pc 000000000014e039  /system/lib64/libandroid_runtime.so
+12-09 07:50:10.511 F/DEBUG   ( 4921):     #02 pc 000000000014ec3f  /system/lib64/libandroid_runtime.so
+12-09 07:50:10.511 F/DEBUG   ( 4921):     #03 pc 0000000073d33016  /data/dalvik-cache/x86_64/system@framework@boot.oat (offset 0x1ed6000)
+12-09 07:50:10.514 I/ActivityManager( 1592): Start proc 5068:com.evancharlton.mileage/u0a117 for added application com.evancharlton.mileage
+12-09 07:50:10.515 D/AndroidRuntime( 5059): Shutting down VM
+12-09 07:50:10.594 F/DEBUG   ( 4921): 
+12-09 07:50:10.594 F/DEBUG   ( 4921): Tombstone written to: /data/tombstones/tombstone_08
+12-09 07:50:10.627 I/BootReceiver( 1592): Copying /data/tombstones/tombstone_08 to DropBox (SYSTEM_TOMBSTONE)
+12-09 07:50:10.678 I/Zygote  ( 1313): Process 5068 exited due to signal (11)
+12-09 07:50:10.927 I/AccountManagerService( 1592): getTypesVisibleToCaller: isPermitted? true
+12-09 07:50:20.525 W/ActivityManager( 1592): Process ProcessRecord{56c2cda 5068:com.evancharlton.mileage/u0a117} failed to attach
+12-09 07:50:20.525 I/ActivityManager( 1592): Killing 5068:com.evancharlton.mileage/u0a117 (adj -100): start timeout
+12-09 07:51:00.242 D/hwcomposer( 1219): hw_composer sent 4 syncs in 60s
