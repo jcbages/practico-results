@@ -1,0 +1,298 @@
+--------- beginning of main
+12-09 08:27:19.249 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 299ms
+12-09 08:27:19.414 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 280ms
+12-09 08:27:20.236 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=0 for 1.417s
+12-09 08:27:20.236 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=1 for 926ms
+12-09 08:27:20.237 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=2 for 779ms
+--------- beginning of system
+12-09 08:27:20.398 W/WindowManager( 1591): Failed looking up window
+12-09 08:27:20.398 W/WindowManager( 1591): java.lang.IllegalArgumentException: Requested window android.view.ViewRootImpl$W@af8caf9 does not exist
+12-09 08:27:20.398 W/WindowManager( 1591): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8733)
+12-09 08:27:20.398 W/WindowManager( 1591): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8724)
+12-09 08:27:20.398 W/WindowManager( 1591): 	at com.android.server.wm.WindowManagerService.removeWindow(WindowManagerService.java:2697)
+12-09 08:27:20.398 W/WindowManager( 1591): 	at com.android.server.wm.Session.remove(Session.java:187)
+12-09 08:27:20.398 W/WindowManager( 1591): 	at android.view.ViewRootImpl.dispatchDetachedFromWindow(ViewRootImpl.java:3099)
+12-09 08:27:20.398 W/WindowManager( 1591): 	at android.view.ViewRootImpl.doDie(ViewRootImpl.java:5606)
+12-09 08:27:20.398 W/WindowManager( 1591): 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:3409)
+12-09 08:27:20.398 W/WindowManager( 1591): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:27:20.398 W/WindowManager( 1591): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:27:20.398 W/WindowManager( 1591): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-09 08:27:20.398 W/WindowManager( 1591): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+12-09 08:27:20.400 W/InputMethodManagerService( 1591): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@d721db5 attribute=null, token = android.os.BinderProxy@112f344
+12-09 08:27:20.651 D/AndroidRuntime(17268): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:27:20.652 D/AndroidRuntime(17268): CheckJNI is ON
+12-09 08:27:20.688 D/ICU     (17268): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:27:20.972 E/memtrack(17268): Couldn't load memtrack module (No such file or directory)
+12-09 08:27:20.972 E/android.os.Debug(17268): failed to load memtrack module: -2
+12-09 08:27:20.981 I/Radio-JNI(17268): register_android_hardware_Radio DONE
+12-09 08:27:20.997 D/AndroidRuntime(17268): Calling main entry com.android.commands.am.Am
+12-09 08:27:21.186 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10137 user=0: start instr
+12-09 08:27:21.186 I/ActivityManager( 1591): Killing 17251:com.evancharlton.mileage/u0a137 (adj 0): stop com.evancharlton.mileage
+12-09 08:27:21.241 W/ActivityManager( 1591): Crash of app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.ClearAppData2}
+12-09 08:27:21.242 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10137 user=0: finished inst
+12-09 08:27:21.352 I/ActivityManager( 1591): Start proc 17277:com.evancharlton.mileage/u0a137 for added application com.evancharlton.mileage
+12-09 08:27:21.353 D/AndroidRuntime(17268): Shutting down VM
+12-09 08:27:21.355 W/ActivityManager( 1591): Spurious death for ProcessRecord{da1fc4a 0:com.evancharlton.mileage/u0a137}, curProc for 17251: null
+12-09 08:27:21.383 W/System  (17277): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:27:21.389 W/System  (17277): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:27:21.409 I/System.out(17277): Main activity name automatically set to: com.evancharlton.mileage.Mileage
+12-09 08:27:21.409 I/System.out(17277): Calabash did not load Mono. This is only a problem if you are trying to test a Mono application
+12-09 08:27:21.410 I/calabash(17277): Test server port: 7102
+12-09 08:27:21.410 I/InstrumentationBackend(17277): Added:'GetPreferences', with key:'get_preferences'
+12-09 08:27:21.604 W/art     (17277): Suspending all threads took: 5.634ms
+12-09 08:27:21.624 I/art     (17277): Background sticky concurrent mark sweep GC freed 8463(453KB) AllocSpace objects, 0(0B) LOS objects, 26% free, 947KB/1295KB, paused 6.711ms total 204.324ms
+12-09 08:27:21.647 I/InstrumentationBackend(17277): Added:'SetPreferences', with key:'set_preferences'
+12-09 08:27:21.647 I/InstrumentationBackend(17277): Added:'ClearPreferences', with key:'clear_preferences'
+12-09 08:27:21.647 I/InstrumentationBackend(17277): Added:'PressElement', with key:'press_l10n_element'
+12-09 08:27:21.648 I/InstrumentationBackend(17277): Added:'WaitForElement', with key:'wait_for_l10n_element'
+12-09 08:27:21.648 I/InstrumentationBackend(17277): Added:'NullAction', with key:'nullAction'
+12-09 08:27:21.648 I/InstrumentationBackend(17277): Added:'PressKey', with key:'press_key'
+12-09 08:27:21.648 I/InstrumentationBackend(17277): Added:'SetActivityOrientation', with key:'set_activity_orientation'
+12-09 08:27:21.648 I/InstrumentationBackend(17277): Added:'GetActivityOrientation', with key:'get_activity_orientation'
+12-09 08:27:21.649 I/InstrumentationBackend(17277): Added:'FakeGPSLocation', with key:'set_gps_coordinates'
+12-09 08:27:21.649 I/InstrumentationBackend(17277): Added:'SetPropertyByCssSelector', with key:'set_property_by_css_selector'
+12-09 08:27:21.658 I/InstrumentationBackend(17277): Added:'GetUrl', with key:'get_url'
+12-09 08:27:21.659 I/InstrumentationBackend(17277): Added:'ScrollTo', with key:'scroll_to'
+12-09 08:27:21.659 I/InstrumentationBackend(17277): Added:'GetLoadProgress', with key:'get_load_progress'
+12-09 08:27:21.660 I/InstrumentationBackend(17277): Added:'DumpHtml', with key:'dump_html'
+12-09 08:27:21.660 I/InstrumentationBackend(17277): Added:'DumpBodyHtml', with key:'dump_body_html'
+12-09 08:27:21.660 I/InstrumentationBackend(17277): Added:'EnterTextByCssSelector', with key:'enter_text_by_selector'
+12-09 08:27:21.661 I/InstrumentationBackend(17277): Added:'AndroidSDKVersion', with key:'android_sdk_version'
+12-09 08:27:21.661 I/InstrumentationBackend(17277): Added:'Version', with key:'version'
+12-09 08:27:21.665 I/InstrumentationBackend(17277): Added:'Drag', with key:'drag'
+12-09 08:27:21.666 I/InstrumentationBackend(17277): Added:'TouchCoordinates', with key:'touch_coordinate'
+12-09 08:27:21.666 I/InstrumentationBackend(17277): Added:'LongPressCoordinate', with key:'long_press_coordinate'
+12-09 08:27:21.666 I/InstrumentationBackend(17277): Added:'DragCoordinates', with key:'drag_coordinates'
+12-09 08:27:21.666 I/InstrumentationBackend(17277): Added:'ResumeApplication', with key:'resume_application'
+12-09 08:27:21.666 I/InstrumentationBackend(17277): Added:'Swipe', with key:'swipe'
+12-09 08:27:21.666 I/InstrumentationBackend(17277): Added:'DoubleTapCoordinate', with key:'double_tap_coordinate'
+12-09 08:27:21.666 I/InstrumentationBackend(17277): Added:'ClickOnScreen', with key:'click_on_screen'
+12-09 08:27:21.667 I/InstrumentationBackend(17277): Added:'GetActivityName', with key:'get_activity_name'
+12-09 08:27:21.667 I/InstrumentationBackend(17277): Added:'ScrollToView', with key:'scroll_to_view'
+12-09 08:27:21.667 I/InstrumentationBackend(17277): Added:'ViewConfiguration', with key:'view_configuration'
+12-09 08:27:21.667 I/InstrumentationBackend(17277): Added:'IsCurrentActivityFocused', with key:'is_current_activity_focused'
+12-09 08:27:21.667 I/InstrumentationBackend(17277): Added:'SendTcp', with key:'send_tcp'
+12-09 08:27:21.668 I/InstrumentationBackend(17277): Added:'DpToDevicePixel', with key:'dp_to_device_pixel'
+12-09 08:27:21.668 I/InstrumentationBackend(17277): Added:'KeyboardEnterText', with key:'keyboard_enter_text'
+12-09 08:27:21.668 I/InstrumentationBackend(17277): Added:'DeleteSurroundingText', with key:'delete_surrounding_text'
+12-09 08:27:21.668 I/InstrumentationBackend(17277): Added:'SetComposingRegion', with key:'set_composing_region'
+12-09 08:27:21.668 I/InstrumentationBackend(17277): Added:'SetSelection', with key:'set_selection'
+12-09 08:27:21.669 I/InstrumentationBackend(17277): Added:'KeyboardKeyEvent', with key:'keyboard_key_event'
+12-09 08:27:21.670 I/InstrumentationBackend(17277): Added:'PressUserActionButton', with key:'press_user_action_button'
+12-09 08:27:21.678 I/InstrumentationBackend(17277): Added:'HideSoftKeyboard', with key:'hide_soft_keyboard'
+12-09 08:27:21.678 I/InstrumentationBackend(17277): Added:'ListActions', with key:'list_actions'
+12-09 08:27:21.678 I/calabash(17277): Instantiating http server at 7102
+12-09 08:27:21.689 I/System.out(17277): HTTP Daemon listening on: 7102
+12-09 08:27:21.798 I/System.out(17277): URI: //ping
+12-09 08:27:21.805 I/System.out(17277): params: {json={}
+12-09 08:27:21.806 I/System.out(17277): }
+12-09 08:27:21.862 I/System.out(17277): URI: //ping
+12-09 08:27:21.862 I/System.out(17277): params: {json={}
+12-09 08:27:21.862 I/System.out(17277): }
+12-09 08:27:21.994 I/System.out(17277): URI: //ready
+12-09 08:27:21.994 I/System.out(17277): params: {json={}
+12-09 08:27:21.994 I/System.out(17277): }
+12-09 08:27:22.046 I/System.out(17277): URI: //
+12-09 08:27:22.046 I/System.out(17277): params: {json={"command":"version","arguments":[]}
+12-09 08:27:22.046 I/System.out(17277): }
+12-09 08:27:22.046 I/System.out(17277): header: {date=Sun, 09 Dec 2018 08:27:22 GMT, accept=*/*, content-length=36, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:27:22.046 I/System.out(17277): params: {json={"command":"version","arguments":[]}
+12-09 08:27:22.046 I/System.out(17277): }
+12-09 08:27:22.046 I/System.out(17277): ProP json = {"command":"version","arguments":[]}
+12-09 08:27:22.046 I/System.out(17277): files: {}
+12-09 08:27:22.046 I/System.out(17277): command: {"command":"version","arguments":[]}
+12-09 08:27:22.055 I/InstrumentationBackend(17277): Got command:'Command:'Line:null,version', arguments:'[]'
+12-09 08:27:22.086 I/System.out(17277): result:{"bonusInformation":[],"message":"0.9.8","success":true}
+12-09 08:27:22.151 I/System.out(17277): URI: //start-application
+12-09 08:27:22.151 I/System.out(17277): params: {json={"intent":null}
+12-09 08:27:22.151 I/System.out(17277): }
+12-09 08:27:22.197 I/ActivityManager( 1591): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.evancharlton.mileage/.Mileage} from uid 10137 on display 0
+12-09 08:27:22.386 I/calabash(17277): newActivity1
+12-09 08:27:22.422 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:22.441 I/calabash(17277): newActivity1
+12-09 08:27:22.450 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@545a6f0
+12-09 08:27:22.450 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:22.450 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:22.450 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:22.450 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 08:27:22.450 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 08:27:22.450 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 08:27:22.450 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:22.450 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:22.500 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@545a6f0
+12-09 08:27:22.500 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:22.500 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:22.500 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:22.500 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 08:27:22.500 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 08:27:22.500 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:22.500 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:22.670 V/PhoneStatusBar( 1691): setLightsOn(true)
+12-09 08:27:22.790 D/EGL_emulation( 1934): eglMakeCurrent: 0x7f13e2ff4dc0: ver 2 0 (tinfo 0x7f13e2fc2d40)
+12-09 08:27:22.791 E/Surface ( 1934): getSlotFromBufferLocked: unknown buffer: 0x7f13df595fc0
+12-09 08:27:22.906 D/FillupsProvider(17277): Creating database
+12-09 08:27:23.233 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@545a6f0
+12-09 08:27:23.233 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:23.233 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:23.233 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:23.233 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 08:27:23.233 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 08:27:23.233 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:23.233 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:23.241 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@545a6f0
+12-09 08:27:23.241 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:23.241 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:23.241 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:23.241 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 08:27:23.241 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 08:27:23.241 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:23.241 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:23.491 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 140ms
+12-09 08:27:23.917 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:24.011 D/        (17277): HostConnection::get() New Host Connection established 0x7f13df6fef20, tid 17277
+12-09 08:27:24.082 I/ActivityManager( 1591): Displayed com.evancharlton.mileage/.Mileage: +1s730ms
+12-09 08:27:24.161 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:24.770 I/System.out(17277): URI: //
+12-09 08:27:24.770 I/System.out(17277): params: {json={"command":"set_activity_orientation","arguments":["landscape"]}
+12-09 08:27:24.770 I/System.out(17277): }
+12-09 08:27:24.770 I/System.out(17277): header: {date=Sun, 09 Dec 2018 08:27:25 GMT, accept=*/*, content-length=64, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:27:24.770 I/System.out(17277): params: {json={"command":"set_activity_orientation","arguments":["landscape"]}
+12-09 08:27:24.770 I/System.out(17277): }
+12-09 08:27:24.770 I/System.out(17277): ProP json = {"command":"set_activity_orientation","arguments":["landscape"]}
+12-09 08:27:24.770 I/System.out(17277): files: {}
+12-09 08:27:24.770 I/System.out(17277): command: {"command":"set_activity_orientation","arguments":["landscape"]}
+12-09 08:27:24.771 I/InstrumentationBackend(17277): Got command:'Command:'Line:null,set_activity_orientation', arguments:'[landscape]'
+12-09 08:27:24.836 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:24.974 E/EGL_emulation( 1224): tid 1224: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 08:27:25.128 I/ActivityManager( 1591): Config changes=480 {1.0 310mcc260mnc en_US ldltr sw720dp w1280dp h696dp 160dpi xlrg long land finger -keyb/v/h tball/v s.51}
+12-09 08:27:25.140 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:25.344 I/InputReader( 1591): Reconfiguring input devices.  changes=0x00000004
+12-09 08:27:25.344 I/InputReader( 1591): Device reconfigured: id=0, name='qwerty2', size 720x1280, orientation 1, mode 1, display id 0
+12-09 08:27:25.519 I/calabash(17277): newActivity1
+12-09 08:27:25.542 I/calabash(17277): newActivity1
+12-09 08:27:25.543 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@193acdd
+12-09 08:27:25.543 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:25.543 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:25.543 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:25.543 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 08:27:25.543 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 08:27:25.543 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 08:27:25.543 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:25.543 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:25.544 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@193acdd
+12-09 08:27:25.544 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:25.544 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:25.544 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:25.544 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 08:27:25.544 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 08:27:25.544 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:25.544 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:25.557 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@193acdd
+12-09 08:27:25.557 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:25.557 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:25.557 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:25.557 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 08:27:25.557 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 08:27:25.557 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:25.557 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:25.569 I/System.out(17277): result:{"bonusInformation":[],"message":"","success":true}
+12-09 08:27:25.597 D/EGL_emulation( 1691): eglMakeCurrent: 0x7f13df594300: ver 2 0 (tinfo 0x7f13d6b6fce0)
+12-09 08:27:25.598 E/Surface ( 1691): getSlotFromBufferLocked: unknown buffer: 0x7f13d44a03c0
+12-09 08:27:25.606 D/EGL_emulation( 1691): eglMakeCurrent: 0x7f13df594300: ver 2 0 (tinfo 0x7f13d6b6fce0)
+12-09 08:27:25.626 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@193acdd
+12-09 08:27:25.626 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:25.626 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:25.626 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:25.626 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 08:27:25.626 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 08:27:25.626 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:25.626 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:25.677 I/art     (17277): Background sticky concurrent mark sweep GC freed 14212(619KB) AllocSpace objects, 2(40KB) LOS objects, 14% free, 2MB/2MB, paused 943us total 104.311ms
+12-09 08:27:25.817 I/WindowManager( 1591): Screen frozen for +1s30ms due to Window{90f6d92 u0 StatusBar}
+12-09 08:27:26.180 I/Choreographer(17277): Skipped 50 frames!  The application may be doing too much work on its main thread.
+12-09 08:27:26.872 I/Choreographer(17277): Skipped 30 frames!  The application may be doing too much work on its main thread.
+12-09 08:27:26.985 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:27.116 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:27.525 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:27.889 E/SurfaceFlinger( 1224): ro.sf.lcd_density must be defined as a build property
+12-09 08:27:27.969 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:27.980 D/        (17305): HostConnection::get() New Host Connection established 0x7f3c1cc12480, tid 17305
+12-09 08:27:28.028 E/EGL_emulation( 1224): tid 1224: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 08:27:28.184 I/art     ( 1591): Starting a blocking GC Explicit
+12-09 08:27:28.269 I/art     ( 1591): Explicit concurrent mark sweep GC freed 12832(1144KB) AllocSpace objects, 5(100KB) LOS objects, 29% free, 9MB/13MB, paused 4.920ms total 34.721ms
+12-09 08:27:28.462 I/System.out(17277): URI: //
+12-09 08:27:28.462 I/System.out(17277): params: {json={"command":"set_activity_orientation","arguments":["portrait"]}
+12-09 08:27:28.462 I/System.out(17277): }
+12-09 08:27:28.462 I/System.out(17277): header: {date=Sun, 09 Dec 2018 08:27:29 GMT, accept=*/*, content-length=63, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:27:28.462 I/System.out(17277): params: {json={"command":"set_activity_orientation","arguments":["portrait"]}
+12-09 08:27:28.462 I/System.out(17277): }
+12-09 08:27:28.462 I/System.out(17277): ProP json = {"command":"set_activity_orientation","arguments":["portrait"]}
+12-09 08:27:28.462 I/System.out(17277): files: {}
+12-09 08:27:28.462 I/System.out(17277): command: {"command":"set_activity_orientation","arguments":["portrait"]}
+12-09 08:27:28.464 I/InstrumentationBackend(17277): Got command:'Command:'Line:null,set_activity_orientation', arguments:'[portrait]'
+12-09 08:27:28.466 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:28.494 E/EGL_emulation( 1224): tid 1224: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 08:27:28.517 W/SurfaceFlinger( 1224): Timed out waiting for hw vsync; faking it
+12-09 08:27:28.522 I/ActivityManager( 1591): Config changes=480 {1.0 310mcc260mnc en_US ldltr sw720dp w720dp h1256dp 160dpi xlrg long port finger -keyb/v/h tball/v s.52}
+12-09 08:27:28.540 I/InputReader( 1591): Reconfiguring input devices.  changes=0x00000004
+12-09 08:27:28.540 I/InputReader( 1591): Device reconfigured: id=0, name='qwerty2', size 720x1280, orientation 0, mode 1, display id 0
+12-09 08:27:30.924 W/SurfaceFlinger( 1224): Timed out waiting for hw vsync; faking it
+12-09 08:27:30.924 W/SurfaceFlinger( 1224): Timed out waiting for hw vsync; faking it
+12-09 08:27:30.955 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.wm.WindowManagerService.setNewConfiguration(android.content.res.Configuration) from WindowManagerService.java:4043 waiters=0 for 487ms
+12-09 08:27:30.955 W/WindowManager( 1591): Window freeze timeout expired.
+12-09 08:27:30.955 W/WindowManager( 1591): Force clearing orientation change: Window{90f6d92 u0 StatusBar}
+12-09 08:27:30.955 W/WindowManager( 1591): Force clearing orientation change: Window{c75ef9e u0 com.evancharlton.mileage/com.evancharlton.mileage.Mileage}
+12-09 08:27:30.955 W/WindowManager( 1591): Force clearing orientation change: Window{cfc163e u0 com.android.systemui.ImageWallpaper}
+12-09 08:27:30.955 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.setRequestedOrientation(android.os.IBinder, int) from ActivityManagerService.java:4192 waiters=0 for 2.434s
+12-09 08:27:30.956 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.setRequestedOrientation(android.os.IBinder, int) from ActivityManagerService.java:4192 waiters=1 for 2.394s
+12-09 08:27:30.981 W/WindowManager( 1591): App freeze timeout expired.
+12-09 08:27:31.074 I/System.out(17277): result:{"bonusInformation":[],"message":"","success":true}
+12-09 08:27:31.076 I/WindowManager( 1591): Screen frozen for +2s611ms due to Window{90f6d92 u0 StatusBar}
+12-09 08:27:31.143 I/calabash(17277): newActivity1
+12-09 08:27:31.174 I/calabash(17277): newActivity1
+12-09 08:27:31.175 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@1725476
+12-09 08:27:31.175 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:31.175 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:31.175 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:31.175 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 08:27:31.175 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 08:27:31.175 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 08:27:31.175 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:31.175 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:31.176 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@1725476
+12-09 08:27:31.176 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:31.176 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:31.176 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:31.176 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 08:27:31.176 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 08:27:31.176 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:31.176 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:31.198 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@1725476
+12-09 08:27:31.198 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:31.198 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@1725476
+12-09 08:27:31.198 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:27:31.198 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:27:31.245 D/EGL_emulation( 1691): eglMakeCurrent: 0x7f13df594300: ver 2 0 (tinfo 0x7f13d6b6fce0)
+12-09 08:27:31.246 E/Surface ( 1691): getSlotFromBufferLocked: unknown buffer: 0x7f13d6503540
+12-09 08:27:31.250 D/EGL_emulation( 1691): eglMakeCurrent: 0x7f13df594300: ver 2 0 (tinfo 0x7f13d6b6fce0)
+12-09 08:27:31.558 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:31.969 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:32.942 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:33.122 I/art     ( 1591): Starting a blocking GC Explicit
+12-09 08:27:33.241 I/art     ( 1591): Explicit concurrent mark sweep GC freed 4523(330KB) AllocSpace objects, 0(0B) LOS objects, 30% free, 9MB/13MB, paused 1.227ms total 110.029ms
+12-09 08:27:33.241 I/art     ( 1591): WaitForGcToComplete blocked for 15.646ms for cause HeapTrim
+12-09 08:27:33.558 E/SurfaceFlinger( 1224): ro.sf.lcd_density must be defined as a build property
+12-09 08:27:33.727 D/gralloc_ranchu( 1224): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:27:33.737 D/        (17312): HostConnection::get() New Host Connection established 0x7f99be112480, tid 17312
+12-09 08:27:33.757 E/EGL_emulation( 1224): tid 1224: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
