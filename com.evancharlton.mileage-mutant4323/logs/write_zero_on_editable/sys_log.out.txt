@@ -1,0 +1,121 @@
+--------- beginning of main
+12-09 07:44:14.820 D/AndroidRuntime( 4986): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:44:14.825 D/AndroidRuntime( 4986): CheckJNI is ON
+12-09 07:44:14.845 D/ICU     ( 4986): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:44:15.092 E/memtrack( 4986): Couldn't load memtrack module (No such file or directory)
+12-09 07:44:15.100 E/android.os.Debug( 4986): failed to load memtrack module: -2
+12-09 07:44:15.101 I/Radio-JNI( 4986): register_android_hardware_Radio DONE
+12-09 07:44:15.116 D/AndroidRuntime( 4986): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 07:44:15.118 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10117 user=0: start instr
+12-09 07:44:15.136 I/ActivityManager( 1594): Start proc 4995:com.evancharlton.mileage/u0a117 for added application com.evancharlton.mileage
+12-09 07:44:15.148 D/AndroidRuntime( 4986): Shutting down VM
+12-09 07:44:15.463 W/System  ( 4995): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 07:44:15.465 W/System  ( 4995): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 07:44:15.558 I/ActivityManager( 1594): START u0 {flg=0x10000000 cmp=com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.StatusReporterActivity (has extras)} from uid 10117 on display 0
+12-09 07:44:15.628 D/AndroidRuntime( 4995): Shutting down VM
+--------- beginning of crash
+12-09 07:44:15.632 E/AndroidRuntime( 4995): FATAL EXCEPTION: main
+12-09 07:44:15.632 E/AndroidRuntime( 4995): Process: com.evancharlton.mileage, PID: 4995
+12-09 07:44:15.632 E/AndroidRuntime( 4995): java.lang.RuntimeException: Exception thrown in onCreate() of ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}: java.lang.RuntimeException: No launch intent set for package 'com.evancharlton.mileage'
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4701)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at android.os.Looper.loop(Looper.java:148)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): Caused by: java.lang.RuntimeException: No launch intent set for package 'com.evancharlton.mileage'
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at sh.calaba.instrumentationbackend.entrypoint.AndroidInstrumentationStartup.detectMainActivity(AndroidInstrumentationStartup.java:160)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at sh.calaba.instrumentationbackend.entrypoint.AndroidInstrumentationStartup.start(AndroidInstrumentationStartup.java:54)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at sh.calaba.instrumentationbackend.Main.start(Main.java:10)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at sh.calaba.instrumentationbackend.CalabashInstrumentation.onCreate(CalabashInstrumentation.java:34)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4698)
+12-09 07:44:15.632 E/AndroidRuntime( 4995): 	... 8 more
+12-09 07:44:15.640 I/System.out( 4856): Failure file: /data/user/0/com.evancharlton.mileage.test/files/calabash_failure.out
+12-09 07:44:15.640 I/System.out( 4856): Finished file: /data/user/0/com.evancharlton.mileage.test/files/calabash_finished.out
+12-09 07:44:15.640 I/System.out( 4856): method: report-failure
+12-09 07:44:15.640 I/System.out( 4856): Failure state: E_NO_LAUNCH_INTENT_FOR_PACKAGE
+12-09 07:44:15.644 W/ActivityManager( 1594): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 07:44:15.644 W/ActivityManager( 1594):   java.lang.RuntimeException
+12-09 07:44:15.644 W/ActivityManager( 1594):   java.lang.RuntimeException: No launch intent set for package 'com.evancharlton.mileage'
+12-09 07:44:15.644 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10117 user=0: finished inst
+12-09 07:44:15.644 I/ActivityManager( 1594): Killing 4995:com.evancharlton.mileage/u0a117 (adj 0): stop com.evancharlton.mileage
+12-09 07:44:16.568 W/SurfaceFlinger( 1219): Timed out waiting for hw vsync; faking it
+12-09 07:44:17.573 W/SurfaceFlinger( 1219): Timed out waiting for hw vsync; faking it
+12-09 07:44:27.082 W/SurfaceFlinger( 1219): Timed out waiting for hw vsync; faking it
+12-09 07:44:27.083 W/SurfaceFlinger( 1219): setTransactionState timed out!
+12-09 07:44:27.110 I/Choreographer( 1594): Skipped 571 frames!  The application may be doing too much work on its main thread.
+12-09 07:44:27.272 D/gralloc_ranchu( 1219): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:44:27.296 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12502 waiters=0 for 11.649s
+12-09 07:44:27.297 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12502 waiters=1 for 11.648s
+12-09 07:44:27.297 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12502 waiters=2 for 11.640s
+12-09 07:44:27.298 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12502 waiters=3 for 11.570s
+12-09 07:44:27.298 W/ActivityManager( 1594): Spurious death for ProcessRecord{aa988b6 0:com.evancharlton.mileage/u0a117}, curProc for 4995: null
+12-09 07:44:27.298 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12502 waiters=4 for 11.187s
+12-09 07:44:27.299 W/ActivityManager( 1594): Activity pause timeout for ActivityRecord{f72e60 u0 com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.StatusReporterActivity t339 f}
+12-09 07:44:27.300 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12502 waiters=5 for 7.650s
+12-09 07:44:27.447 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityStack$ActivityStackHandler.handleMessage(android.os.Message) from ActivityStack.java:283 waiters=1 for 146ms
+12-09 07:44:27.460 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityStack$ActivityStackHandler.handleMessage(android.os.Message) from ActivityStack.java:283 waiters=3 for 142ms
+12-09 07:44:27.468 W/ActivityManager( 1594): Launch timeout has expired, giving up wake lock!
+12-09 07:44:27.512 D/gralloc_ranchu( 1219): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:44:27.676 E/BufferQueueProducer( 1219): [Starting com.evancharlton.mileage.test] requestBuffer: BufferQueue has been abandoned
+12-09 07:44:27.676 E/Surface ( 1594): dequeueBuffer: IGraphicBufferProducer::requestBuffer failed: -19
+12-09 07:44:27.676 E/BufferQueueProducer( 1219): [Starting com.evancharlton.mileage.test] cancelBuffer: BufferQueue has been abandoned
+12-09 07:44:27.676 E/Surface ( 1594): dequeueBuffer failed (No such device)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): Could not lock surface
+12-09 07:44:27.677 E/ViewRootImpl( 1594): java.lang.IllegalArgumentException
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.Surface.nativeLockCanvas(Native Method)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.Surface.lockCanvas(Surface.java:264)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.ViewRootImpl.drawSoftware(ViewRootImpl.java:2668)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.ViewRootImpl.draw(ViewRootImpl.java:2642)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.ViewRootImpl.performDraw(ViewRootImpl.java:2434)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2067)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1107)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6013)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:858)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.Choreographer.doFrame(Choreographer.java:606)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.os.Handler.handleCallback(Handler.java:739)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.os.Looper.loop(Looper.java:148)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-09 07:44:27.677 E/ViewRootImpl( 1594): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+12-09 07:44:27.677 W/WindowManager( 1594): Failed looking up window
+12-09 07:44:27.677 W/WindowManager( 1594): java.lang.IllegalArgumentException: Requested window android.view.ViewRootImpl$W@16a6adb does not exist
+12-09 07:44:27.677 W/WindowManager( 1594): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8733)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8724)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at com.android.server.wm.WindowManagerService.finishDrawingWindow(WindowManagerService.java:3449)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at com.android.server.wm.Session.finishDrawing(Session.java:232)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.view.ViewRootImpl.performDraw(ViewRootImpl.java:2472)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2067)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1107)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6013)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:858)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.view.Choreographer.doFrame(Choreographer.java:606)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.os.Handler.handleCallback(Handler.java:739)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.os.Looper.loop(Looper.java:148)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-09 07:44:27.677 W/WindowManager( 1594): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+12-09 07:44:27.680 W/WindowManager( 1594): Failed looking up window
+12-09 07:44:27.680 W/WindowManager( 1594): java.lang.IllegalArgumentException: Requested window android.view.ViewRootImpl$W@16a6adb does not exist
+12-09 07:44:27.680 W/WindowManager( 1594): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8733)
+12-09 07:44:27.680 W/WindowManager( 1594): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8724)
+12-09 07:44:27.680 W/WindowManager( 1594): 	at com.android.server.wm.WindowManagerService.removeWindow(WindowManagerService.java:2697)
+12-09 07:44:27.680 W/WindowManager( 1594): 	at com.android.server.wm.Session.remove(Session.java:187)
+12-09 07:44:27.680 W/WindowManager( 1594): 	at android.view.ViewRootImpl.dispatchDetachedFromWindow(ViewRootImpl.java:3099)
+12-09 07:44:27.680 W/WindowManager( 1594): 	at android.view.ViewRootImpl.doDie(ViewRootImpl.java:5606)
+12-09 07:44:27.680 W/WindowManager( 1594): 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:3409)
+12-09 07:44:27.680 W/WindowManager( 1594): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 07:44:27.680 W/WindowManager( 1594): 	at android.os.Looper.loop(Looper.java:148)
+12-09 07:44:27.680 W/WindowManager( 1594): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-09 07:44:27.680 W/WindowManager( 1594): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+12-09 07:44:27.750 W/InputMethodManagerService( 1594): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@afe1089 attribute=null, token = android.os.BinderProxy@11270cd
+12-09 07:44:27.977 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
+12-09 07:45:00.276 D/hwcomposer( 1219): hw_composer sent 21 syncs in 60s

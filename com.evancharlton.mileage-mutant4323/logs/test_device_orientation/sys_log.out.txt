@@ -1,0 +1,55 @@
+--------- beginning of main
+12-09 07:48:22.234 D/AndroidRuntime( 5164): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:48:22.249 D/AndroidRuntime( 5164): CheckJNI is ON
+12-09 07:48:22.262 D/ICU     ( 5164): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:48:22.431 E/memtrack( 5164): Couldn't load memtrack module (No such file or directory)
+12-09 07:48:22.435 E/android.os.Debug( 5164): failed to load memtrack module: -2
+12-09 07:48:22.437 I/Radio-JNI( 5164): register_android_hardware_Radio DONE
+12-09 07:48:22.448 D/AndroidRuntime( 5164): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 07:48:22.449 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10117 user=0: start instr
+12-09 07:48:22.456 I/ActivityManager( 1594): Killing 5147:com.evancharlton.mileage/u0a117 (adj 0): stop com.evancharlton.mileage
+12-09 07:48:22.513 W/ActivityManager( 1594): Crash of app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.ClearAppData2}
+12-09 07:48:22.513 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10117 user=0: finished inst
+12-09 07:48:22.560 I/ActivityManager( 1594): Start proc 5173:com.evancharlton.mileage/u0a117 for added application com.evancharlton.mileage
+12-09 07:48:22.568 D/AndroidRuntime( 5164): Shutting down VM
+12-09 07:48:22.600 W/ActivityManager( 1594): Spurious death for ProcessRecord{5d9c980 0:com.evancharlton.mileage/u0a117}, curProc for 5147: null
+12-09 07:48:22.699 W/System  ( 5173): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 07:48:22.699 W/System  ( 5173): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 07:48:22.714 I/ActivityManager( 1594): START u0 {flg=0x10000000 cmp=com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.StatusReporterActivity (has extras)} from uid 10117 on display 0
+12-09 07:48:22.736 D/AndroidRuntime( 5173): Shutting down VM
+--------- beginning of crash
+12-09 07:48:22.737 E/AndroidRuntime( 5173): FATAL EXCEPTION: main
+12-09 07:48:22.737 E/AndroidRuntime( 5173): Process: com.evancharlton.mileage, PID: 5173
+12-09 07:48:22.737 E/AndroidRuntime( 5173): java.lang.RuntimeException: Exception thrown in onCreate() of ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}: java.lang.RuntimeException: No launch intent set for package 'com.evancharlton.mileage'
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4701)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at android.os.Looper.loop(Looper.java:148)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): Caused by: java.lang.RuntimeException: No launch intent set for package 'com.evancharlton.mileage'
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at sh.calaba.instrumentationbackend.entrypoint.AndroidInstrumentationStartup.detectMainActivity(AndroidInstrumentationStartup.java:160)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at sh.calaba.instrumentationbackend.entrypoint.AndroidInstrumentationStartup.start(AndroidInstrumentationStartup.java:54)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at sh.calaba.instrumentationbackend.Main.start(Main.java:10)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at sh.calaba.instrumentationbackend.CalabashInstrumentation.onCreate(CalabashInstrumentation.java:34)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4698)
+12-09 07:48:22.737 E/AndroidRuntime( 5173): 	... 8 more
+12-09 07:48:22.754 I/System.out( 4856): Failure file: /data/user/0/com.evancharlton.mileage.test/files/calabash_failure.out
+12-09 07:48:22.754 I/System.out( 4856): Finished file: /data/user/0/com.evancharlton.mileage.test/files/calabash_finished.out
+12-09 07:48:22.754 I/System.out( 4856): method: report-failure
+12-09 07:48:22.754 I/System.out( 4856): Failure state: E_NO_LAUNCH_INTENT_FOR_PACKAGE
+12-09 07:48:22.819 W/ActivityManager( 1594): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 07:48:22.819 W/ActivityManager( 1594):   java.lang.RuntimeException
+12-09 07:48:22.819 W/ActivityManager( 1594):   java.lang.RuntimeException: No launch intent set for package 'com.evancharlton.mileage'
+12-09 07:48:22.819 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10117 user=0: finished inst
+12-09 07:48:22.819 I/ActivityManager( 1594): Killing 5173:com.evancharlton.mileage/u0a117 (adj 0): stop com.evancharlton.mileage
+12-09 07:48:22.940 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=1 for 165ms
+12-09 07:48:22.940 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=2 for 158ms
+12-09 07:48:22.981 W/ActivityManager( 1594): Spurious death for ProcessRecord{2a45644 0:com.evancharlton.mileage/u0a117}, curProc for 5173: null
+12-09 07:48:23.053 W/InputMethodManagerService( 1594): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4306062 attribute=null, token = android.os.BinderProxy@11270cd
+12-09 07:48:23.335 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
+12-09 07:49:00.281 D/hwcomposer( 1219): hw_composer sent 30 syncs in 60s

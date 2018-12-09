@@ -1,0 +1,56 @@
+--------- beginning of main
+12-09 07:42:54.990 D/AndroidRuntime( 4949): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:42:54.991 D/AndroidRuntime( 4949): CheckJNI is ON
+12-09 07:42:55.022 D/ICU     ( 4949): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:42:55.165 E/memtrack( 4949): Couldn't load memtrack module (No such file or directory)
+12-09 07:42:55.180 E/android.os.Debug( 4949): failed to load memtrack module: -2
+12-09 07:42:55.188 I/Radio-JNI( 4949): register_android_hardware_Radio DONE
+12-09 07:42:55.268 D/AndroidRuntime( 4949): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 07:42:55.341 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10117 user=0: start instr
+12-09 07:42:55.556 I/ActivityManager( 1594): Start proc 4958:com.evancharlton.mileage/u0a117 for added application com.evancharlton.mileage
+12-09 07:42:55.564 D/AndroidRuntime( 4949): Shutting down VM
+12-09 07:42:55.827 W/System  ( 4958): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 07:42:55.827 W/System  ( 4958): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 07:42:55.851 I/ActivityManager( 1594): START u0 {flg=0x10000000 cmp=com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.StatusReporterActivity (has extras)} from uid 10117 on display 0
+12-09 07:42:55.894 D/AndroidRuntime( 4958): Shutting down VM
+--------- beginning of crash
+12-09 07:42:55.895 E/AndroidRuntime( 4958): FATAL EXCEPTION: main
+12-09 07:42:55.895 E/AndroidRuntime( 4958): Process: com.evancharlton.mileage, PID: 4958
+12-09 07:42:55.895 E/AndroidRuntime( 4958): java.lang.RuntimeException: Exception thrown in onCreate() of ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}: java.lang.RuntimeException: No launch intent set for package 'com.evancharlton.mileage'
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4701)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at android.os.Looper.loop(Looper.java:148)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): Caused by: java.lang.RuntimeException: No launch intent set for package 'com.evancharlton.mileage'
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at sh.calaba.instrumentationbackend.entrypoint.AndroidInstrumentationStartup.detectMainActivity(AndroidInstrumentationStartup.java:160)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at sh.calaba.instrumentationbackend.entrypoint.AndroidInstrumentationStartup.start(AndroidInstrumentationStartup.java:54)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at sh.calaba.instrumentationbackend.Main.start(Main.java:10)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at sh.calaba.instrumentationbackend.CalabashInstrumentation.onCreate(CalabashInstrumentation.java:34)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4698)
+12-09 07:42:55.895 E/AndroidRuntime( 4958): 	... 8 more
+12-09 07:42:55.913 I/System.out( 4856): Failure file: /data/user/0/com.evancharlton.mileage.test/files/calabash_failure.out
+12-09 07:42:55.913 I/System.out( 4856): Finished file: /data/user/0/com.evancharlton.mileage.test/files/calabash_finished.out
+12-09 07:42:55.913 I/System.out( 4856): method: report-failure
+12-09 07:42:55.913 I/System.out( 4856): Failure state: E_NO_LAUNCH_INTENT_FOR_PACKAGE
+12-09 07:42:56.043 D/hwcomposer( 1219): hw_composer sent 69 syncs in 80s
+12-09 07:42:56.229 D/gralloc_ranchu( 1219): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:42:56.464 D/gralloc_ranchu( 1219): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:42:56.546 I/WindowManager( 1594): Screenshot max retries 4 of Token{ebfd2fb ActivityRecord{6354c8a u0 com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.StatusReporterActivity t338 f}} appWin=Window{44fa673 u0 Starting com.evancharlton.mileage.test} drawState=2
+12-09 07:42:56.547 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=1 for 627ms
+12-09 07:42:56.550 W/ActivityManager( 1594): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 07:42:56.550 W/ActivityManager( 1594):   java.lang.RuntimeException
+12-09 07:42:56.550 W/ActivityManager( 1594):   java.lang.RuntimeException: No launch intent set for package 'com.evancharlton.mileage'
+12-09 07:42:56.551 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10117 user=0: finished inst
+12-09 07:42:56.551 I/ActivityManager( 1594): Killing 4958:com.evancharlton.mileage/u0a117 (adj 0): stop com.evancharlton.mileage
+12-09 07:42:56.635 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=1 for 715ms
+12-09 07:42:56.638 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=2 for 524ms
+12-09 07:42:56.640 W/ActivityManager( 1594): Spurious death for ProcessRecord{a931930 0:com.evancharlton.mileage/u0a117}, curProc for 4958: null
+12-09 07:42:56.919 W/InputMethodManagerService( 1594): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@a4fce1d attribute=null, token = android.os.BinderProxy@11270cd
+12-09 07:42:57.145 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
+12-09 07:44:00.317 D/hwcomposer( 1219): hw_composer sent 23 syncs in 65s
