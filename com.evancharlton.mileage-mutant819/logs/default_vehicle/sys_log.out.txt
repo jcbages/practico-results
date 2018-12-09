@@ -1,0 +1,99 @@
+--------- beginning of main
+12-09 08:51:06.970 D/AndroidRuntime(19782): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:51:06.987 D/AndroidRuntime(19782): CheckJNI is ON
+12-09 08:51:07.001 D/ICU     (19782): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:51:07.108 E/memtrack(19782): Couldn't load memtrack module (No such file or directory)
+12-09 08:51:07.108 E/android.os.Debug(19782): failed to load memtrack module: -2
+12-09 08:51:07.109 I/Radio-JNI(19782): register_android_hardware_Radio DONE
+12-09 08:51:07.286 D/AndroidRuntime(19782): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:51:07.328 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10143 user=0: start instr
+12-09 08:51:07.482 I/ActivityManager( 1591): Start proc 19791:com.evancharlton.mileage/u0a143 for added application com.evancharlton.mileage
+12-09 08:51:07.482 W/art     ( 1591): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=0 for 152ms
+12-09 08:51:07.489 D/AndroidRuntime(19782): Shutting down VM
+12-09 08:51:07.942 W/System  (19791): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:51:07.958 I/art     (19791): Background partial concurrent mark sweep GC freed 15143(530KB) AllocSpace objects, 0(0B) LOS objects, 74% free, 350KB/1374KB, paused 104.973ms total 386.376ms
+12-09 08:51:07.959 W/System  (19791): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:51:07.964 D/AndroidRuntime(19791): Shutting down VM
+--------- beginning of crash
+12-09 08:51:07.964 E/AndroidRuntime(19791): FATAL EXCEPTION: main
+12-09 08:51:07.964 E/AndroidRuntime(19791): Process: com.evancharlton.mileage, PID: 19791
+12-09 08:51:07.964 E/AndroidRuntime(19791): java.lang.ExceptionInInitializerError
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:51:07.964 E/AndroidRuntime(19791): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at android.content.UriMatcher.addURI(UriMatcher.java:194)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at com.evancharlton.mileage.provider.FillUpsProvider.registerUri(FillUpsProvider.java:92)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at com.evancharlton.mileage.provider.tables.FillupsTable.registerUris(FillupsTable.java:64)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 08:51:07.964 E/AndroidRuntime(19791): 	... 12 more
+12-09 08:51:07.965 W/ActivityManager( 1591): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:51:07.965 W/ActivityManager( 1591):   java.lang.NullPointerException
+12-09 08:51:07.965 W/ActivityManager( 1591):   java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+12-09 08:51:07.970 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10143 user=0: finished inst
+12-09 08:51:07.970 I/ActivityManager( 1591): Killing 19791:com.evancharlton.mileage/u0a143 (adj 0): stop com.evancharlton.mileage
+12-09 08:51:08.062 W/ActivityManager( 1591): Spurious death for ProcessRecord{dd56f2f 0:com.evancharlton.mileage/u0a143}, curProc for 19791: null
+12-09 08:51:08.413 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:51:25.663 V/NativeCrypto( 2223): Read error: ssl=0x7f8a6d677548: I/O error during system call, Connection reset by peer
+12-09 08:51:25.678 E/WakeLock( 2223): GCM_HB_ALARM release without a matched acquire!
+12-09 08:51:25.691 V/NativeCrypto( 2223): SSL shutdown failed: ssl=0x7f8a6d677548: I/O error during system call, Broken pipe
+12-09 08:51:25.691 E/WakeLock( 2223): GCM_HB_ALARM release without a matched acquire!
+12-09 08:51:25.692 D/ConnectivityService( 1591): reportNetworkConnectivity(100, false) by 10008
+12-09 08:51:25.692 D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100]( 1591): Forcing reevaluation for UID 10008
+12-09 08:51:25.724 D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100]( 1591): Checking http://connectivitycheck.gstatic.com/generate_204 on epc.tmobile.com, connectivitycheck.gstatic.com=108.177.111.94,2607:f8b0:4001:c07::5e
+12-09 08:51:25.747 D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100]( 1591): isCaptivePortal: ret=204 headers={null=[HTTP/1.1 204 No Content], Content-Length=[0], Date=[Sun, 09 Dec 2018 08:51:26 GMT], X-Android-Received-Millis=[1544345485746], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1544345485742]}
+12-09 08:51:25.748 D/ConnectivityService( 1591): setProvNotificationVisibleIntent null visible=false networkType=MOBILE extraInfo=null highPriority=false
+12-09 08:51:25.748 D/ConnectivityService( 1591): NetworkAgentInfo [MOBILE (LTE) - 100] validation  passed
+12-09 08:51:26.039 I/EventLogChimeraService( 2387): Aggregate from 1544343808415 (log), 1544343808415 (data)
+12-09 08:51:26.084 E/WakeLock( 2223): GCM_CONN_ALARM release without a matched acquire!
+12-09 08:51:26.263 I/Auth    ( 2223): [ReflectiveChannelBinder] Successfully bound channel!
+12-09 08:51:26.267 D/WVCdm   ( 1307): Instantiating CDM.
+12-09 08:51:26.268 I/WVCdm   ( 1307): CdmEngine::OpenSession
+12-09 08:51:26.268 I/WVCdm   ( 1307): Level3 Library Sep 28 2015 13:08:28
+12-09 08:51:26.268 W/WVCdm   ( 1307): Could not read /data/mediadrm/IDM1013/ay64.dat2: No such file or directory
+12-09 08:51:26.269 W/WVCdm   ( 1307): Could not load liboemcrypto.so. Falling back to L3.  dlopen failed: library "liboemcrypto.so" not found
+12-09 08:51:26.282 I/WVCdm   ( 1307): CdmEngine::QueryKeyControlInfo
+12-09 08:51:26.283 W/WVCdm   ( 1307): BufferReader::Read<T> : Failure during parse: Not enough bytes (4)
+12-09 08:51:26.283 W/WVCdm   ( 1307): CdmEngine::ExtractWidevinePssh: Unable to read atom size.
+12-09 08:51:26.283 I/WVCdm   ( 1307): CdmEngine::GenerateKeyRequest
+12-09 08:51:26.283 D/WVCdm   ( 1307): PrepareKeyRequest: nonce=636316410
+12-09 08:51:26.362 W/Conscrypt( 2223): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+12-09 08:51:26.362 W/Conscrypt( 2223): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:51:26.362 W/Conscrypt( 2223): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@13280023@13.2.80 (040800-211705629):13)
+12-09 08:51:26.362 W/Conscrypt( 2223): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+12-09 08:51:26.362 W/Conscrypt( 2223): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+12-09 08:51:26.362 W/Conscrypt( 2223): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+12-09 08:51:26.392 W/Conscrypt( 2223): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+12-09 08:51:26.392 W/Conscrypt( 2223): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:51:26.392 W/Conscrypt( 2223): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@13280023@13.2.80 (040800-211705629):13)
+12-09 08:51:26.392 W/Conscrypt( 2223): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+12-09 08:51:26.393 W/Conscrypt( 2223): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+12-09 08:51:26.393 W/Conscrypt( 2223): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+12-09 08:51:26.427 W/GLSUser ( 2223): [AppCertManager] IOException while requesting key: 
+12-09 08:51:26.427 W/GLSUser ( 2223): java.io.IOException: Invalid device key response.
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at hnl.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):11)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at hnl.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):64)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at hnj.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):6)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at hnf.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):1)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at hne.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):9)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at com.google.android.gms.auth.account.be.legacy.AuthCronChimeraService.b(:com.google.android.gms@13280023@13.2.80 (040800-211705629):6)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at gmd.call(:com.google.android.gms@13280023@13.2.80 (040800-211705629):3)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at qcr.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629):21)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at qiv.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629))
+12-09 08:51:26.427 W/GLSUser ( 2223): 	at java.lang.Thread.run(Thread.java:818)
+12-09 08:51:26.471 I/WVCdm   ( 1307): CdmEngine::CloseSession
+12-09 08:51:27.186 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:52:00.397 D/hwcomposer( 1223): hw_composer sent 6 syncs in 60s

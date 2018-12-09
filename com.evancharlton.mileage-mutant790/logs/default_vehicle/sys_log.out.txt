@@ -1,0 +1,41 @@
+--------- beginning of main
+12-09 08:13:19.052 D/AndroidRuntime(11346): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:13:19.075 D/AndroidRuntime(11346): CheckJNI is ON
+12-09 08:13:19.109 D/ICU     (11346): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:13:19.211 E/memtrack(11346): Couldn't load memtrack module (No such file or directory)
+12-09 08:13:19.211 E/android.os.Debug(11346): failed to load memtrack module: -2
+12-09 08:13:19.212 I/Radio-JNI(11346): register_android_hardware_Radio DONE
+12-09 08:13:19.224 D/AndroidRuntime(11346): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:13:19.247 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10127 user=0: start instr
+12-09 08:13:19.273 I/ActivityManager( 1591): Start proc 11355:com.evancharlton.mileage/u0a127 for added application com.evancharlton.mileage
+12-09 08:13:19.278 D/AndroidRuntime(11346): Shutting down VM
+12-09 08:13:19.396 W/System  (11355): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:13:19.396 W/System  (11355): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:13:19.420 D/AndroidRuntime(11355): Shutting down VM
+--------- beginning of crash
+12-09 08:13:19.420 E/AndroidRuntime(11355): FATAL EXCEPTION: main
+12-09 08:13:19.420 E/AndroidRuntime(11355): Process: com.evancharlton.mileage, PID: 11355
+12-09 08:13:19.420 E/AndroidRuntime(11355): java.lang.ExceptionInInitializerError
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:13:19.420 E/AndroidRuntime(11355): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 08:13:19.420 E/AndroidRuntime(11355): 	... 12 more
+12-09 08:13:19.426 W/ActivityManager( 1591): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:13:19.426 W/ActivityManager( 1591):   java.lang.NullPointerException
+12-09 08:13:19.426 W/ActivityManager( 1591):   java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:13:19.426 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10127 user=0: finished inst
+12-09 08:13:19.433 I/ActivityManager( 1591): Killing 11355:com.evancharlton.mileage/u0a127 (adj 0): stop com.evancharlton.mileage
+12-09 08:13:19.900 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:14:00.284 D/hwcomposer( 1223): hw_composer sent 2 syncs in 60s
