@@ -1,0 +1,47 @@
+--------- beginning of main
+12-09 07:46:56.452 D/AndroidRuntime( 4937): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:46:56.454 D/AndroidRuntime( 4937): CheckJNI is ON
+12-09 07:46:56.486 D/ICU     ( 4937): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:46:56.873 E/memtrack( 4937): Couldn't load memtrack module (No such file or directory)
+12-09 07:46:56.873 E/android.os.Debug( 4937): failed to load memtrack module: -2
+12-09 07:46:56.874 I/Radio-JNI( 4937): register_android_hardware_Radio DONE
+12-09 07:46:56.894 D/AndroidRuntime( 4937): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 07:46:56.896 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10117 user=0: start instr
+--------- beginning of crash
+12-09 07:46:56.947 F/libc    ( 4946): Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7fdaecec0000 in tid 4946 (main)
+12-09 07:46:56.948 I/ActivityManager( 1592): Start proc 4946:com.evancharlton.mileage/u0a117 for added application com.evancharlton.mileage
+12-09 07:46:56.951 D/AndroidRuntime( 4937): Shutting down VM
+12-09 07:46:57.053 I/SELinux ( 4921): SELinux: Loaded file_contexts contexts from /file_contexts.
+12-09 07:46:57.054 F/DEBUG   ( 4921): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+12-09 07:46:57.054 F/DEBUG   ( 4921): Build fingerprint: 'Android/sdk_google_phone_x86_64/generic_x86_64:6.0/MASTER/5056751:userdebug/test-keys'
+12-09 07:46:57.054 F/DEBUG   ( 4921): Revision: '0'
+12-09 07:46:57.054 F/DEBUG   ( 4921): ABI: 'x86_64'
+12-09 07:46:57.054 F/DEBUG   ( 4921): pid: 4946, tid: 4946, name: main  >>> zygote64 <<<
+12-09 07:46:57.054 F/DEBUG   ( 4921): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7fdaecec0000
+12-09 07:46:57.057 F/DEBUG   ( 4921):     rax 000000000000000f  rbx 00007fdaf57d2240  rcx 0000000000000000  rdx 6761656c696d2e6e
+12-09 07:46:57.057 F/DEBUG   ( 4921):     rsi 00007fdaecebfff8  rdi 00007fff8face3d0
+12-09 07:46:57.057 F/DEBUG   ( 4921):     r8  000000000000000f  r9  0000000000000000  r10 0000000000000017  r11 00007fdaf8f57320
+12-09 07:46:57.057 F/DEBUG   ( 4921):     r12 00007fdaecebfe60  r13 00007fff8face3d0  r14 0000000000000000  r15 00007fff8face3b0
+12-09 07:46:57.057 F/DEBUG   ( 4921):     cs  0000000000000033  ss  000000000000002b
+12-09 07:46:57.057 F/DEBUG   ( 4921):     rip 00007fdaf8ea2790  rbp 00007fdaee7d7e60  rsp 00007fff8face338  eflags 0000000000010212
+12-09 07:46:57.066 F/DEBUG   ( 4921): 
+12-09 07:46:57.066 F/DEBUG   ( 4921): backtrace:
+12-09 07:46:57.066 F/DEBUG   ( 4921):     #00 pc 0000000000021790  /system/lib64/libc.so (strlcpy+2768)
+12-09 07:46:57.067 F/DEBUG   ( 4921):     #01 pc 000000000014e039  /system/lib64/libandroid_runtime.so
+12-09 07:46:57.067 F/DEBUG   ( 4921):     #02 pc 000000000014ec3f  /system/lib64/libandroid_runtime.so
+12-09 07:46:57.067 F/DEBUG   ( 4921):     #03 pc 0000000073d33016  /data/dalvik-cache/x86_64/system@framework@boot.oat (offset 0x1ed6000)
+12-09 07:46:57.090 F/DEBUG   ( 4921): 
+12-09 07:46:57.090 F/DEBUG   ( 4921): Tombstone written to: /data/tombstones/tombstone_06
+12-09 07:46:57.090 E/DEBUG   ( 4921): AM write failed: Broken pipe
+12-09 07:46:57.091 I/BootReceiver( 1592): Copying /data/tombstones/tombstone_06 to DropBox (SYSTEM_TOMBSTONE)
+12-09 07:46:57.103 W/ActivityManager( 1592): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 07:46:57.103 W/ActivityManager( 1592):   Native crash
+12-09 07:46:57.103 W/ActivityManager( 1592):   Native crash: Segmentation fault
+12-09 07:46:57.103 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10117 user=0: finished inst
+12-09 07:46:57.104 I/ActivityManager( 1592): Killing 4946:com.evancharlton.mileage/u0a117 (adj -100): stop com.evancharlton.mileage
+12-09 07:46:57.815 I/AccountManagerService( 1592): getTypesVisibleToCaller: isPermitted? true
+12-09 07:46:57.892 I/AccountManagerService( 1592): getTypesVisibleToCaller: isPermitted? true
+12-09 07:47:00.250 D/hwcomposer( 1219): hw_composer sent 3 syncs in 60s
+12-09 07:48:00.430 D/hwcomposer( 1219): hw_composer sent 2 syncs in 60s
+12-09 07:48:10.254 I/UsageStatsService( 1592): User[0] Flushing usage stats to disk
