@@ -1,0 +1,210 @@
+--------- beginning of main
+12-09 07:54:08.842 W/art     ( 1792): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 211ms
+12-09 07:54:09.047 W/art     ( 1792): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 205ms
+12-09 07:54:09.058 W/art     ( 1792): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=0 for 1.423s
+12-09 07:54:09.059 W/art     ( 1792): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=1 for 526ms
+--------- beginning of system
+12-09 07:54:09.222 W/InputMethodManagerService( 1792): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@1fcd786 attribute=null, token = android.os.BinderProxy@212257b
+12-09 07:54:09.223 W/art     ( 1792): Long monitor contention event with owner method=java.util.List com.android.server.am.ActivityManagerService.getAllStackInfos() from ActivityManagerService.java:8937 waiters=0 for 146ms
+12-09 07:54:09.612 D/AndroidRuntime( 8679): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:54:09.627 D/AndroidRuntime( 8679): CheckJNI is ON
+12-09 07:54:09.642 D/ICU     ( 8679): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:54:09.792 E/memtrack( 8679): Couldn't load memtrack module (No such file or directory)
+12-09 07:54:09.797 E/android.os.Debug( 8679): failed to load memtrack module: -2
+12-09 07:54:09.799 I/Radio-JNI( 8679): register_android_hardware_Radio DONE
+12-09 07:54:09.822 D/AndroidRuntime( 8679): Calling main entry com.android.commands.am.Am
+12-09 07:54:09.959 I/ActivityManager( 1792): Force stopping com.evancharlton.mileage appid=10123 user=0: start instr
+12-09 07:54:09.959 I/ActivityManager( 1792): Killing 8649:com.evancharlton.mileage/u0a123 (adj 0): stop com.evancharlton.mileage
+12-09 07:54:10.058 W/ActivityManager( 1792): Crash of app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.ClearAppData2}
+12-09 07:54:10.059 I/ActivityManager( 1792): Force stopping com.evancharlton.mileage appid=10123 user=0: finished inst
+12-09 07:54:10.079 I/ActivityManager( 1792): Start proc 8688:com.evancharlton.mileage/u0a123 for added application com.evancharlton.mileage
+12-09 07:54:10.080 W/art     ( 1792): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=0 for 106ms
+12-09 07:54:10.083 D/AndroidRuntime( 8679): Shutting down VM
+12-09 07:54:10.375 W/System  ( 8688): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 07:54:10.383 W/System  ( 8688): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 07:54:10.498 I/System.out( 8688): Main activity name automatically set to: com.evancharlton.mileage.Mileage
+12-09 07:54:10.566 I/System.out( 8688): Calabash did not load Mono. This is only a problem if you are trying to test a Mono application
+12-09 07:54:10.667 I/calabash( 8688): Test server port: 7102
+12-09 07:54:10.746 I/InstrumentationBackend( 8688): Added:'GetPreferences', with key:'get_preferences'
+12-09 07:54:10.749 I/art     ( 8688): Background sticky concurrent mark sweep GC freed 28038(1057KB) AllocSpace objects, 0(0B) LOS objects, 78% free, 810KB/3MB, paused 1.072ms total 314.857ms
+12-09 07:54:10.815 I/InstrumentationBackend( 8688): Added:'SetPreferences', with key:'set_preferences'
+12-09 07:54:10.830 I/InstrumentationBackend( 8688): Added:'ClearPreferences', with key:'clear_preferences'
+12-09 07:54:10.830 I/InstrumentationBackend( 8688): Added:'PressElement', with key:'press_l10n_element'
+12-09 07:54:10.830 I/InstrumentationBackend( 8688): Added:'WaitForElement', with key:'wait_for_l10n_element'
+12-09 07:54:10.831 I/InstrumentationBackend( 8688): Added:'NullAction', with key:'nullAction'
+12-09 07:54:10.831 I/InstrumentationBackend( 8688): Added:'PressKey', with key:'press_key'
+12-09 07:54:10.831 I/InstrumentationBackend( 8688): Added:'SetActivityOrientation', with key:'set_activity_orientation'
+12-09 07:54:10.831 I/InstrumentationBackend( 8688): Added:'GetActivityOrientation', with key:'get_activity_orientation'
+12-09 07:54:10.832 I/InstrumentationBackend( 8688): Added:'FakeGPSLocation', with key:'set_gps_coordinates'
+12-09 07:54:10.832 I/InstrumentationBackend( 8688): Added:'SetPropertyByCssSelector', with key:'set_property_by_css_selector'
+12-09 07:54:10.832 I/InstrumentationBackend( 8688): Added:'GetUrl', with key:'get_url'
+12-09 07:54:10.833 I/InstrumentationBackend( 8688): Added:'ScrollTo', with key:'scroll_to'
+12-09 07:54:10.833 I/InstrumentationBackend( 8688): Added:'GetLoadProgress', with key:'get_load_progress'
+12-09 07:54:10.833 I/InstrumentationBackend( 8688): Added:'DumpHtml', with key:'dump_html'
+12-09 07:54:10.834 I/InstrumentationBackend( 8688): Added:'DumpBodyHtml', with key:'dump_body_html'
+12-09 07:54:10.834 I/InstrumentationBackend( 8688): Added:'EnterTextByCssSelector', with key:'enter_text_by_selector'
+12-09 07:54:10.835 I/InstrumentationBackend( 8688): Added:'AndroidSDKVersion', with key:'android_sdk_version'
+12-09 07:54:10.836 I/InstrumentationBackend( 8688): Added:'Version', with key:'version'
+12-09 07:54:10.836 I/InstrumentationBackend( 8688): Added:'Drag', with key:'drag'
+12-09 07:54:10.836 I/InstrumentationBackend( 8688): Added:'TouchCoordinates', with key:'touch_coordinate'
+12-09 07:54:10.836 I/InstrumentationBackend( 8688): Added:'LongPressCoordinate', with key:'long_press_coordinate'
+12-09 07:54:10.836 I/InstrumentationBackend( 8688): Added:'DragCoordinates', with key:'drag_coordinates'
+12-09 07:54:10.836 I/InstrumentationBackend( 8688): Added:'ResumeApplication', with key:'resume_application'
+12-09 07:54:10.837 I/InstrumentationBackend( 8688): Added:'Swipe', with key:'swipe'
+12-09 07:54:10.837 I/InstrumentationBackend( 8688): Added:'DoubleTapCoordinate', with key:'double_tap_coordinate'
+12-09 07:54:10.837 I/InstrumentationBackend( 8688): Added:'ClickOnScreen', with key:'click_on_screen'
+12-09 07:54:10.837 I/InstrumentationBackend( 8688): Added:'GetActivityName', with key:'get_activity_name'
+12-09 07:54:10.837 I/InstrumentationBackend( 8688): Added:'ScrollToView', with key:'scroll_to_view'
+12-09 07:54:10.842 I/InstrumentationBackend( 8688): Added:'ViewConfiguration', with key:'view_configuration'
+12-09 07:54:10.842 I/InstrumentationBackend( 8688): Added:'IsCurrentActivityFocused', with key:'is_current_activity_focused'
+12-09 07:54:10.842 I/InstrumentationBackend( 8688): Added:'SendTcp', with key:'send_tcp'
+12-09 07:54:10.842 I/InstrumentationBackend( 8688): Added:'DpToDevicePixel', with key:'dp_to_device_pixel'
+12-09 07:54:10.843 I/InstrumentationBackend( 8688): Added:'KeyboardEnterText', with key:'keyboard_enter_text'
+12-09 07:54:10.843 I/InstrumentationBackend( 8688): Added:'DeleteSurroundingText', with key:'delete_surrounding_text'
+12-09 07:54:10.843 I/InstrumentationBackend( 8688): Added:'SetComposingRegion', with key:'set_composing_region'
+12-09 07:54:10.844 I/InstrumentationBackend( 8688): Added:'SetSelection', with key:'set_selection'
+12-09 07:54:10.858 I/InstrumentationBackend( 8688): Added:'KeyboardKeyEvent', with key:'keyboard_key_event'
+12-09 07:54:10.858 I/InstrumentationBackend( 8688): Added:'PressUserActionButton', with key:'press_user_action_button'
+12-09 07:54:10.859 I/InstrumentationBackend( 8688): Added:'HideSoftKeyboard', with key:'hide_soft_keyboard'
+12-09 07:54:10.859 I/InstrumentationBackend( 8688): Added:'ListActions', with key:'list_actions'
+12-09 07:54:10.859 I/calabash( 8688): Instantiating http server at 7102
+12-09 07:54:10.860 I/System.out( 8688): HTTP Daemon listening on: 7102
+12-09 07:54:10.946 I/System.out( 8688): URI: //ping
+12-09 07:54:10.960 I/System.out( 8688): params: {json={}
+12-09 07:54:10.960 I/System.out( 8688): }
+12-09 07:54:11.019 I/System.out( 8688): URI: //ping
+12-09 07:54:11.025 I/System.out( 8688): params: {json={}
+12-09 07:54:11.026 I/System.out( 8688): }
+12-09 07:54:11.126 I/System.out( 8688): URI: //ready
+12-09 07:54:11.126 I/System.out( 8688): params: {json={}
+12-09 07:54:11.127 I/System.out( 8688): }
+12-09 07:54:11.235 I/System.out( 8688): URI: //
+12-09 07:54:11.241 I/System.out( 8688): params: {json={"command":"version","arguments":[]}
+12-09 07:54:11.241 I/System.out( 8688): }
+12-09 07:54:11.241 I/System.out( 8688): header: {date=Sun, 09 Dec 2018 07:54:11 GMT, accept=*/*, content-length=36, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:54:11.241 I/System.out( 8688): params: {json={"command":"version","arguments":[]}
+12-09 07:54:11.241 I/System.out( 8688): }
+12-09 07:54:11.241 I/System.out( 8688): ProP json = {"command":"version","arguments":[]}
+12-09 07:54:11.241 I/System.out( 8688): files: {}
+12-09 07:54:11.241 I/System.out( 8688): command: {"command":"version","arguments":[]}
+12-09 07:54:11.256 I/InstrumentationBackend( 8688): Got command:'Command:'Line:null,version', arguments:'[]'
+12-09 07:54:11.267 I/System.out( 8688): result:{"bonusInformation":[],"message":"0.9.8","success":true}
+12-09 07:54:11.326 I/System.out( 8688): URI: //start-application
+12-09 07:54:11.326 I/System.out( 8688): params: {json={"intent":null}
+12-09 07:54:11.326 I/System.out( 8688): }
+12-09 07:54:11.434 I/ActivityManager( 1792): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.evancharlton.mileage/.Mileage} from uid 10123 on display 0
+12-09 07:54:11.670 W/art     ( 1792): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=1 for 173ms
+12-09 07:54:11.675 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:54:11.691 I/calabash( 8688): newActivity1
+12-09 07:54:11.768 I/calabash( 8688): newActivity1
+12-09 07:54:11.783 W/ActivityManager( 1792): Bad activity token: android.os.BinderProxy@4f5020c
+12-09 07:54:11.783 W/ActivityManager( 1792): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:54:11.783 W/ActivityManager( 1792): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:54:11.783 W/ActivityManager( 1792): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:54:11.783 W/ActivityManager( 1792): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 07:54:11.783 W/ActivityManager( 1792): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 07:54:11.783 W/ActivityManager( 1792): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 07:54:11.783 W/ActivityManager( 1792): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:54:11.783 W/ActivityManager( 1792): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:54:11.784 W/ActivityManager( 1792): Bad activity token: android.os.BinderProxy@4f5020c
+12-09 07:54:11.784 W/ActivityManager( 1792): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:54:11.784 W/ActivityManager( 1792): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:54:11.784 W/ActivityManager( 1792): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:54:11.784 W/ActivityManager( 1792): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 07:54:11.784 W/ActivityManager( 1792): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 07:54:11.784 W/ActivityManager( 1792): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:54:11.784 W/ActivityManager( 1792): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:54:11.892 V/PhoneStatusBar( 1963): setLightsOn(true)
+12-09 07:54:12.039 D/EGL_emulation( 2223): eglMakeCurrent: 0x7f5c2c934dc0: ver 2 0 (tinfo 0x7f5c2c902d40)
+12-09 07:54:12.044 E/Surface ( 2223): getSlotFromBufferLocked: unknown buffer: 0x7f5c28f16420
+12-09 07:54:12.219 W/art     ( 1792): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 163ms
+12-09 07:54:12.238 D/FillupsProvider( 8688): Creating database
+12-09 07:54:12.390 W/ActivityManager( 1792): Bad activity token: android.os.BinderProxy@4f5020c
+12-09 07:54:12.390 W/ActivityManager( 1792): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:54:12.390 W/ActivityManager( 1792): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:54:12.390 W/ActivityManager( 1792): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:54:12.390 W/ActivityManager( 1792): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 07:54:12.390 W/ActivityManager( 1792): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 07:54:12.390 W/ActivityManager( 1792): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:54:12.390 W/ActivityManager( 1792): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:54:12.391 W/ActivityManager( 1792): Bad activity token: android.os.BinderProxy@4f5020c
+12-09 07:54:12.391 W/ActivityManager( 1792): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:54:12.391 W/ActivityManager( 1792): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:54:12.391 W/ActivityManager( 1792): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:54:12.391 W/ActivityManager( 1792): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 07:54:12.391 W/ActivityManager( 1792): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 07:54:12.391 W/ActivityManager( 1792): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:54:12.391 W/ActivityManager( 1792): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:54:12.422 W/art     ( 8688): Suspending all threads took: 11.063ms
+12-09 07:54:12.462 I/art     ( 8688): Background sticky concurrent mark sweep GC freed 8313(575KB) AllocSpace objects, 0(0B) LOS objects, 17% free, 1887KB/2MB, paused 15.693ms total 106.386ms
+12-09 07:54:12.827 W/art     ( 1792): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 115ms
+12-09 07:54:13.068 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:54:13.122 D/        ( 8688): HostConnection::get() New Host Connection established 0x7f5c2a8c5fc0, tid 8688
+12-09 07:54:13.332 I/ActivityManager( 1792): Displayed com.evancharlton.mileage/.Mileage: +1s837ms
+12-09 07:54:13.357 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:54:13.734 W/art     ( 1792): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 151ms
+12-09 07:54:13.779 I/System.out( 8688): URI: //map
+12-09 07:54:13.779 I/System.out( 8688): params: {json={"query":"android.widget.Button index:2","operation":{"method_name":"query","arguments":[]}}
+12-09 07:54:13.779 I/System.out( 8688): }
+12-09 07:54:13.933 I/art     ( 8688): WaitForGcToComplete blocked for 19.812ms for cause Background
+12-09 07:54:14.012 I/ContentMaintenance( 2645): Internal cache bytes used: 0; limit: 40626585; download size: 0
+12-09 07:54:14.036 I/RealtimeCacheCleanup( 2645): Beginning Realtime garbage collection.
+12-09 07:54:14.037 I/RealtimeCacheCleanup( 2645): Finished Realtime garbage collection.
+12-09 07:54:14.122 I/art     ( 8688): Background sticky concurrent mark sweep GC freed 47233(2MB) AllocSpace objects, 2(40KB) LOS objects, 29% free, 2MB/3MB, paused 1.213ms total 180.925ms
+12-09 07:54:14.179 I/System.out( 8688): URI: //gesture
+12-09 07:54:14.179 I/System.out( 8688): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.Button index:2","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:54:14.179 I/System.out( 8688): }
+12-09 07:54:14.863 W/AudioTrack( 1792): AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 48000 Hz, output 44100 Hz
+12-09 07:54:14.899 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:14.930 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:14.944 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:14.959 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:14.978 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:15.059 I/art     ( 8688): Background sticky concurrent mark sweep GC freed 31768(1514KB) AllocSpace objects, 1(20KB) LOS objects, 36% free, 2MB/3MB, paused 7.397ms total 124.107ms
+12-09 07:54:15.102 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:15.130 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:15.144 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:15.159 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:15.161 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 45056
+12-09 07:54:15.196 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:15.350 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15509130 , only wrote 15506399
+12-09 07:54:15.351 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15506406 , only wrote 15506399
+12-09 07:54:15.375 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15507472 , only wrote 15507060
+12-09 07:54:15.467 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15511117 , only wrote 15511026
+12-09 07:54:15.467 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15511033 , only wrote 15511026
+12-09 07:54:15.618 E/SurfaceFlinger( 1223): ro.sf.lcd_density must be defined as a build property
+12-09 07:54:15.638 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:54:15.682 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15520516 , only wrote 15519619
+12-09 07:54:15.683 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15519626 , only wrote 15519619
+12-09 07:54:15.702 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15520468 , only wrote 15520280
+12-09 07:54:15.889 D/        ( 8716): HostConnection::get() New Host Connection established 0x7f4b2d592480, tid 8716
+12-09 07:54:15.927 E/EGL_emulation( 1223): tid 1223: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:54:15.972 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15532201 , only wrote 15532178
+12-09 07:54:15.972 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:15.974 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:54:16.086 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15537209 , only wrote 15536144
+12-09 07:54:16.086 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15536151 , only wrote 15536144
+12-09 07:54:16.113 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15537335 , only wrote 15536805
+12-09 07:54:16.271 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15543760 , only wrote 15543415
+12-09 07:54:16.271 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.271 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.290 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.330 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.330 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.363 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.375 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.504 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15553673 , only wrote 15550025
+12-09 07:54:16.522 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15550832 , only wrote 15550025
+12-09 07:54:16.555 W/audio_hw_generic( 1595): Not supplying enough data to HAL, expected position 15551466 , only wrote 15551347
+12-09 07:54:16.594 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.707 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.723 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.735 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.750 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.766 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.786 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.802 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.818 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.837 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.854 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:54:16.870 W/audio_hw_generic( 1595): Hardware backing HAL too slow, could only write 0 of 661 frames
