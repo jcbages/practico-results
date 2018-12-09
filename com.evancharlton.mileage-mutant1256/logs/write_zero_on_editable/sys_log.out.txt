@@ -1,0 +1,45 @@
+--------- beginning of main
+12-09 08:42:26.574 D/AndroidRuntime(21147): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:42:26.580 D/AndroidRuntime(21147): CheckJNI is ON
+12-09 08:42:26.620 D/ICU     (21147): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:42:26.940 E/memtrack(21147): Couldn't load memtrack module (No such file or directory)
+12-09 08:42:26.947 E/android.os.Debug(21147): failed to load memtrack module: -2
+12-09 08:42:26.948 I/Radio-JNI(21147): register_android_hardware_Radio DONE
+12-09 08:42:26.959 D/AndroidRuntime(21147): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:42:26.960 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10145 user=0: start instr
+12-09 08:42:27.049 I/ActivityManager( 1592): Start proc 21156:com.evancharlton.mileage/u0a145 for added application com.evancharlton.mileage
+12-09 08:42:27.049 D/AndroidRuntime(21147): Shutting down VM
+12-09 08:42:27.130 W/System  (21156): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:42:27.130 W/System  (21156): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:42:27.169 W/art     (21156): Rejecting class com.evancharlton.mileage.provider.tables.FillupsTable that attempts to sub-class erroneous class com.evancharlton.mileage.provider.tables.ContentTable in /data/app/com.evancharlton.mileage-1/base.apk
+12-09 08:42:27.183 D/AndroidRuntime(21156): Shutting down VM
+--------- beginning of crash
+12-09 08:42:27.183 E/AndroidRuntime(21156): FATAL EXCEPTION: main
+12-09 08:42:27.183 E/AndroidRuntime(21156): Process: com.evancharlton.mileage, PID: 21156
+12-09 08:42:27.183 E/AndroidRuntime(21156): java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.FillupsTable that attempts to sub-class erroneous class com.evancharlton.mileage.provider.tables.ContentTable (declaration of 'com.evancharlton.mileage.provider.tables.FillupsTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:76)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:42:27.183 E/AndroidRuntime(21156): Caused by: java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.ContentTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.ContentTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:42:27.183 E/AndroidRuntime(21156): 	... 13 more
+12-09 08:42:27.208 W/ActivityManager( 1592): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:42:27.208 W/ActivityManager( 1592):   java.lang.VerifyError
+12-09 08:42:27.208 W/ActivityManager( 1592):   java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.ContentTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.ContentTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:42:27.208 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10145 user=0: finished inst
+12-09 08:42:27.227 I/ActivityManager( 1592): Killing 21156:com.evancharlton.mileage/u0a145 (adj 0): stop com.evancharlton.mileage
+12-09 08:42:27.343 W/ActivityManager( 1592): Spurious death for ProcessRecord{fad4deb 0:com.evancharlton.mileage/u0a145}, curProc for 21156: null
+12-09 08:42:27.842 I/AccountManagerService( 1592): getTypesVisibleToCaller: isPermitted? true
+12-09 08:42:27.863 I/art     ( 2277): Background partial concurrent mark sweep GC freed 32122(1780KB) AllocSpace objects, 0(0B) LOS objects, 23% free, 12MB/16MB, paused 5.954ms total 57.510ms
+12-09 08:42:32.868 I/art     ( 2277): WaitForGcToComplete blocked for 9.523ms for cause HeapTrim
+12-09 08:43:00.229 D/hwcomposer( 1219): hw_composer sent 5 syncs in 111s
