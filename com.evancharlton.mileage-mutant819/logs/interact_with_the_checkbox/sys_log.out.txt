@@ -1,0 +1,46 @@
+--------- beginning of main
+12-09 08:41:36.664 D/AndroidRuntime(19386): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:41:36.665 D/AndroidRuntime(19386): CheckJNI is ON
+12-09 08:41:36.691 D/ICU     (19386): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:41:37.067 E/memtrack(19386): Couldn't load memtrack module (No such file or directory)
+12-09 08:41:37.068 E/android.os.Debug(19386): failed to load memtrack module: -2
+12-09 08:41:37.069 I/Radio-JNI(19386): register_android_hardware_Radio DONE
+12-09 08:41:37.081 D/AndroidRuntime(19386): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:41:37.083 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10143 user=0: start instr
+12-09 08:41:37.126 I/ActivityManager( 1591): Start proc 19394:com.evancharlton.mileage/u0a143 for added application com.evancharlton.mileage
+12-09 08:41:37.127 D/AndroidRuntime(19386): Shutting down VM
+12-09 08:41:37.164 W/System  (19394): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:41:37.164 W/System  (19394): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:41:37.170 D/AndroidRuntime(19394): Shutting down VM
+--------- beginning of crash
+12-09 08:41:37.178 E/AndroidRuntime(19394): FATAL EXCEPTION: main
+12-09 08:41:37.178 E/AndroidRuntime(19394): Process: com.evancharlton.mileage, PID: 19394
+12-09 08:41:37.178 E/AndroidRuntime(19394): java.lang.ExceptionInInitializerError
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:41:37.178 E/AndroidRuntime(19394): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at android.content.UriMatcher.addURI(UriMatcher.java:194)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at com.evancharlton.mileage.provider.FillUpsProvider.registerUri(FillUpsProvider.java:92)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at com.evancharlton.mileage.provider.tables.FillupsTable.registerUris(FillupsTable.java:64)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 08:41:37.178 E/AndroidRuntime(19394): 	... 12 more
+12-09 08:41:37.189 W/ActivityManager( 1591): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:41:37.189 W/ActivityManager( 1591):   java.lang.NullPointerException
+12-09 08:41:37.189 W/ActivityManager( 1591):   java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+12-09 08:41:37.190 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10143 user=0: finished inst
+12-09 08:41:37.190 I/ActivityManager( 1591): Killing 19394:com.evancharlton.mileage/u0a143 (adj 0): stop com.evancharlton.mileage
+12-09 08:41:37.250 W/libprocessgroup( 1591): failed to kill pid 19394: No such process
+12-09 08:41:37.333 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12502 waiters=0 for 144ms
+12-09 08:41:37.665 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:42:00.282 D/hwcomposer( 1223): hw_composer sent 5 syncs in 60s

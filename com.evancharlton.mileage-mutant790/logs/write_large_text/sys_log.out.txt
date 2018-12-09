@@ -1,0 +1,51 @@
+--------- beginning of main
+12-09 08:09:07.624 D/AndroidRuntime(11101): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:09:07.625 D/AndroidRuntime(11101): CheckJNI is ON
+12-09 08:09:07.644 D/ICU     (11101): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:09:07.995 E/memtrack(11101): Couldn't load memtrack module (No such file or directory)
+12-09 08:09:08.001 E/android.os.Debug(11101): failed to load memtrack module: -2
+12-09 08:09:08.003 I/Radio-JNI(11101): register_android_hardware_Radio DONE
+12-09 08:09:08.017 D/AndroidRuntime(11101): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:09:08.033 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10127 user=0: start instr
+12-09 08:09:08.080 I/ActivityManager( 1591): Start proc 11110:com.evancharlton.mileage/u0a127 for added application com.evancharlton.mileage
+12-09 08:09:08.080 D/AndroidRuntime(11101): Shutting down VM
+12-09 08:09:08.166 W/System  (11110): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:09:08.173 W/System  (11110): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:09:08.211 D/AndroidRuntime(11110): Shutting down VM
+--------- beginning of crash
+12-09 08:09:08.211 E/AndroidRuntime(11110): FATAL EXCEPTION: main
+12-09 08:09:08.211 E/AndroidRuntime(11110): Process: com.evancharlton.mileage, PID: 11110
+12-09 08:09:08.211 E/AndroidRuntime(11110): java.lang.ExceptionInInitializerError
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:09:08.211 E/AndroidRuntime(11110): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 08:09:08.211 E/AndroidRuntime(11110): 	... 12 more
+12-09 08:09:08.212 W/ActivityManager( 1591): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:09:08.212 W/ActivityManager( 1591):   java.lang.NullPointerException
+12-09 08:09:08.212 W/ActivityManager( 1591):   java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:09:08.212 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10127 user=0: finished inst
+12-09 08:09:08.212 I/ActivityManager( 1591): Killing 11110:com.evancharlton.mileage/u0a127 (adj 0): stop com.evancharlton.mileage
+12-09 08:09:08.362 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12502 waiters=0 for 144ms
+12-09 08:09:08.372 W/ActivityManager( 1591): Spurious death for ProcessRecord{33dcc4a 0:com.evancharlton.mileage/u0a127}, curProc for 11110: null
+12-09 08:09:08.788 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:09:15.704 I/ActivityManager( 1591): Killing 4685:com.google.android.gm/u0a47 (adj 13): empty for 1800s
+12-09 08:09:15.830 I/ActivityManager( 1591): Killing 4552:com.google.android.calendar/u0a22 (adj 15): empty for 1800s
+12-09 08:09:15.978 I/ActivityManager( 1591): Killing 4672:com.google.android.apps.photos/u0a44 (adj 15): empty for 1803s
+12-09 08:09:16.010 I/ActivityManager( 1591): Killing 4645:com.google.android.apps.maps/u0a39 (adj 15): empty for 1804s
+12-09 08:09:16.202 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=0 for 499ms
+12-09 08:09:16.221 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=1 for 288ms
+12-09 08:09:16.241 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=2 for 271ms
+12-09 08:09:16.242 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=3 for 260ms
+12-09 08:10:00.274 D/hwcomposer( 1223): hw_composer sent 3 syncs in 60s

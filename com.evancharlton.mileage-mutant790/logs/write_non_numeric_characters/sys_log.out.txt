@@ -1,0 +1,42 @@
+--------- beginning of main
+12-09 08:05:08.655 D/AndroidRuntime(10991): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:05:08.671 D/AndroidRuntime(10991): CheckJNI is ON
+12-09 08:05:08.696 D/ICU     (10991): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:05:08.929 E/memtrack(10991): Couldn't load memtrack module (No such file or directory)
+12-09 08:05:08.929 E/android.os.Debug(10991): failed to load memtrack module: -2
+12-09 08:05:09.002 I/Radio-JNI(10991): register_android_hardware_Radio DONE
+12-09 08:05:09.018 D/AndroidRuntime(10991): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:05:09.019 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10127 user=0: start instr
+12-09 08:05:09.039 I/ActivityManager( 1591): Start proc 11000:com.evancharlton.mileage/u0a127 for added application com.evancharlton.mileage
+12-09 08:05:09.053 D/AndroidRuntime(10991): Shutting down VM
+12-09 08:05:09.313 W/System  (11000): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:05:09.313 W/System  (11000): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:05:09.386 D/AndroidRuntime(11000): Shutting down VM
+--------- beginning of crash
+12-09 08:05:09.387 E/AndroidRuntime(11000): FATAL EXCEPTION: main
+12-09 08:05:09.387 E/AndroidRuntime(11000): Process: com.evancharlton.mileage, PID: 11000
+12-09 08:05:09.387 E/AndroidRuntime(11000): java.lang.ExceptionInInitializerError
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:05:09.387 E/AndroidRuntime(11000): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 08:05:09.387 E/AndroidRuntime(11000): 	... 12 more
+12-09 08:05:09.388 W/ActivityManager( 1591): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:05:09.388 W/ActivityManager( 1591):   java.lang.NullPointerException
+12-09 08:05:09.388 W/ActivityManager( 1591):   java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:05:09.388 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10127 user=0: finished inst
+12-09 08:05:09.388 I/ActivityManager( 1591): Killing 11000:com.evancharlton.mileage/u0a127 (adj 0): stop com.evancharlton.mileage
+12-09 08:05:09.434 W/ActivityManager( 1591): Spurious death for ProcessRecord{99747f4 0:com.evancharlton.mileage/u0a127}, curProc for 11000: null
+12-09 08:05:09.703 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:06:00.245 D/hwcomposer( 1223): hw_composer sent 2 syncs in 60s
