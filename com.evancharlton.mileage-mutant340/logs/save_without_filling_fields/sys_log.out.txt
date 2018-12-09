@@ -1,0 +1,131 @@
+--------- beginning of main
+12-09 08:02:05.906 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 156ms
+--------- beginning of system
+12-09 08:02:06.097 I/WindowManager( 1591): Screenshot max retries 4 of Token{b9f2470 ActivityRecord{da3d6b3 u0 com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.StatusReporterActivity t395 f}} appWin=Window{4cfd2a3 u0 Starting com.evancharlton.mileage.test} drawState=3
+12-09 08:02:06.112 W/art     ( 1591): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=0 for 1.880s
+12-09 08:02:06.113 W/art     ( 1591): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=1 for 515ms
+12-09 08:02:06.204 W/InputMethodManagerService( 1591): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@63ac91e attribute=null, token = android.os.BinderProxy@9885c06
+12-09 08:02:06.614 D/AndroidRuntime(10926): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:02:06.630 D/AndroidRuntime(10926): CheckJNI is ON
+12-09 08:02:06.642 D/ICU     (10926): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:02:06.834 E/memtrack(10926): Couldn't load memtrack module (No such file or directory)
+12-09 08:02:06.840 E/android.os.Debug(10926): failed to load memtrack module: -2
+12-09 08:02:06.842 I/Radio-JNI(10926): register_android_hardware_Radio DONE
+12-09 08:02:06.856 D/AndroidRuntime(10926): Calling main entry com.android.commands.am.Am
+12-09 08:02:06.872 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10127 user=0: start instr
+12-09 08:02:06.881 I/ActivityManager( 1591): Killing 10895:com.evancharlton.mileage/u0a127 (adj 0): stop com.evancharlton.mileage
+12-09 08:02:07.021 W/ActivityManager( 1591): Crash of app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.ClearAppData2}
+12-09 08:02:07.021 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10127 user=0: finished inst
+12-09 08:02:07.049 I/ActivityManager( 1591): Start proc 10935:com.evancharlton.mileage/u0a127 for added application com.evancharlton.mileage
+12-09 08:02:07.065 D/AndroidRuntime(10926): Shutting down VM
+12-09 08:02:07.235 W/System  (10935): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:02:07.236 W/System  (10935): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:02:07.258 I/System.out(10935): Main activity name automatically set to: com.evancharlton.mileage.Mileage
+12-09 08:02:07.265 I/System.out(10935): Calabash did not load Mono. This is only a problem if you are trying to test a Mono application
+12-09 08:02:07.265 I/calabash(10935): Test server port: 7102
+12-09 08:02:07.266 I/InstrumentationBackend(10935): Added:'GetPreferences', with key:'get_preferences'
+12-09 08:02:07.289 I/InstrumentationBackend(10935): Added:'SetPreferences', with key:'set_preferences'
+12-09 08:02:07.305 I/InstrumentationBackend(10935): Added:'ClearPreferences', with key:'clear_preferences'
+12-09 08:02:07.305 I/InstrumentationBackend(10935): Added:'PressElement', with key:'press_l10n_element'
+12-09 08:02:07.305 I/InstrumentationBackend(10935): Added:'WaitForElement', with key:'wait_for_l10n_element'
+12-09 08:02:07.306 I/InstrumentationBackend(10935): Added:'NullAction', with key:'nullAction'
+12-09 08:02:07.306 I/InstrumentationBackend(10935): Added:'PressKey', with key:'press_key'
+12-09 08:02:07.306 I/InstrumentationBackend(10935): Added:'SetActivityOrientation', with key:'set_activity_orientation'
+12-09 08:02:07.306 I/InstrumentationBackend(10935): Added:'GetActivityOrientation', with key:'get_activity_orientation'
+12-09 08:02:07.307 I/InstrumentationBackend(10935): Added:'FakeGPSLocation', with key:'set_gps_coordinates'
+12-09 08:02:07.307 I/InstrumentationBackend(10935): Added:'SetPropertyByCssSelector', with key:'set_property_by_css_selector'
+12-09 08:02:07.307 I/InstrumentationBackend(10935): Added:'GetUrl', with key:'get_url'
+12-09 08:02:07.308 I/InstrumentationBackend(10935): Added:'ScrollTo', with key:'scroll_to'
+12-09 08:02:07.308 I/InstrumentationBackend(10935): Added:'GetLoadProgress', with key:'get_load_progress'
+12-09 08:02:07.308 I/InstrumentationBackend(10935): Added:'DumpHtml', with key:'dump_html'
+12-09 08:02:07.308 I/InstrumentationBackend(10935): Added:'DumpBodyHtml', with key:'dump_body_html'
+12-09 08:02:07.309 I/InstrumentationBackend(10935): Added:'EnterTextByCssSelector', with key:'enter_text_by_selector'
+12-09 08:02:07.310 I/InstrumentationBackend(10935): Added:'AndroidSDKVersion', with key:'android_sdk_version'
+12-09 08:02:07.310 I/InstrumentationBackend(10935): Added:'Version', with key:'version'
+12-09 08:02:07.310 I/InstrumentationBackend(10935): Added:'Drag', with key:'drag'
+12-09 08:02:07.310 I/InstrumentationBackend(10935): Added:'TouchCoordinates', with key:'touch_coordinate'
+12-09 08:02:07.310 I/InstrumentationBackend(10935): Added:'LongPressCoordinate', with key:'long_press_coordinate'
+12-09 08:02:07.310 I/InstrumentationBackend(10935): Added:'DragCoordinates', with key:'drag_coordinates'
+12-09 08:02:07.311 I/InstrumentationBackend(10935): Added:'ResumeApplication', with key:'resume_application'
+12-09 08:02:07.311 I/InstrumentationBackend(10935): Added:'Swipe', with key:'swipe'
+12-09 08:02:07.311 I/InstrumentationBackend(10935): Added:'DoubleTapCoordinate', with key:'double_tap_coordinate'
+12-09 08:02:07.311 I/InstrumentationBackend(10935): Added:'ClickOnScreen', with key:'click_on_screen'
+12-09 08:02:07.311 I/InstrumentationBackend(10935): Added:'GetActivityName', with key:'get_activity_name'
+12-09 08:02:07.312 I/InstrumentationBackend(10935): Added:'ScrollToView', with key:'scroll_to_view'
+12-09 08:02:07.312 I/InstrumentationBackend(10935): Added:'ViewConfiguration', with key:'view_configuration'
+12-09 08:02:07.312 I/InstrumentationBackend(10935): Added:'IsCurrentActivityFocused', with key:'is_current_activity_focused'
+12-09 08:02:07.312 I/InstrumentationBackend(10935): Added:'SendTcp', with key:'send_tcp'
+12-09 08:02:07.313 I/InstrumentationBackend(10935): Added:'DpToDevicePixel', with key:'dp_to_device_pixel'
+12-09 08:02:07.333 I/InstrumentationBackend(10935): Added:'KeyboardEnterText', with key:'keyboard_enter_text'
+12-09 08:02:07.333 I/InstrumentationBackend(10935): Added:'DeleteSurroundingText', with key:'delete_surrounding_text'
+12-09 08:02:07.334 I/InstrumentationBackend(10935): Added:'SetComposingRegion', with key:'set_composing_region'
+12-09 08:02:07.334 I/InstrumentationBackend(10935): Added:'SetSelection', with key:'set_selection'
+12-09 08:02:07.334 I/InstrumentationBackend(10935): Added:'KeyboardKeyEvent', with key:'keyboard_key_event'
+12-09 08:02:07.334 I/InstrumentationBackend(10935): Added:'PressUserActionButton', with key:'press_user_action_button'
+12-09 08:02:07.334 I/InstrumentationBackend(10935): Added:'HideSoftKeyboard', with key:'hide_soft_keyboard'
+12-09 08:02:07.335 I/InstrumentationBackend(10935): Added:'ListActions', with key:'list_actions'
+12-09 08:02:07.335 I/calabash(10935): Instantiating http server at 7102
+12-09 08:02:07.336 I/System.out(10935): HTTP Daemon listening on: 7102
+12-09 08:02:07.433 I/System.out(10935): URI: //ping
+12-09 08:02:07.433 I/System.out(10935): params: {json={}
+12-09 08:02:07.434 I/System.out(10935): }
+12-09 08:02:07.486 I/System.out(10935): URI: //ping
+12-09 08:02:07.491 I/System.out(10935): params: {json={}
+12-09 08:02:07.491 I/System.out(10935): }
+12-09 08:02:07.586 I/System.out(10935): URI: //ready
+12-09 08:02:07.586 I/System.out(10935): params: {json={}
+12-09 08:02:07.586 I/System.out(10935): }
+12-09 08:02:07.646 I/System.out(10935): URI: //
+12-09 08:02:07.646 I/System.out(10935): params: {json={"command":"version","arguments":[]}
+12-09 08:02:07.646 I/System.out(10935): }
+12-09 08:02:07.646 I/System.out(10935): header: {date=Sun, 09 Dec 2018 08:02:07 GMT, accept=*/*, content-length=36, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:02:07.646 I/System.out(10935): params: {json={"command":"version","arguments":[]}
+12-09 08:02:07.646 I/System.out(10935): }
+12-09 08:02:07.646 I/System.out(10935): ProP json = {"command":"version","arguments":[]}
+12-09 08:02:07.646 I/System.out(10935): files: {}
+12-09 08:02:07.646 I/System.out(10935): command: {"command":"version","arguments":[]}
+12-09 08:02:07.660 I/InstrumentationBackend(10935): Got command:'Command:'Line:null,version', arguments:'[]'
+12-09 08:02:07.743 I/System.out(10935): result:{"bonusInformation":[],"message":"0.9.8","success":true}
+12-09 08:02:07.841 I/System.out(10935): URI: //start-application
+12-09 08:02:07.841 I/System.out(10935): params: {json={"intent":null}
+12-09 08:02:07.841 I/System.out(10935): }
+12-09 08:02:07.905 I/art     (10935): Background partial concurrent mark sweep GC freed 27693(1623KB) AllocSpace objects, 12(240KB) LOS objects, 41% free, 1466KB/2MB, paused 3.684ms total 187.695ms
+12-09 08:02:07.969 I/ActivityManager( 1591): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.evancharlton.mileage/.Mileage} from uid 10127 on display 0
+12-09 08:02:08.007 I/calabash(10935): newActivity1
+12-09 08:02:08.049 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:02:08.194 I/calabash(10935): newActivity1
+12-09 08:02:08.195 D/AndroidRuntime(10935): Shutting down VM
+--------- beginning of crash
+12-09 08:02:08.196 E/AndroidRuntime(10935): FATAL EXCEPTION: main
+12-09 08:02:08.196 E/AndroidRuntime(10935): Process: com.evancharlton.mileage, PID: 10935
+12-09 08:02:08.196 E/AndroidRuntime(10935): java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup because it failed compile-time verification (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.Instrumentation.newActivity(Instrumentation.java:1067)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at sh.calaba.instrumentationbackend.CalabashInstrumentation.newActivity(CalabashInstrumentation.java:52)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2317)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2240)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:724)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.widget.TabHost.setCurrentTab(TabHost.java:388)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.widget.TabHost.addTab(TabHost.java:222)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.Activity.performCreate(Activity.java:6237)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:02:08.196 E/AndroidRuntime(10935): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:02:08.197 W/ActivityManager( 1591): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:02:08.197 W/ActivityManager( 1591):   java.lang.VerifyError
+12-09 08:02:08.197 W/ActivityManager( 1591):   java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup because it failed compile-time verification (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:02:08.197 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10127 user=0: finished inst
+12-09 08:02:08.197 I/ActivityManager( 1591): Killing 10935:com.evancharlton.mileage/u0a127 (adj 0): stop com.evancharlton.mileage
+12-09 08:02:08.453 D/EGL_emulation( 1946): eglMakeCurrent: 0x7f85871b4dc0: ver 2 0 (tinfo 0x7f8587182d60)
