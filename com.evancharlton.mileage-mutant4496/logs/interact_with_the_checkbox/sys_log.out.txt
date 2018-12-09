@@ -1,0 +1,213 @@
+--------- beginning of main
+12-09 07:40:45.303 D/        ( 1594): HostConnection::get() New Host Connection established 0x7f3470710180, tid 3338
+12-09 07:40:45.353 E/EGL_emulation( 1219): tid 1219: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:40:45.522 I/art     ( 1594): Background partial concurrent mark sweep GC freed 21398(1620KB) AllocSpace objects, 8(160KB) LOS objects, 29% free, 9MB/13MB, paused 7.949ms total 124.264ms
+12-09 07:40:45.569 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 116ms
+12-09 07:40:45.570 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=0 for 190ms
+--------- beginning of system
+12-09 07:40:45.640 W/ActivityManager( 1594): Finishing task with all activities already finished
+12-09 07:40:45.640 W/ActivityManager( 1594): Duplicate finish request for ActivityRecord{db176f9 u0 com.evancharlton.mileage/.Mileage t348 f}
+12-09 07:40:45.641 W/ActivityManager( 1594): Finishing task with all activities already finished
+12-09 07:40:45.641 W/ActivityManager( 1594): Duplicate finish request for ActivityRecord{db176f9 u0 com.evancharlton.mileage/.Mileage t348 f}
+12-09 07:40:45.641 W/ActivityManager( 1594): Finishing task with all activities already finished
+12-09 07:40:45.641 W/ActivityManager( 1594): Duplicate finish request for ActivityRecord{db176f9 u0 com.evancharlton.mileage/.Mileage t348 f}
+12-09 07:40:45.861 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 202ms
+12-09 07:40:45.967 D/EGL_emulation( 1899): eglMakeCurrent: 0x7f347faf4dc0: ver 2 0 (tinfo 0x7f347fac2ce0)
+12-09 07:40:46.238 D/AndroidRuntime( 5255): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:40:46.240 D/AndroidRuntime( 5255): CheckJNI is ON
+12-09 07:40:46.295 D/ICU     ( 5255): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:40:46.516 E/memtrack( 5255): Couldn't load memtrack module (No such file or directory)
+12-09 07:40:46.517 E/android.os.Debug( 5255): failed to load memtrack module: -2
+12-09 07:40:46.518 I/Radio-JNI( 5255): register_android_hardware_Radio DONE
+12-09 07:40:46.520 W/OpenGLRenderer( 1899): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+12-09 07:40:46.605 D/AndroidRuntime( 5255): Calling main entry com.android.commands.am.Am
+12-09 07:40:46.609 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10119 user=0: start instr
+12-09 07:40:46.610 I/ActivityManager( 1594): Killing 5216:com.evancharlton.mileage/u0a119 (adj 0): stop com.evancharlton.mileage
+12-09 07:40:46.727 I/WindowState( 1594): WIN DEATH: Window{f8a2aee u0 com.evancharlton.mileage/com.evancharlton.mileage.Mileage EXITING}
+12-09 07:40:46.739 W/ActivityManager( 1594): Crash of app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}
+12-09 07:40:46.739 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10119 user=0: finished inst
+12-09 07:40:46.800 I/ActivityManager( 1594): Start proc 5264:com.evancharlton.mileage/u0a119 for added application com.evancharlton.mileage
+12-09 07:40:46.801 D/AndroidRuntime( 5255): Shutting down VM
+12-09 07:40:46.811 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=1 for 198ms
+12-09 07:40:46.815 W/ActivityManager( 1594): Spurious death for ProcessRecord{196d4b4 0:com.evancharlton.mileage/u0a119}, curProc for 5216: null
+12-09 07:40:47.149 W/WindowAnimator( 1594): Failed to dispatch window animation state change.
+12-09 07:40:47.149 W/WindowAnimator( 1594): android.os.DeadObjectException
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.os.BinderProxy.transactNative(Native Method)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.os.BinderProxy.transact(Binder.java:503)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.view.IWindow$Stub$Proxy.onAnimationStopped(IWindow.java:534)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at com.android.server.wm.WindowAnimator.updateWindowsLocked(WindowAnimator.java:286)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at com.android.server.wm.WindowAnimator.animateLocked(WindowAnimator.java:678)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at com.android.server.wm.WindowAnimator.-wrap0(WindowAnimator.java)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at com.android.server.wm.WindowAnimator$1.doFrame(WindowAnimator.java:123)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:856)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.view.Choreographer.doFrame(Choreographer.java:603)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.os.Handler.handleCallback(Handler.java:739)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.os.Looper.loop(Looper.java:148)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-09 07:40:47.149 W/WindowAnimator( 1594): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+12-09 07:40:47.287 W/System  ( 5264): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 07:40:47.287 W/System  ( 5264): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 07:40:47.330 I/System.out( 5264): Main activity name automatically set to: com.evancharlton.mileage.Mileage
+12-09 07:40:47.330 I/System.out( 5264): Calabash did not load Mono. This is only a problem if you are trying to test a Mono application
+12-09 07:40:47.330 I/calabash( 5264): Test server port: 7102
+12-09 07:40:47.335 I/InstrumentationBackend( 5264): Added:'GetPreferences', with key:'get_preferences'
+12-09 07:40:47.681 I/InstrumentationBackend( 5264): Added:'SetPreferences', with key:'set_preferences'
+12-09 07:40:47.681 I/InstrumentationBackend( 5264): Added:'ClearPreferences', with key:'clear_preferences'
+12-09 07:40:47.681 I/InstrumentationBackend( 5264): Added:'PressElement', with key:'press_l10n_element'
+12-09 07:40:47.682 I/InstrumentationBackend( 5264): Added:'WaitForElement', with key:'wait_for_l10n_element'
+12-09 07:40:47.682 I/InstrumentationBackend( 5264): Added:'NullAction', with key:'nullAction'
+12-09 07:40:47.682 I/InstrumentationBackend( 5264): Added:'PressKey', with key:'press_key'
+12-09 07:40:47.691 I/InstrumentationBackend( 5264): Added:'SetActivityOrientation', with key:'set_activity_orientation'
+12-09 07:40:47.691 I/InstrumentationBackend( 5264): Added:'GetActivityOrientation', with key:'get_activity_orientation'
+12-09 07:40:47.703 I/InstrumentationBackend( 5264): Added:'FakeGPSLocation', with key:'set_gps_coordinates'
+12-09 07:40:47.703 I/InstrumentationBackend( 5264): Added:'SetPropertyByCssSelector', with key:'set_property_by_css_selector'
+12-09 07:40:47.703 I/InstrumentationBackend( 5264): Added:'GetUrl', with key:'get_url'
+12-09 07:40:47.735 I/InstrumentationBackend( 5264): Added:'ScrollTo', with key:'scroll_to'
+12-09 07:40:47.735 I/InstrumentationBackend( 5264): Added:'GetLoadProgress', with key:'get_load_progress'
+12-09 07:40:47.736 I/InstrumentationBackend( 5264): Added:'DumpHtml', with key:'dump_html'
+12-09 07:40:47.736 I/InstrumentationBackend( 5264): Added:'DumpBodyHtml', with key:'dump_body_html'
+12-09 07:40:47.736 I/InstrumentationBackend( 5264): Added:'EnterTextByCssSelector', with key:'enter_text_by_selector'
+12-09 07:40:47.748 I/InstrumentationBackend( 5264): Added:'AndroidSDKVersion', with key:'android_sdk_version'
+12-09 07:40:47.748 I/InstrumentationBackend( 5264): Added:'Version', with key:'version'
+12-09 07:40:47.748 I/InstrumentationBackend( 5264): Added:'Drag', with key:'drag'
+12-09 07:40:47.748 I/InstrumentationBackend( 5264): Added:'TouchCoordinates', with key:'touch_coordinate'
+12-09 07:40:47.748 I/InstrumentationBackend( 5264): Added:'LongPressCoordinate', with key:'long_press_coordinate'
+12-09 07:40:47.748 I/InstrumentationBackend( 5264): Added:'DragCoordinates', with key:'drag_coordinates'
+12-09 07:40:47.749 I/InstrumentationBackend( 5264): Added:'ResumeApplication', with key:'resume_application'
+12-09 07:40:47.749 I/InstrumentationBackend( 5264): Added:'Swipe', with key:'swipe'
+12-09 07:40:47.749 I/InstrumentationBackend( 5264): Added:'DoubleTapCoordinate', with key:'double_tap_coordinate'
+12-09 07:40:47.749 I/InstrumentationBackend( 5264): Added:'ClickOnScreen', with key:'click_on_screen'
+12-09 07:40:47.750 I/InstrumentationBackend( 5264): Added:'GetActivityName', with key:'get_activity_name'
+12-09 07:40:47.750 I/InstrumentationBackend( 5264): Added:'ScrollToView', with key:'scroll_to_view'
+12-09 07:40:47.750 I/InstrumentationBackend( 5264): Added:'ViewConfiguration', with key:'view_configuration'
+12-09 07:40:47.758 I/InstrumentationBackend( 5264): Added:'IsCurrentActivityFocused', with key:'is_current_activity_focused'
+12-09 07:40:47.759 I/InstrumentationBackend( 5264): Added:'SendTcp', with key:'send_tcp'
+12-09 07:40:47.759 I/InstrumentationBackend( 5264): Added:'DpToDevicePixel', with key:'dp_to_device_pixel'
+12-09 07:40:47.799 I/InstrumentationBackend( 5264): Added:'KeyboardEnterText', with key:'keyboard_enter_text'
+12-09 07:40:47.800 I/InstrumentationBackend( 5264): Added:'DeleteSurroundingText', with key:'delete_surrounding_text'
+12-09 07:40:47.800 I/InstrumentationBackend( 5264): Added:'SetComposingRegion', with key:'set_composing_region'
+12-09 07:40:47.800 I/InstrumentationBackend( 5264): Added:'SetSelection', with key:'set_selection'
+12-09 07:40:47.800 I/InstrumentationBackend( 5264): Added:'KeyboardKeyEvent', with key:'keyboard_key_event'
+12-09 07:40:47.800 I/InstrumentationBackend( 5264): Added:'PressUserActionButton', with key:'press_user_action_button'
+12-09 07:40:47.801 I/InstrumentationBackend( 5264): Added:'HideSoftKeyboard', with key:'hide_soft_keyboard'
+12-09 07:40:47.801 I/InstrumentationBackend( 5264): Added:'ListActions', with key:'list_actions'
+12-09 07:40:47.839 I/calabash( 5264): Instantiating http server at 7102
+12-09 07:40:47.840 I/System.out( 5264): HTTP Daemon listening on: 7102
+12-09 07:40:48.091 I/art     ( 5264): Background sticky concurrent mark sweep GC freed 39925(1548KB) AllocSpace objects, 0(0B) LOS objects, 70% free, 1139KB/3MB, paused 5.976ms total 598.760ms
+12-09 07:40:48.092 I/System.out( 5264): URI: //ping
+12-09 07:40:48.092 I/System.out( 5264): params: {json={}
+12-09 07:40:48.092 I/System.out( 5264): }
+12-09 07:40:48.113 I/System.out( 5264): URI: //ping
+12-09 07:40:48.113 I/System.out( 5264): params: {json={}
+12-09 07:40:48.113 I/System.out( 5264): }
+12-09 07:40:48.148 I/System.out( 5264): URI: //ready
+12-09 07:40:48.148 I/System.out( 5264): params: {json={}
+12-09 07:40:48.148 I/System.out( 5264): }
+12-09 07:40:48.191 I/System.out( 5264): URI: //
+12-09 07:40:48.191 I/System.out( 5264): params: {json={"command":"version","arguments":[]}
+12-09 07:40:48.191 I/System.out( 5264): }
+12-09 07:40:48.192 I/System.out( 5264): header: {date=Sun, 09 Dec 2018 07:40:48 GMT, accept=*/*, content-length=36, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:40:48.192 I/System.out( 5264): params: {json={"command":"version","arguments":[]}
+12-09 07:40:48.192 I/System.out( 5264): }
+12-09 07:40:48.192 I/System.out( 5264): ProP json = {"command":"version","arguments":[]}
+12-09 07:40:48.192 I/System.out( 5264): files: {}
+12-09 07:40:48.192 I/System.out( 5264): command: {"command":"version","arguments":[]}
+12-09 07:40:48.214 I/InstrumentationBackend( 5264): Got command:'Command:'Line:null,version', arguments:'[]'
+12-09 07:40:48.258 I/System.out( 5264): result:{"bonusInformation":[],"message":"0.9.8","success":true}
+12-09 07:40:48.298 I/System.out( 5264): URI: //start-application
+12-09 07:40:48.298 I/System.out( 5264): params: {json={"intent":null}
+12-09 07:40:48.298 I/System.out( 5264): }
+12-09 07:40:48.378 I/ActivityManager( 1594): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.evancharlton.mileage/.Mileage} from uid 10119 on display 0
+12-09 07:40:48.740 I/calabash( 5264): newActivity1
+12-09 07:40:48.779 D/gralloc_ranchu( 1219): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:40:48.909 I/art     ( 5264): Background partial concurrent mark sweep GC freed 34585(1938KB) AllocSpace objects, 15(300KB) LOS objects, 41% free, 1436KB/2MB, paused 1.055ms total 151.494ms
+12-09 07:40:48.967 I/calabash( 5264): newActivity1
+12-09 07:40:48.969 W/ActivityManager( 1594): Bad activity token: android.os.BinderProxy@2d9e67f
+12-09 07:40:48.969 W/ActivityManager( 1594): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:40:48.969 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:40:48.969 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:40:48.969 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 07:40:48.969 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 07:40:48.969 W/ActivityManager( 1594): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 07:40:48.969 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:40:48.969 W/ActivityManager( 1594): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:40:48.970 W/ActivityManager( 1594): Bad activity token: android.os.BinderProxy@2d9e67f
+12-09 07:40:48.970 W/ActivityManager( 1594): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:40:48.970 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:40:48.970 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:40:48.970 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 07:40:48.970 W/ActivityManager( 1594): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 07:40:48.970 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:40:48.970 W/ActivityManager( 1594): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:40:48.993 D/EGL_emulation( 1899): eglMakeCurrent: 0x7f347faf4dc0: ver 2 0 (tinfo 0x7f347fac2ce0)
+12-09 07:40:48.996 E/Surface ( 1899): getSlotFromBufferLocked: unknown buffer: 0x7f347faf5c20
+12-09 07:40:49.054 W/ActivityManager( 1594): Bad activity token: android.os.BinderProxy@2d9e67f
+12-09 07:40:49.054 W/ActivityManager( 1594): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:40:49.054 W/ActivityManager( 1594): Bad activity token: android.os.BinderProxy@2d9e67f
+12-09 07:40:49.054 W/ActivityManager( 1594): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:40:49.054 W/ActivityManager( 1594): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:40:49.492 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 140ms
+12-09 07:40:49.907 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 190ms
+12-09 07:40:50.176 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3103 waiters=1 for 132ms
+12-09 07:40:50.178 I/Choreographer( 5264): Skipped 52 frames!  The application may be doing too much work on its main thread.
+12-09 07:40:50.223 D/gralloc_ranchu( 1219): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:40:50.317 D/        ( 5264): HostConnection::get() New Host Connection established 0x7f347c1bf520, tid 5264
+12-09 07:40:50.485 I/ActivityManager( 1594): Displayed com.evancharlton.mileage/.Mileage: +1s855ms
+12-09 07:40:50.537 D/gralloc_ranchu( 1219): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:40:50.870 D/gralloc_ranchu( 1219): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:40:51.370 I/System.out( 5264): URI: //map
+12-09 07:40:51.370 I/System.out( 5264): params: {json={"query":"android.widget.CheckBox index:0","operation":{"method_name":"query","arguments":[]}}
+12-09 07:40:51.371 I/System.out( 5264): }
+12-09 07:40:51.439 I/art     ( 5264): Background partial concurrent mark sweep GC freed 13074(657KB) AllocSpace objects, 2(40KB) LOS objects, 39% free, 2MB/4MB, paused 3.059ms total 212.194ms
+12-09 07:40:51.643 I/System.out( 5264): URI: //gesture
+12-09 07:40:51.643 I/System.out( 5264): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.CheckBox index:0","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:40:51.643 I/System.out( 5264): }
+12-09 07:40:51.743 W/InputDispatcher( 1594): Permission denied: injecting event from pid 5264 uid 10119 to window Window{98c7dec u0 Application Not Responding: system} owned by uid 1000
+12-09 07:40:51.751 W/InputManager( 1594): Input event injection from pid 5264 permission denied.
+12-09 07:40:51.876 W/InputDispatcher( 1594): Permission denied: injecting event from pid 5264 uid 10119 to window Window{98c7dec u0 Application Not Responding: system} owned by uid 1000
+12-09 07:40:51.877 W/InputManager( 1594): Input event injection from pid 5264 permission denied.
+12-09 07:40:51.992 W/InputDispatcher( 1594): Permission denied: injecting event from pid 5264 uid 10119 to window Window{98c7dec u0 Application Not Responding: system} owned by uid 1000
+12-09 07:40:52.015 W/InputManager( 1594): Input event injection from pid 5264 permission denied.
+12-09 07:40:52.127 W/InputDispatcher( 1594): Permission denied: injecting event from pid 5264 uid 10119 to window Window{98c7dec u0 Application Not Responding: system} owned by uid 1000
+12-09 07:40:52.128 W/InputManager( 1594): Input event injection from pid 5264 permission denied.
+12-09 07:40:52.235 W/InputDispatcher( 1594): Permission denied: injecting event from pid 5264 uid 10119 to window Window{98c7dec u0 Application Not Responding: system} owned by uid 1000
+12-09 07:40:52.306 W/InputManager( 1594): Input event injection from pid 5264 permission denied.
+12-09 07:40:52.413 W/InputDispatcher( 1594): Permission denied: injecting event from pid 5264 uid 10119 to window Window{98c7dec u0 Application Not Responding: system} owned by uid 1000
+12-09 07:40:52.414 W/InputManager( 1594): Input event injection from pid 5264 permission denied.
+12-09 07:40:52.520 W/InputDispatcher( 1594): Permission denied: injecting event from pid 5264 uid 10119 to window Window{98c7dec u0 Application Not Responding: system} owned by uid 1000
+12-09 07:40:52.520 W/InputManager( 1594): Input event injection from pid 5264 permission denied.
+12-09 07:40:52.623 W/InputDispatcher( 1594): Permission denied: injecting event from pid 5264 uid 10119 to window Window{98c7dec u0 Application Not Responding: system} owned by uid 1000
+12-09 07:40:52.623 W/InputManager( 1594): Input event injection from pid 5264 permission denied.
+12-09 07:40:52.735 W/InputDispatcher( 1594): Permission denied: injecting event from pid 5264 uid 10119 to window Window{98c7dec u0 Application Not Responding: system} owned by uid 1000
+12-09 07:40:52.736 W/InputManager( 1594): Input event injection from pid 5264 permission denied.
+12-09 07:40:52.839 W/InputDispatcher( 1594): Permission denied: injecting event from pid 5264 uid 10119 to window Window{98c7dec u0 Application Not Responding: system} owned by uid 1000
+12-09 07:40:52.840 W/InputManager( 1594): Input event injection from pid 5264 permission denied.
+12-09 07:40:52.941 W/System.err( 5264): java.lang.SecurityException: java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission
+12-09 07:40:52.959 W/System.err( 5264): 	at sh.calaba.instrumentationbackend.actions.MultiTouchGesture.pressGestures(MultiTouchGesture.java:268)
+12-09 07:40:52.959 W/System.err( 5264): 	at sh.calaba.instrumentationbackend.actions.MultiTouchGesture.perform(MultiTouchGesture.java:167)
+12-09 07:40:52.959 W/System.err( 5264): 	at sh.calaba.instrumentationbackend.actions.HttpServer.serve(HttpServer.java:540)
+12-09 07:40:52.959 W/System.err( 5264): 	at sh.calaba.instrumentationbackend.actions.NanoHTTPD$HTTPSession.run(NanoHTTPD.java:487)
+12-09 07:40:52.959 W/System.err( 5264): 	at java.lang.Thread.run(Thread.java:818)
+12-09 07:40:52.959 W/System.err( 5264): Caused by: java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission
+12-09 07:40:52.959 W/System.err( 5264): 	at android.os.Parcel.readException(Parcel.java:1599)
+12-09 07:40:52.959 W/System.err( 5264): 	at android.os.Parcel.readException(Parcel.java:1552)
+12-09 07:40:52.959 W/System.err( 5264): 	at android.hardware.input.IInputManager$Stub$Proxy.injectInputEvent(IInputManager.java:417)
+12-09 07:40:52.959 W/System.err( 5264): 	at android.hardware.input.InputManager.injectInputEvent(InputManager.java:679)
+12-09 07:40:52.959 W/System.err( 5264): 	at android.app.Instrumentation.sendPointerSync(Instrumentation.java:943)
+12-09 07:40:52.960 W/System.err( 5264): 	at sh.calaba.instrumentationbackend.actions.MultiTouchGesture.sendPointerSync(MultiTouchGesture.java:229)
+12-09 07:40:52.960 W/System.err( 5264): 	at sh.calaba.instrumentationbackend.actions.MultiTouchGesture.pressGestures(MultiTouchGesture.java:246)
+12-09 07:40:52.960 W/System.err( 5264): 	... 4 more
