@@ -1,964 +1,415 @@
 --------- beginning of main
-12-09 02:19:52.151 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:19:52.239 D/        ( 1594): HostConnection::get() New Host Connection established 0x7fc08b843740, tid 1987
-12-09 02:19:52.268 E/EGL_emulation( 1225): tid 1225: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
-12-09 02:19:52.312 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=0 for 239ms
-12-09 02:19:52.313 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=1 for 239ms
-12-09 02:19:52.313 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=2 for 239ms
-12-09 02:19:52.313 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=3 for 235ms
-12-09 02:19:52.318 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=6 for 167ms
-12-09 02:19:52.323 I/GrowthService( 2524): Scheduled sync with period: 14400
-12-09 02:19:52.512 I/art     ( 1594): Background partial concurrent mark sweep GC freed 15654(1257KB) AllocSpace objects, 9(480KB) LOS objects, 30% free, 8MB/12MB, paused 22.635ms total 203.024ms
-12-09 02:19:52.663 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=7 for 480ms
-12-09 02:19:52.664 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=2 for 340ms
+12-09 02:37:40.296 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 708608
+12-09 02:37:40.392 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 288349 , only wrote 284891
+12-09 02:37:40.424 E/EGL_emulation( 1223): tid 1223: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 02:37:40.455 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
 --------- beginning of system
-12-09 02:19:52.666 W/ActivityManager( 1594): Finishing task with all activities already finished
-12-09 02:19:52.666 W/ActivityManager( 1594): Duplicate finish request for ActivityRecord{b78a9d9 u0 com.evancharlton.mileage/.Mileage t72 f}
-12-09 02:19:52.666 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=5 for 173ms
-12-09 02:19:52.666 W/ActivityManager( 1594): Finishing task with all activities already finished
-12-09 02:19:52.666 W/ActivityManager( 1594): Duplicate finish request for ActivityRecord{b78a9d9 u0 com.evancharlton.mileage/.Mileage t72 f}
-12-09 02:19:52.745 W/ActivityManager( 1594): Finishing task with all activities already finished
-12-09 02:19:52.745 W/ActivityManager( 1594): Duplicate finish request for ActivityRecord{b78a9d9 u0 com.evancharlton.mileage/.Mileage t72 f}
-12-09 02:19:53.052 D/CAR.DRIVINGMODE( 2524): connected
-12-09 02:19:53.058 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 862ms
-12-09 02:19:53.172 D/EGL_emulation( 1946): eglMakeCurrent: 0x7fc09c8b4dc0: ver 2 0 (tinfo 0x7fc09c882da0)
-12-09 02:19:53.199 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 1.047s
-12-09 02:19:53.199 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 1.014s
-12-09 02:19:53.290 D/AndroidRuntime( 3201): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-12-09 02:19:53.300 D/AndroidRuntime( 3201): CheckJNI is ON
-12-09 02:19:53.381 D/ICU     ( 3201): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
-12-09 02:19:53.438 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 209ms
-12-09 02:19:53.505 I/art     ( 2888): Background sticky concurrent mark sweep GC freed 12576(1165KB) AllocSpace objects, 5(128KB) LOS objects, 17% free, 8MB/9MB, paused 14.886ms total 100.369ms
-12-09 02:19:53.602 E/memtrack( 3201): Couldn't load memtrack module (No such file or directory)
-12-09 02:19:53.602 E/android.os.Debug( 3201): failed to load memtrack module: -2
-12-09 02:19:53.624 I/Radio-JNI( 3201): register_android_hardware_Radio DONE
-12-09 02:19:53.664 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 296ms
-12-09 02:19:53.667 D/AndroidRuntime( 3201): Calling main entry com.android.commands.am.Am
-12-09 02:19:53.877 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 478ms
-12-09 02:19:53.901 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10071 user=0: start instr
-12-09 02:19:53.901 I/ActivityManager( 1594): Killing 3003:com.evancharlton.mileage/u0a71 (adj 0): stop com.evancharlton.mileage
-12-09 02:19:53.984 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 843ms
-12-09 02:19:53.984 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 595ms
-12-09 02:19:54.123 W/InputDispatcher( 1594): channel 'f5ed16f com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
-12-09 02:19:54.123 E/InputDispatcher( 1594): channel 'f5ed16f com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
-12-09 02:19:54.204 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 766ms
-12-09 02:19:54.311 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 647ms
-12-09 02:19:54.331 W/art     ( 3160): Suspending all threads took: 11.042ms
-12-09 02:19:54.360 I/Icing   ( 2524): updateResources: need to parse yva{com.google.android.gms}
-12-09 02:19:54.373 W/IntentService[D( 3128): type=1400 audit(0.0:21): avc: denied { read } for name="/" dev="tmpfs" ino=89 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=0
-12-09 02:19:54.531 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 654ms
-12-09 02:19:54.533 W/InputMethodManagerService( 1594): Got RemoteException sending setActive(false) notification to pid 3003 uid 10071
-12-09 02:19:54.534 W/ActivityManager( 1594): Crash of app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}
-12-09 02:19:54.534 I/ActivityManager( 1594): Force stopping com.evancharlton.mileage appid=10071 user=0: finished inst
-12-09 02:19:54.535 I/WindowState( 1594): WIN DEATH: Window{f5ed16f u0 com.evancharlton.mileage/com.evancharlton.mileage.Mileage}
-12-09 02:19:54.535 W/InputDispatcher( 1594): Attempted to unregister already unregistered input channel 'f5ed16f com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)'
-12-09 02:19:54.535 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=4 for 331ms
-12-09 02:19:54.535 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=4 for 224ms
-12-09 02:19:54.537 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.wm.WindowManagerService.inputMethodClientHasFocus(com.android.internal.view.IInputMethodClient) from WindowManagerService.java:8301 waiters=0 for 339ms
-12-09 02:19:54.551 I/Choreographer( 1946): Skipped 69 frames!  The application may be doing too much work on its main thread.
-12-09 02:19:54.616 D/        ( 2888): HostConnection::get() New Host Connection established 0x7fc09c8b1980, tid 3128
-12-09 02:19:54.865 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 248ms
-12-09 02:19:54.866 D/EGL_emulation( 2888): eglCreateContext: 0x7fc09c8b5b80: maj 2 min 0 rcv 2
-12-09 02:19:54.916 D/EGL_emulation( 2888): eglMakeCurrent: 0x7fc09c8b5b80: ver 2 0 (tinfo 0x7fc087156a00)
-12-09 02:19:55.088 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 223ms
-12-09 02:19:55.370 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 454ms
-12-09 02:19:55.764 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 675ms
-12-09 02:19:55.888 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 518ms
-12-09 02:19:56.278 D/EGL_emulation( 2888): eglCreateContext: 0x7fc09c8b5b80: maj 2 min 0 rcv 2
-12-09 02:19:56.288 D/EGL_emulation( 2888): eglMakeCurrent: 0x7fc09c8b5b80: ver 2 0 (tinfo 0x7fc087156a00)
-12-09 02:19:56.556 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 328ms
-12-09 02:19:56.986 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 429ms
-12-09 02:19:57.173 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 399ms
-12-09 02:19:57.333 W/IntentService[D( 3128): type=1400 audit(0.0:22): avc: denied { search } for name="1313" dev="proc" ino=4266 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:zygote:s0 tclass=dir permissive=0
-12-09 02:19:57.349 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 362ms
-12-09 02:19:57.464 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 291ms
-12-09 02:19:57.613 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 149ms
-12-09 02:19:57.627 I/Choreographer( 1946): Skipped 184 frames!  The application may be doing too much work on its main thread.
-12-09 02:19:57.718 I/ActivityManager( 1594): Start proc 3225:com.evancharlton.mileage/u0a71 for added application com.evancharlton.mileage
-12-09 02:19:57.732 D/AndroidRuntime( 3201): Shutting down VM
-12-09 02:19:57.738 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=0 for 3.775s
-12-09 02:19:57.738 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=1 for 3.786s
-12-09 02:19:57.824 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=2 for 3.872s
-12-09 02:19:57.896 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=3 for 3.912s
-12-09 02:19:57.897 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=4 for 3.912s
-12-09 02:19:57.897 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=5 for 3.846s
-12-09 02:19:57.934 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=6 for 3.873s
-12-09 02:19:57.934 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=9 for 3.386s
-12-09 02:19:57.951 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=7 for 3.602s
-12-09 02:19:57.952 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=8 for 3.597s
-12-09 02:19:57.952 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=10 for 2.605s
-12-09 02:19:57.952 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=11 for 2.186s
-12-09 02:19:57.965 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=13 for 1.937s
-12-09 02:19:57.966 W/ActivityManager( 1594): Unable to start service Intent { act=com.google.android.gms.drive.ApiService.RESET_AFTER_BOOT flg=0x4 cmp=com.google.android.gms/.drive.api.ApiService (has extras) } U=0: not found
-12-09 02:19:57.980 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=15 for 644ms
-12-09 02:19:57.980 W/art     ( 1594): Long monitor contention event with owner method=java.util.List com.android.server.am.ActivityManagerService.getAllStackInfos() from ActivityManagerService.java:8937 waiters=14 for 242ms
-12-09 02:19:57.981 W/art     ( 1594): Long monitor contention event with owner method=java.util.List com.android.server.am.ActivityManagerService.getAllStackInfos() from ActivityManagerService.java:8937 waiters=15 for 208ms
-12-09 02:19:57.991 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=14 for 1.066s
-12-09 02:19:58.017 I/Authzen ( 2524): [PermitStore] Getting all permits...
-12-09 02:19:58.020 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=12 for 2.047s
-12-09 02:19:58.049 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=3 for 4.498s
-12-09 02:19:58.051 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 4.551s
-12-09 02:19:58.056 I/Authzen ( 2524): [hsm] Opening database auth.proximity.permit_store...
-12-09 02:19:58.074 W/art     ( 2283): Long monitor contention event with owner method=boolean ppd.handleMessage(android.os.Message) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):2 waiters=0 for 1.451s
-12-09 02:19:58.221 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:19:58.269 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 4.285s
-12-09 02:19:58.271 W/WindowAnimator( 1594): Failed to dispatch window animation state change.
-12-09 02:19:58.271 W/WindowAnimator( 1594): android.os.DeadObjectException
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.os.BinderProxy.transactNative(Native Method)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.os.BinderProxy.transact(Binder.java:503)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.view.IWindow$Stub$Proxy.onAnimationStopped(IWindow.java:534)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at com.android.server.wm.WindowAnimator.updateWindowsLocked(WindowAnimator.java:286)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at com.android.server.wm.WindowAnimator.animateLocked(WindowAnimator.java:678)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at com.android.server.wm.WindowAnimator.-wrap0(WindowAnimator.java)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at com.android.server.wm.WindowAnimator$1.doFrame(WindowAnimator.java:123)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:856)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.view.Choreographer.doCallbacks(Choreographer.java:670)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.view.Choreographer.doFrame(Choreographer.java:603)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.os.Handler.handleCallback(Handler.java:739)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.os.Handler.dispatchMessage(Handler.java:95)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.os.Looper.loop(Looper.java:148)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at android.os.HandlerThread.run(HandlerThread.java:61)
-12-09 02:19:58.271 W/WindowAnimator( 1594): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
-12-09 02:19:58.271 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=3 for 3.905s
-12-09 02:19:58.314 W/art     ( 2524): Long monitor contention event with owner method=boolean ppd.handleMessage(android.os.Message) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):2 waiters=0 for 255ms
-12-09 02:19:58.341 W/OpenGLRenderer( 1946): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
-12-09 02:19:58.379 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 4.026s
-12-09 02:19:58.403 W/System  ( 3225): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
-12-09 02:19:58.403 W/System  ( 3225): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
-12-09 02:19:58.449 W/CheckinConnFactory( 2524): Fail to connect to GoogleApiClient error : otb{statusCode=TIMEOUT, resolution=null, message=null}
-12-09 02:19:58.785 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 467ms
-12-09 02:19:58.819 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 405ms
-12-09 02:19:58.832 I/System.out( 3225): Main activity name automatically set to: com.evancharlton.mileage.Mileage
-12-09 02:19:58.833 I/System.out( 3225): Calabash did not load Mono. This is only a problem if you are trying to test a Mono application
-12-09 02:19:58.833 I/calabash( 3225): Test server port: 7102
-12-09 02:19:58.834 I/InstrumentationBackend( 3225): Added:'GetPreferences', with key:'get_preferences'
-12-09 02:19:58.888 D/CAR.SETUP( 2524): Driving Mode ActivityTransition conditions not met. Skip registration.
-12-09 02:19:58.888 D/CAR.DRIVINGMODE( 2524): unbinding
-12-09 02:19:58.949 I/InstrumentationBackend( 3225): Added:'SetPreferences', with key:'set_preferences'
-12-09 02:19:58.949 I/InstrumentationBackend( 3225): Added:'ClearPreferences', with key:'clear_preferences'
-12-09 02:19:58.955 I/InstrumentationBackend( 3225): Added:'PressElement', with key:'press_l10n_element'
-12-09 02:19:58.956 I/InstrumentationBackend( 3225): Added:'WaitForElement', with key:'wait_for_l10n_element'
-12-09 02:19:58.956 I/InstrumentationBackend( 3225): Added:'NullAction', with key:'nullAction'
-12-09 02:19:58.956 I/InstrumentationBackend( 3225): Added:'PressKey', with key:'press_key'
-12-09 02:19:58.956 I/InstrumentationBackend( 3225): Added:'SetActivityOrientation', with key:'set_activity_orientation'
-12-09 02:19:58.957 I/InstrumentationBackend( 3225): Added:'GetActivityOrientation', with key:'get_activity_orientation'
-12-09 02:19:58.957 I/InstrumentationBackend( 3225): Added:'FakeGPSLocation', with key:'set_gps_coordinates'
-12-09 02:19:58.957 I/InstrumentationBackend( 3225): Added:'SetPropertyByCssSelector', with key:'set_property_by_css_selector'
-12-09 02:19:58.957 I/InstrumentationBackend( 3225): Added:'GetUrl', with key:'get_url'
-12-09 02:19:58.958 I/InstrumentationBackend( 3225): Added:'ScrollTo', with key:'scroll_to'
-12-09 02:19:58.958 I/InstrumentationBackend( 3225): Added:'GetLoadProgress', with key:'get_load_progress'
-12-09 02:19:58.958 I/InstrumentationBackend( 3225): Added:'DumpHtml', with key:'dump_html'
-12-09 02:19:58.959 I/InstrumentationBackend( 3225): Added:'DumpBodyHtml', with key:'dump_body_html'
-12-09 02:19:59.008 I/InstrumentationBackend( 3225): Added:'EnterTextByCssSelector', with key:'enter_text_by_selector'
-12-09 02:19:59.009 I/InstrumentationBackend( 3225): Added:'AndroidSDKVersion', with key:'android_sdk_version'
-12-09 02:19:59.009 I/InstrumentationBackend( 3225): Added:'Version', with key:'version'
-12-09 02:19:59.009 I/InstrumentationBackend( 3225): Added:'Drag', with key:'drag'
-12-09 02:19:59.010 I/InstrumentationBackend( 3225): Added:'TouchCoordinates', with key:'touch_coordinate'
-12-09 02:19:59.010 I/InstrumentationBackend( 3225): Added:'LongPressCoordinate', with key:'long_press_coordinate'
-12-09 02:19:59.010 I/InstrumentationBackend( 3225): Added:'DragCoordinates', with key:'drag_coordinates'
-12-09 02:19:59.010 I/InstrumentationBackend( 3225): Added:'ResumeApplication', with key:'resume_application'
-12-09 02:19:59.010 I/InstrumentationBackend( 3225): Added:'Swipe', with key:'swipe'
-12-09 02:19:59.011 I/InstrumentationBackend( 3225): Added:'DoubleTapCoordinate', with key:'double_tap_coordinate'
-12-09 02:19:59.022 I/InstrumentationBackend( 3225): Added:'ClickOnScreen', with key:'click_on_screen'
-12-09 02:19:59.022 I/InstrumentationBackend( 3225): Added:'GetActivityName', with key:'get_activity_name'
-12-09 02:19:59.022 I/InstrumentationBackend( 3225): Added:'ScrollToView', with key:'scroll_to_view'
-12-09 02:19:59.048 I/InstrumentationBackend( 3225): Added:'ViewConfiguration', with key:'view_configuration'
-12-09 02:19:59.048 I/InstrumentationBackend( 3225): Added:'IsCurrentActivityFocused', with key:'is_current_activity_focused'
-12-09 02:19:59.048 I/InstrumentationBackend( 3225): Added:'SendTcp', with key:'send_tcp'
-12-09 02:19:59.049 I/InstrumentationBackend( 3225): Added:'DpToDevicePixel', with key:'dp_to_device_pixel'
-12-09 02:19:59.049 I/InstrumentationBackend( 3225): Added:'KeyboardEnterText', with key:'keyboard_enter_text'
-12-09 02:19:59.049 I/InstrumentationBackend( 3225): Added:'DeleteSurroundingText', with key:'delete_surrounding_text'
-12-09 02:19:59.071 I/InstrumentationBackend( 3225): Added:'SetComposingRegion', with key:'set_composing_region'
-12-09 02:19:59.071 I/InstrumentationBackend( 3225): Added:'SetSelection', with key:'set_selection'
-12-09 02:19:59.072 I/InstrumentationBackend( 3225): Added:'KeyboardKeyEvent', with key:'keyboard_key_event'
-12-09 02:19:59.072 I/InstrumentationBackend( 3225): Added:'PressUserActionButton', with key:'press_user_action_button'
-12-09 02:19:59.072 I/InstrumentationBackend( 3225): Added:'HideSoftKeyboard', with key:'hide_soft_keyboard'
-12-09 02:19:59.073 I/InstrumentationBackend( 3225): Added:'ListActions', with key:'list_actions'
-12-09 02:19:59.073 I/calabash( 3225): Instantiating http server at 7102
-12-09 02:19:59.074 I/System.out( 3225): HTTP Daemon listening on: 7102
-12-09 02:19:59.136 I/art     ( 2283): Background partial concurrent mark sweep GC freed 22236(2MB) AllocSpace objects, 5(88KB) LOS objects, 27% free, 10MB/14MB, paused 1.360ms total 306.720ms
-12-09 02:19:59.209 I/System.out( 3225): URI: //ping
-12-09 02:19:59.210 I/System.out( 3225): params: {json={}
-12-09 02:19:59.210 I/System.out( 3225): }
-12-09 02:19:59.252 I/System.out( 3225): URI: //ping
-12-09 02:19:59.252 I/System.out( 3225): params: {json={}
-12-09 02:19:59.253 I/System.out( 3225): }
-12-09 02:19:59.288 I/System.out( 3225): URI: //ready
-12-09 02:19:59.288 I/System.out( 3225): params: {json={}
-12-09 02:19:59.288 I/System.out( 3225): }
-12-09 02:19:59.324 I/ActivityManager( 1594): Killing 2710:com.evancharlton.mileage.test/u0a72 (adj 15): empty #17
-12-09 02:19:59.348 I/System.out( 3225): URI: //
-12-09 02:19:59.348 I/System.out( 3225): params: {json={"command":"version","arguments":[]}
-12-09 02:19:59.348 I/System.out( 3225): }
-12-09 02:19:59.348 I/System.out( 3225): header: {date=Sun, 09 Dec 2018 02:19:59 GMT, accept=*/*, content-length=36, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
-12-09 02:19:59.348 I/System.out( 3225): params: {json={"command":"version","arguments":[]}
-12-09 02:19:59.348 I/System.out( 3225): }
-12-09 02:19:59.348 I/System.out( 3225): ProP json = {"command":"version","arguments":[]}
-12-09 02:19:59.348 I/System.out( 3225): files: {}
-12-09 02:19:59.348 I/System.out( 3225): command: {"command":"version","arguments":[]}
-12-09 02:19:59.389 I/InstrumentationBackend( 3225): Got command:'Command:'Line:null,version', arguments:'[]'
-12-09 02:19:59.505 I/art     ( 3225): Background sticky concurrent mark sweep GC freed 24303(1361KB) AllocSpace objects, 12(240KB) LOS objects, 56% free, 1668KB/3MB, paused 23.323ms total 92.095ms
-12-09 02:19:59.506 I/System.out( 3225): result:{"bonusInformation":[],"message":"0.9.8","success":true}
-12-09 02:19:59.538 I/System.out( 3225): URI: //start-application
-12-09 02:19:59.538 I/System.out( 3225): params: {json={"intent":null}
-12-09 02:19:59.538 I/System.out( 3225): }
-12-09 02:19:59.678 D/VoicemailCleanupService( 2007): Cleaning up data for package: com.evancharlton.mileage.test
-12-09 02:19:59.737 I/ActivityManager( 1594): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.evancharlton.mileage/.Mileage} from uid 10071 on display 0
-12-09 02:19:59.747 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 503ms
-12-09 02:20:00.280 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=1 for 544ms
-12-09 02:20:00.355 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:946 waiters=2 for 616ms
-12-09 02:20:00.376 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=2 for 640ms
-12-09 02:20:00.384 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:946 waiters=4 for 469ms
-12-09 02:20:00.386 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:946 waiters=7 for 386ms
-12-09 02:20:00.387 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:946 waiters=3 for 473ms
-12-09 02:20:00.387 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:946 waiters=5 for 473ms
-12-09 02:20:00.388 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=1 for 1.030s
-12-09 02:20:00.388 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 475ms
-12-09 02:20:00.388 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 468ms
-12-09 02:20:00.390 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=8 for 103ms
-12-09 02:20:00.457 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 8294400
-12-09 02:20:00.472 I/calabash( 3225): newActivity1
-12-09 02:20:00.495 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 573ms
-12-09 02:20:00.524 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=2 for 134ms
-12-09 02:20:00.590 I/ActivityManager( 1594): Killing 2759:com.android.documentsui/u0a29 (adj 15): empty #17
-12-09 02:20:00.658 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=2 for 1.102s
-12-09 02:20:00.675 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 928ms
-12-09 02:20:00.676 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=2 for 286ms
-12-09 02:20:00.783 I/calabash( 3225): newActivity1
-12-09 02:20:00.786 W/ActivityManager( 1594): Bad activity token: android.os.BinderProxy@b5023ad
-12-09 02:20:00.786 W/ActivityManager( 1594): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
-12-09 02:20:00.786 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
-12-09 02:20:00.786 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
-12-09 02:20:00.786 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
-12-09 02:20:00.786 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
-12-09 02:20:00.786 W/ActivityManager( 1594): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
-12-09 02:20:00.786 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
-12-09 02:20:00.786 W/ActivityManager( 1594): 	at android.os.Binder.execTransact(Binder.java:453)
-12-09 02:20:00.787 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=3 for 188ms
-12-09 02:20:01.068 W/ActivityManager( 1594): Bad activity token: android.os.BinderProxy@b5023ad
-12-09 02:20:01.068 W/ActivityManager( 1594): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
-12-09 02:20:01.068 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
-12-09 02:20:01.068 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
-12-09 02:20:01.068 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
-12-09 02:20:01.068 W/ActivityManager( 1594): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
-12-09 02:20:01.068 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
-12-09 02:20:01.068 W/ActivityManager( 1594): 	at android.os.Binder.execTransact(Binder.java:453)
-12-09 02:20:01.188 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=0 for 119ms
-12-09 02:20:01.201 I/Choreographer( 1594): Skipped 44 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:01.240 E/UninstallPackageIntentO( 2524): Package still installed com.evancharlton.mileage.test
-12-09 02:20:01.324 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=2 for 103ms
-12-09 02:20:01.345 V/PhoneStatusBar( 1696): setLightsOn(true)
-12-09 02:20:01.394 I/CheckinRequestProcessor( 2524): cookie is null
-12-09 02:20:01.395 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 719ms
-12-09 02:20:01.434 W/ActivityManager( 1594): Bad activity token: android.os.BinderProxy@b5023ad
-12-09 02:20:01.434 W/ActivityManager( 1594): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
-12-09 02:20:01.434 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
-12-09 02:20:01.434 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
-12-09 02:20:01.434 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
-12-09 02:20:01.434 W/ActivityManager( 1594): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
-12-09 02:20:01.434 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
-12-09 02:20:01.434 W/ActivityManager( 1594): 	at android.os.Binder.execTransact(Binder.java:453)
-12-09 02:20:01.443 D/EGL_emulation( 1946): eglMakeCurrent: 0x7fc09c8b4dc0: ver 2 0 (tinfo 0x7fc09c882da0)
-12-09 02:20:01.457 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 722ms
-12-09 02:20:01.472 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 737ms
-12-09 02:20:01.473 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 144ms
-12-09 02:20:01.478 E/Surface ( 1946): getSlotFromBufferLocked: unknown buffer: 0x7fc098e562e0
-12-09 02:20:01.533 W/ActivityManager( 1594): Bad activity token: android.os.BinderProxy@b5023ad
-12-09 02:20:01.533 W/ActivityManager( 1594): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
-12-09 02:20:01.533 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
-12-09 02:20:01.533 W/ActivityManager( 1594): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
-12-09 02:20:01.533 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
-12-09 02:20:01.533 W/ActivityManager( 1594): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
-12-09 02:20:01.533 W/ActivityManager( 1594): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
-12-09 02:20:01.533 W/ActivityManager( 1594): 	at android.os.Binder.execTransact(Binder.java:453)
-12-09 02:20:01.601 I/LocationSettingsChecker( 2524): Removing dialog suppression flag for package com.evancharlton.mileage.test
-12-09 02:20:01.646 W/Conscrypt( 2524): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
-12-09 02:20:01.646 W/Conscrypt( 2524): 	at java.lang.reflect.Method.invoke(Native Method)
-12-09 02:20:01.646 W/Conscrypt( 2524): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@13280023@13.2.80 (040800-211705629):13)
-12-09 02:20:01.646 W/Conscrypt( 2524): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
-12-09 02:20:01.646 W/Conscrypt( 2524): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
-12-09 02:20:01.646 W/Conscrypt( 2524): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
-12-09 02:20:01.670 I/UpdateIcingCorporaServi( 2089): Updating corpora: APPS=com.evancharlton.mileage.test, CONTACTS=MAYBE
-12-09 02:20:01.688 W/Conscrypt( 2524): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
-12-09 02:20:01.688 W/Conscrypt( 2524): 	at java.lang.reflect.Method.invoke(Native Method)
-12-09 02:20:01.688 W/Conscrypt( 2524): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@13280023@13.2.80 (040800-211705629):13)
-12-09 02:20:01.688 W/Conscrypt( 2524): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
-12-09 02:20:01.688 W/Conscrypt( 2524): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
-12-09 02:20:01.688 W/Conscrypt( 2524): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
-12-09 02:20:01.702 W/art     ( 3225): Suspending all threads took: 15.164ms
-12-09 02:20:01.724 I/art     ( 3225): Background partial concurrent mark sweep GC freed 31708(1767KB) AllocSpace objects, 3(60KB) LOS objects, 39% free, 1813KB/2MB, paused 16.572ms total 33.716ms
-12-09 02:20:01.911 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 381ms
-12-09 02:20:01.927 I/PeopleContactsSync( 2524): triggerPendingContactsCleanup: no accounts
-12-09 02:20:01.959 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 417ms
-12-09 02:20:01.992 I/art     ( 2089): WaitForGcToComplete blocked for 21.016ms for cause Background
-12-09 02:20:02.092 I/Choreographer( 1696): Skipped 32 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:02.142 I/MobileDataHub( 2524): Scheduling periodic tasks
-12-09 02:20:02.166 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 583ms
-12-09 02:20:02.210 I/UpdateIcingCorporaServi( 2089): UpdateCorporaTask done [took 539 ms] updated apps [took 539 ms] 
-12-09 02:20:02.454 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3103 waiters=1 for 403ms
-12-09 02:20:02.657 W/ContextImpl( 2727): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1221 android.content.ContextWrapper.startService:581 android.content.ContextWrapper.startService:581 com.android.keychain.KeyChainBroadcastReceiver.onReceive:12 android.app.ActivityThread.handleReceiver:2725 
-12-09 02:20:02.900 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.unbindService(android.app.IServiceConnection) from ActivityManagerService.java:15918 waiters=1 for 227ms
-12-09 02:20:02.903 W/art     ( 1594): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.unbindService(android.app.IServiceConnection) from ActivityManagerService.java:15918 waiters=3 for 225ms
-12-09 02:20:03.077 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 179ms
-12-09 02:20:03.139 I/CheckinRequestProcessor( 2524): updateCheckinIdTokenFileFromResponse, Reading existing AID
-12-09 02:20:03.248 W/GCoreFlp( 2283): No location to return for getLastLocation()
-12-09 02:20:03.388 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 324ms
-12-09 02:20:03.388 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 249ms
-12-09 02:20:03.496 I/CheckinRequestProcessor( 2524): CheckinNowTaskTag : Checkin Succeeded: https://android.clients.google.com/checkin (fragment #1): 
-12-09 02:20:03.698 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3103 waiters=0 for 361ms
-12-09 02:20:03.821 I/Choreographer( 3225): Skipped 39 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:03.834 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 8294400
-12-09 02:20:03.862 I/MobileDataPlan( 2524): [173] MobileDataPlanModuleInitIntentOperation.a: Periodic service false update false
-12-09 02:20:03.873 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:03.874 E/MagicTether( 2524): [MagicTetherInitializer] Invalid account list.
-12-09 02:20:03.990 I/MobileDataPlan( 2524): [173] adfm.b: delete MobileDataPlan SIM based database name: MdpSimBasedDatabase
-12-09 02:20:04.010 I/ActivityManager( 1594): Start proc 3286:com.google.android.gms.ui/u0a8 for service com.google.android.gms/.chimera.UiIntentOperationService
-12-09 02:20:04.046 W/ChimeraUtils( 2524): Non Chimera context
-12-09 02:20:04.053 I/MobileDataPlan( 2524): [173] MobileDataPlanModuleInitIntentOperation.a: Periodic service will not be started.
-12-09 02:20:04.068 D/        ( 3225): HostConnection::get() New Host Connection established 0x7fc098f790a0, tid 3225
-12-09 02:20:04.196 I/ActivityManager( 1594): Killing 2551:com.android.settings/1000 (adj 15): empty #17
-12-09 02:20:04.283 W/System  ( 3286): ClassLoader referenced unknown path: /system/priv-app/PrebuiltGmsCore/lib/x86_64
-12-09 02:20:04.285 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=3 for 104ms
-12-09 02:20:04.296 I/ActivityManager( 1594): Displayed com.evancharlton.mileage/.Mileage: +3s854ms
-12-09 02:20:04.362 I/MobileDataPlan( 2524): [173] MobileDataPlanModuleInitIntentOperation.a: Module is initialized with flag 11.
-12-09 02:20:04.388 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 8294400
-12-09 02:20:04.581 W/NetRec  ( 2524): [169] NetrecModuleInitIntentOperation.a: Device does not support scoring, exiting
-12-09 02:20:04.852 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=0 for 195ms
-12-09 02:20:04.925 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=1 for 268ms
-12-09 02:20:05.052 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 124ms
-12-09 02:20:05.189 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 254ms
-12-09 02:20:05.392 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 150ms
-12-09 02:20:05.520 I/EventLogChimeraService( 2524): Accumulating logs since 1544321971234
-12-09 02:20:05.596 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 8294400
-12-09 02:20:05.600 E/DeviceContactImportDelegate( 2524): Device contact import is disabled.
-12-09 02:20:05.609 E/DeviceContactImportDelegate( 2524): Data layer device contacts import is disabled.
-12-09 02:20:05.609 E/DeviceContactImportDelegate( 2524): Device contact import is disabled.
-12-09 02:20:05.645 W/ActivityManager( 1594): Unable to start service Intent { act=com.google.android.gms.nearby.discovery:ACTION_INIT_MESSAGES_PATH cmp=com.google.android.gms/.nearby.discovery.service.DiscoveryService } U=0: not found
-12-09 02:20:05.698 W/System  ( 3286): ClassLoader referenced unknown path: /system/priv-app/PrebuiltGmsCore/lib/x86_64
-12-09 02:20:05.698 W/System  ( 3286): ClassLoader referenced unknown path: /system/priv-app/PrebuiltGmsCore/lib/x86_64
-12-09 02:20:05.710 E/DeviceContactImportDelegate( 2524): Data layer device contacts import is disabled.
-12-09 02:20:05.711 E/DeviceContactImportDelegate( 2524): Device contact import is disabled.
-12-09 02:20:05.774 V/NativeCrypto( 3286): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 284 native methods...
-12-09 02:20:05.815 E/DeviceContactImportDelegate( 2524): Data layer device contacts import is disabled.
-12-09 02:20:05.815 E/DeviceContactImportDelegate( 2524): Device contact import is disabled.
-12-09 02:20:05.833 I/art     ( 3286): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7ExtendedSSLSession>
-12-09 02:20:05.833 I/art     ( 3286): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7ExtendedSSLSession>
-12-09 02:20:05.834 I/art     ( 3286): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java8ExtendedSSLSession>
-12-09 02:20:05.834 I/art     ( 3286): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java8ExtendedSSLSession>
-12-09 02:20:05.912 I/ProviderInstaller( 3286): Installed default security provider GmsCore_OpenSSL
-12-09 02:20:05.925 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 437ms
-12-09 02:20:05.953 W/MobileDataHub( 2524): [Service] appsupload-periodic periodic task disabled
-12-09 02:20:05.988 E/DeviceContactImportDelegate( 2524): Data layer device contacts import is disabled.
-12-09 02:20:06.002 I/GeofencerStateMachine( 2283): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=null]
-12-09 02:20:06.052 W/art     ( 2283): Long monitor contention event with owner method=boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int) from Binder.java:4294967294 waiters=0 for 1.428s
-12-09 02:20:06.146 I/CheckinRequestProcessor( 2524): Gmscore running on device, checkin will use Gmscore context
-12-09 02:20:06.146 I/CheckinRequestBuilder( 2524): Checkin reason type: 1 attempt count: 2
-12-09 02:20:06.159 W/art     ( 2283): Long monitor contention event with owner method=boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int) from Binder.java:4294967294 waiters=1 for 970ms
-12-09 02:20:06.465 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:06.520 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:06.612 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 636ms
-12-09 02:20:06.809 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=2 for 806ms
-12-09 02:20:06.809 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=3 for 178ms
-12-09 02:20:06.819 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=1 for 831ms
-12-09 02:20:06.820 W/IcingInternalCorpora( 2524): Failed to connect to SearchIndex Apis
-12-09 02:20:06.885 I/ChimeraSrvcProxy( 2283): com.google.android.gms.chimera.PersistentBoundBrokerService returning NullBinder for action com.google.android.gms.ipa.mediastoreindexer.PERSISTENT_START
-12-09 02:20:06.924 I/System.out( 3225): URI: //map
-12-09 02:20:06.924 I/System.out( 3225): params: {json={"query":"android.widget.EditText id:'price'","operation":{"method_name":"query","arguments":[]}}
-12-09 02:20:06.924 I/System.out( 3225): }
-12-09 02:20:07.045 I/art     ( 3225): Background sticky concurrent mark sweep GC freed 25600(1159KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 2MB/2MB, paused 1.455ms total 117.855ms
-12-09 02:20:07.074 W/ResourceType( 3225): No package identifier when getting name for resource number 0x00000001
-12-09 02:20:07.184 I/System.out( 3225): URI: //gesture
-12-09 02:20:07.184 I/System.out( 3225): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'price'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
-12-09 02:20:07.184 I/System.out( 3225): }
-12-09 02:20:07.197 W/art     ( 3286): Suspending all threads took: 23.323ms
-12-09 02:20:07.202 W/ResourceType( 3225): No package identifier when getting name for resource number 0x00000001
-12-09 02:20:07.297 D/WVCdm   ( 1310): Instantiating CDM.
-12-09 02:20:07.352 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 301ms
-12-09 02:20:07.355 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 534ms
-12-09 02:20:07.355 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=1 for 531ms
-12-09 02:20:07.356 I/WVCdm   ( 1310): CdmEngine::OpenSession
-12-09 02:20:07.356 I/WVCdm   ( 1310): Level3 Library Sep 28 2015 13:08:28
-12-09 02:20:07.356 W/WVCdm   ( 1310): Could not read /data/mediadrm/IDM1013/ay64.dat2: No such file or directory
-12-09 02:20:07.357 W/WVCdm   ( 1310): Could not load liboemcrypto.so. Falling back to L3.  dlopen failed: library "liboemcrypto.so" not found
-12-09 02:20:07.369 I/WVCdm   ( 1310): CdmEngine::QueryKeyControlInfo
-12-09 02:20:07.374 I/ChimeraSrvcProxy( 2283): com.google.android.gms.chimera.PersistentBoundBrokerService returning NullBinder for action com.google.android.gms.ipa.smsindexer.PERSISTENT_START
-12-09 02:20:07.385 W/Primes  ( 3286): Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
-12-09 02:20:07.388 W/WVCdm   ( 1310): BufferReader::Read<T> : Failure during parse: Not enough bytes (4)
-12-09 02:20:07.388 W/WVCdm   ( 1310): CdmEngine::ExtractWidevinePssh: Unable to read atom size.
-12-09 02:20:07.388 I/WVCdm   ( 1310): CdmEngine::GenerateKeyRequest
-12-09 02:20:07.388 D/WVCdm   ( 1310): PrepareKeyRequest: nonce=1997743044
-12-09 02:20:07.575 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=2 for 750ms
-12-09 02:20:07.630 I/art     ( 1893): Background partial concurrent mark sweep GC freed 2398(253KB) AllocSpace objects, 0(0B) LOS objects, 52% free, 937KB/1961KB, paused 13.701ms total 104.548ms
-12-09 02:20:07.668 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=3 for 830ms
-12-09 02:20:07.669 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=4 for 822ms
-12-09 02:20:07.670 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=4 for 314ms
-12-09 02:20:07.723 I/art     ( 2283): Background sticky concurrent mark sweep GC freed 22912(3MB) AllocSpace objects, 2(40KB) LOS objects, 21% free, 11MB/14MB, paused 10.234ms total 222.305ms
-12-09 02:20:07.817 I/WVCdm   ( 1310): CdmEngine::CloseSession
-12-09 02:20:07.828 W/ctxmgr  ( 2283): [WorkManager]Long workInfo: pkg=com.google.android.gms, lbl=Prune, start=2018-12-09 02:20:06.159+0000, stop=2018-12-09 02:20:07.827+0000, durtn=1668ms
-12-09 02:20:07.860 W/RichInputMethodSubtype( 1893): Can't find emoji subtype
-12-09 02:20:07.860 W/RichInputMethodSubtype( 1893): No input method subtype found; returning dummy subtype: Multi-lingual subtype: android.view.inputmethod.InputMethodSubtype@d78b2ed0, zz
-12-09 02:20:08.087 E/IndexManagementDelegate( 2524): Rebuild index is disabled.
-12-09 02:20:08.097 W/ViewPager( 1893): Requested offscreen page limit 0 too small; defaulting to 1
-12-09 02:20:08.161 I/art     ( 2524): Background sticky concurrent mark sweep GC freed 18252(1697KB) AllocSpace objects, 25(500KB) LOS objects, 15% free, 14MB/16MB, paused 1.609ms total 205.144ms
-12-09 02:20:08.191 I/System.out( 3225): URI: //
-12-09 02:20:08.191 I/System.out( 3225): params: {json={"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:08.191 I/System.out( 3225): }
-12-09 02:20:08.191 I/System.out( 3225): header: {date=Sun, 09 Dec 2018 02:20:08 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
-12-09 02:20:08.207 I/System.out( 3225): params: {json={"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:08.207 I/System.out( 3225): }
-12-09 02:20:08.207 I/System.out( 3225): ProP json = {"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:08.207 I/System.out( 3225): files: {}
-12-09 02:20:08.207 I/System.out( 3225): command: {"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:08.232 I/InstrumentationBackend( 3225): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
-12-09 02:20:08.237 W/AudioTrack( 1594): AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 48000 Hz, output 44100 Hz
-12-09 02:20:08.239 I/LatinIME( 1893): Starting input. Cursor position = 0,0
-12-09 02:20:08.325 I/System.out( 3225): result:{"bonusInformation":[],"message":"","success":true}
-12-09 02:20:08.333 W/Binder_3( 2923): type=1400 audit(0.0:23): avc: denied { search } for name="1313" dev="proc" ino=4266 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:zygote:s0 tclass=dir permissive=0
-12-09 02:20:08.372 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.387 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.402 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.423 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.439 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.447 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.463 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.476 I/art     ( 1594): Background partial concurrent mark sweep GC freed 21857(1974KB) AllocSpace objects, 13(448KB) LOS objects, 30% free, 9MB/13MB, paused 1.341ms total 103.045ms
-12-09 02:20:08.477 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.487 D/AudioFlinger( 1310): mixer(0xf43c0000) throttle end: throttle time(12)
-12-09 02:20:08.502 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.503 W/Binder_3( 2923): type=1400 audit(0.0:24): avc: denied { read } for name="/" dev="tmpfs" ino=89 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=0
-12-09 02:20:08.590 W/MDM     ( 2524): [173] acuj.c: FMD does not own an admin that uses USES_POLICY_DISABLE_KEYGUARD_FEATURES
-12-09 02:20:08.601 D/        ( 2888): HostConnection::get() New Host Connection established 0x7fc098e61400, tid 2923
-12-09 02:20:08.619 D/EGL_emulation( 2888): eglCreateContext: 0x7fc09a8082a0: maj 2 min 0 rcv 2
-12-09 02:20:08.620 D/EGL_emulation( 2888): eglMakeCurrent: 0x7fc09a8082a0: ver 2 0 (tinfo 0x7fc098e45ba0)
-12-09 02:20:08.741 V/SmartDevice( 2524): [service,SmartDeviceIntentHandlers] OnUpgradeOrBootOperation got intent: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x8000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) } with flag 3
-12-09 02:20:08.742 W/ChimeraUtils( 2524): Non Chimera context
-12-09 02:20:08.889 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.898 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.919 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.935 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.956 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:08.980 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 401607 , only wrote 401227
-12-09 02:20:09.060 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 404772 , only wrote 404532
-12-09 02:20:09.060 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 404539 , only wrote 404532
-12-09 02:20:09.087 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 405717 , only wrote 405193
-12-09 02:20:09.087 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.087 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.103 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.119 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.135 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.149 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.171 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.191 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.193 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.231 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.488 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 422852 , only wrote 422379
-12-09 02:20:09.488 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 422386 , only wrote 422379
-12-09 02:20:09.508 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 423259 , only wrote 423040
-12-09 02:20:09.508 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.616 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 427796 , only wrote 427667
-12-09 02:20:09.616 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 427674 , only wrote 427667
-12-09 02:20:09.644 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 428911 , only wrote 428328
-12-09 02:20:09.860 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 437837 , only wrote 437582
-12-09 02:20:09.860 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 437589 , only wrote 437582
-12-09 02:20:09.876 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 438282 , only wrote 438243
-12-09 02:20:09.908 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 439681 , only wrote 439565
-12-09 02:20:09.908 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.908 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.923 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.959 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.959 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:09.995 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:10.011 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:10.044 W/audio_hw_generic( 1310): Hardware backing HAL too slow, could only write 0 of 661 frames
-12-09 02:20:10.044 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 445536 , only wrote 445514
-12-09 02:20:10.044 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 445519 , only wrote 445514
-12-09 02:20:10.056 W/art     ( 2524): Long monitor contention event with owner method=boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int) from Binder.java:4294967294 waiters=0 for 1.478s
-12-09 02:20:10.072 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 446745 , only wrote 446175
-12-09 02:20:10.148 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 449531 , only wrote 449480
-12-09 02:20:10.192 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 451416 , only wrote 450802
-12-09 02:20:10.233 D/EGL_emulation( 2888): eglCreateContext: 0x7fc09a8082a0: maj 2 min 0 rcv 2
-12-09 02:20:10.234 D/EGL_emulation( 2888): eglMakeCurrent: 0x7fc09a8082a0: ver 2 0 (tinfo 0x7fc098e45ba0)
-12-09 02:20:10.277 I/ActivityManager( 1594): Start proc 3356:com.android.documentsui/u0a29 for broadcast com.android.documentsui/.PackageReceiver
-12-09 02:20:10.767 E/SurfaceFlinger( 1225): ro.sf.lcd_density must be defined as a build property
-12-09 02:20:10.812 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 478176 , only wrote 477903
-12-09 02:20:10.813 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 477909 , only wrote 477903
-12-09 02:20:10.816 D/OpenGLRenderer( 1893): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
-12-09 02:20:10.836 W/SemanticLocation( 2524): Personalization not enabled; won't try to improve personalization account.
-12-09 02:20:10.902 I/MagicTether( 3286): [HostValidator] InvalidHost. MobileData: true, Tethering: false, whitelist: false, ble: false
-12-09 02:20:10.908 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 482105 , only wrote 481869
-12-09 02:20:10.908 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 481875 , only wrote 481869
-12-09 02:20:10.924 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 482554 , only wrote 482530
-12-09 02:20:11.008 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 486234 , only wrote 485835
-12-09 02:20:11.008 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 485841 , only wrote 485835
-12-09 02:20:11.027 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 486702 , only wrote 486496
-12-09 02:20:11.102 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 489785 , only wrote 487818
-12-09 02:20:11.129 D/        ( 1893): HostConnection::get() New Host Connection established 0x7fc098f77060, tid 1893
-12-09 02:20:11.294 W/System  ( 3356): ClassLoader referenced unknown path: /system/app/DocumentsUI/lib/x86_64
-12-09 02:20:11.344 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 498469 , only wrote 496411
-12-09 02:20:11.438 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 500596 , only wrote 499055
-12-09 02:20:11.467 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 500327 , only wrote 499716
-12-09 02:20:11.509 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 501558 , only wrote 501038
-12-09 02:20:11.539 W/audio_hw_generic( 1310): Not supplying enough data to HAL, expected position 503686 , only wrote 502360
-12-09 02:20:11.887 I/SubscribedFeeds( 2524): Collected 10 certs in 611ms
-12-09 02:20:11.899 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:11.901 I/SemanticLocation( 2524): Cancel DailyWhamDataUpload
-12-09 02:20:11.901 I/PeopleInitIntentOp( 2524): Not initializing debuggability
-12-09 02:20:11.901 I/PeopleInitIntentOp( 2524): Clean up Google+ contacts from CP2.
-12-09 02:20:12.036 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:12.043 I/Choreographer( 1893): Skipped 36 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:12.120 I/System.out( 3225): URI: //
-12-09 02:20:12.120 I/System.out( 3225): params: {json={"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
-12-09 02:20:12.120 I/System.out( 3225): }
-12-09 02:20:12.120 I/System.out( 3225): header: {date=Sun, 09 Dec 2018 02:20:12 GMT, accept=*/*, content-length=75, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
-12-09 02:20:12.120 I/System.out( 3225): params: {json={"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
-12-09 02:20:12.120 I/System.out( 3225): }
-12-09 02:20:12.120 I/System.out( 3225): ProP json = {"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
-12-09 02:20:12.120 I/System.out( 3225): files: {}
-12-09 02:20:12.120 I/System.out( 3225): command: {"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
-12-09 02:20:12.121 I/InstrumentationBackend( 3225): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[-321ßå∂˚¡–ºß123]'
-12-09 02:20:12.153 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:12.153 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:12.673 I/ActivityManager( 1594): Killing 2881:com.android.dialer/u0a5 (adj 15): empty #17
-12-09 02:20:12.685 I/Wear_Controller( 2283): Wear requires a companion app to be installed.
-12-09 02:20:12.685 I/WearableService( 2283): onCreate: Wearable Services not starting. Wear is not available on this device.
-12-09 02:20:12.686 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:12.818 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:12.825 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3103 waiters=0 for 556ms
-12-09 02:20:12.842 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:12.842 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:12.842 I/Choreographer( 3225): Skipped 40 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:12.844 D/        ( 1893): HostConnection::get() New Host Connection established 0x7fc09c8b0960, tid 3373
-12-09 02:20:12.876 I/System.out( 3225): result:{"bonusInformation":[],"message":"","success":true}
-12-09 02:20:12.877 I/OpenGLRenderer( 1893): Initialized EGL, version 1.4
-12-09 02:20:12.923 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=0 for 283ms
-12-09 02:20:12.924 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=1 for 283ms
-12-09 02:20:12.924 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=2 for 272ms
-12-09 02:20:12.995 W/art     ( 2524): Long monitor contention event with owner method=boolean ppd.handleMessage(android.os.Message) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):2 waiters=0 for 183ms
-12-09 02:20:12.998 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=4 for 315ms
-12-09 02:20:12.999 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=5 for 313ms
-12-09 02:20:12.999 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=3 for 336ms
-12-09 02:20:13.000 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=9 for 188ms
-12-09 02:20:13.001 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=10 for 175ms
-12-09 02:20:13.004 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=6 for 319ms
-12-09 02:20:13.057 I/SemanticLocation( 2524): Cancel ReverseGeoBatch
-12-09 02:20:13.068 D/EGL_emulation( 1893): eglCreateContext: 0x7fc090bcee60: maj 2 min 0 rcv 2
-12-09 02:20:13.069 D/EGL_emulation( 1893): eglMakeCurrent: 0x7fc090bcee60: ver 2 0 (tinfo 0x7fc0987b64a0)
-12-09 02:20:13.466 I/TelephonySpam( 2524): TelephonySpamInit - On boot completed TelephonySpam module initialized
-12-09 02:20:13.466 I/TelephonySpam( 2524): TelephonySpamInit - onModuleUpdated TelephonySpam module initialized
-12-09 02:20:13.466 I/TelephonySpam( 2524): TelephonySpamInit - onModuleUpdated calling setComponentEnabled for com.google.android.gms.telephonyspam.sync.SpamListSyncTaskService
-12-09 02:20:13.515 I/TelephonySpam( 2524): TelephonySpamInit - onModuleUpdated completed setComponentEnabled for com.google.android.gms.telephonyspam.sync.SpamListSyncTaskService
-12-09 02:20:13.526 I/TelephonySpam( 2524): SpamListSync - scheduleSyncTasks
-12-09 02:20:13.527 I/TelephonySpam( 2524): SpamListSync - schedulePeriodicTask
-12-09 02:20:13.564 D/EGL_emulation( 1893): eglMakeCurrent: 0x7fc090bcee60: ver 2 0 (tinfo 0x7fc0987b64a0)
-12-09 02:20:13.830 E/SurfaceFlinger( 1225): ro.sf.lcd_density must be defined as a build property
-12-09 02:20:13.855 W/art     ( 2283): Long monitor contention event with owner method=boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int) from Binder.java:4294967294 waiters=0 for 1.946s
-12-09 02:20:13.937 W/art     ( 2524): Long monitor contention event with owner method=boolean ppd.handleMessage(android.os.Message) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):2 waiters=1 for 1.119s
-12-09 02:20:14.034 W/CheckinConnFactory( 2524): Fail to connect to GoogleApiClient error : otb{statusCode=TIMEOUT, resolution=null, message=null}
-12-09 02:20:14.035 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 8294400
-12-09 02:20:14.048 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 1.229s
-12-09 02:20:14.048 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 1.151s
-12-09 02:20:14.048 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 177ms
-12-09 02:20:14.097 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:14.120 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 1.045s
-12-09 02:20:14.120 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=1 for 593ms
-12-09 02:20:14.121 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=2 for 529ms
-12-09 02:20:14.129 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:14.140 W/ctxmgr  ( 2283): [WorkManager]Long workInfo: pkg=com.google.android.gms, lbl=PushAnalyticsDataToServer, start=2018-12-09 02:20:07.829+0000, stop=2018-12-09 02:20:14.140+0000, durtn=6311ms
-12-09 02:20:14.165 D/        ( 3384): HostConnection::get() New Host Connection established 0x7fcc4cc52480, tid 3384
-12-09 02:20:14.291 E/EGL_emulation( 1225): tid 1225: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
-12-09 02:20:14.416 I/ActivityManager( 1594): Start proc 3387:com.android.externalstorage/u0a7 for content provider com.android.externalstorage/.ExternalStorageProvider
-12-09 02:20:14.639 I/ActivityManager( 1594): Killing 2590:com.android.providers.calendar/u0a1 (adj 15): empty #17
-12-09 02:20:14.641 W/art     ( 2524): Long monitor contention event with owner method=boolean ppd.a(ppc, android.content.ServiceConnection, java.lang.String) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):5 waiters=0 for 102ms
-12-09 02:20:14.784 W/art     ( 2283): Long monitor contention event with owner method=void xno.a(xnk, xla) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):113 waiters=0 for 606ms
-12-09 02:20:14.785 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:14.787 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 193ms
-12-09 02:20:14.931 W/WearableService( 2283): onGetService: Wear is not available on this device.
-12-09 02:20:15.409 W/System  ( 3387): ClassLoader referenced unknown path: /system/priv-app/ExternalStorageProvider/lib/x86_64
-12-09 02:20:15.427 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:15.429 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 510ms
-12-09 02:20:15.430 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=1 for 503ms
-12-09 02:20:15.529 I/System.out( 3225): URI: //map
-12-09 02:20:15.529 I/System.out( 3225): params: {json={"query":"android.widget.EditText id:'volume'","operation":{"method_name":"query","arguments":[]}}
-12-09 02:20:15.529 I/System.out( 3225): }
-12-09 02:20:15.615 W/ResourceType( 3225): No package identifier when getting name for resource number 0x00000001
-12-09 02:20:15.637 I/Choreographer( 1893): Skipped 105 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:15.724 I/art     ( 2524): Waiting for a blocking GC DisableMovingGc
-12-09 02:20:15.735 I/art     ( 2524): WaitForGcToComplete blocked for 11.667ms for cause DisableMovingGc
-12-09 02:20:15.735 I/art     ( 2524): Starting a blocking GC DisableMovingGc
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): Timeout on service connection
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): java.lang.Throwable
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at yog.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):5)
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at yoi.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):1)
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at nzh.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):18)
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at nzg.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):39)
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at nzg.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):252)
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at com.google.android.gms.checkin.CheckinChimeraService.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):139)
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at nzb.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629):2)
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at qcr.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629):21)
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at qiv.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629))
-12-09 02:20:15.779 W/GoogleHttpServiceClient( 2524): 	at java.lang.Thread.run(Thread.java:818)
-12-09 02:20:15.779 I/CheckinRequestProcessor( 2524): cookie is null
-12-09 02:20:15.801 W/Conscrypt( 2524): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
-12-09 02:20:15.801 W/Conscrypt( 2524): 	at java.lang.reflect.Method.invoke(Native Method)
-12-09 02:20:15.801 W/Conscrypt( 2524): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@13280023@13.2.80 (040800-211705629):13)
-12-09 02:20:15.802 W/Conscrypt( 2524): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
-12-09 02:20:15.802 W/Conscrypt( 2524): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
-12-09 02:20:15.802 W/Conscrypt( 2524): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
-12-09 02:20:15.811 W/Conscrypt( 2524): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
-12-09 02:20:15.811 W/Conscrypt( 2524): 	at java.lang.reflect.Method.invoke(Native Method)
-12-09 02:20:15.811 W/Conscrypt( 2524): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@13280023@13.2.80 (040800-211705629):13)
-12-09 02:20:15.811 W/Conscrypt( 2524): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
-12-09 02:20:15.811 W/Conscrypt( 2524): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
-12-09 02:20:15.811 W/Conscrypt( 2524): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
-12-09 02:20:15.818 I/art     ( 3225): Background partial concurrent mark sweep GC freed 51535(2MB) AllocSpace objects, 8(160KB) LOS objects, 39% free, 2MB/4MB, paused 1.154ms total 100.321ms
-12-09 02:20:15.866 I/SemanticLocation( 2524): Cancel WhamDailyActiveUserReport
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): Error retrieving account
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): java.lang.IllegalStateException: No current tap-and-pay account
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at aodb.b(:com.google.android.gms@13280023@13.2.80 (040800-211705629):3)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at aodb.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):1)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at aowy.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):27)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):1)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.b(:com.google.android.gms@13280023@13.2.80 (040800-211705629))
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at aomk.g(:com.google.android.gms@13280023@13.2.80 (040800-211705629):8)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at aomk.d(:com.google.android.gms@13280023@13.2.80 (040800-211705629):1)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at com.google.android.gms.tapandpay.init.TapAndPayInitIntentOperation.onHandleIntent(:com.google.android.gms@13280023@13.2.80 (040800-211705629):4)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@13280023@13.2.80 (040800-211705629):2)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at dkm.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):34)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at odq.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):11)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at dkr.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629):12)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at dko.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629):9)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
-12-09 02:20:15.868 E/SeTransactionSyncTask( 2283): 	at java.lang.Thread.run(Thread.java:818)
-12-09 02:20:15.882 I/IcingInternalCorpora( 2524): Received calendar change notification.
-12-09 02:20:15.928 I/System.out( 3225): URI: //gesture
-12-09 02:20:15.928 I/System.out( 3225): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'volume'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
-12-09 02:20:15.928 I/System.out( 3225): }
-12-09 02:20:16.027 I/art     ( 2283): Background sticky concurrent mark sweep GC freed 17358(2000KB) AllocSpace objects, 6(120KB) LOS objects, 15% free, 12MB/14MB, paused 6.883ms total 274.070ms
-12-09 02:20:16.130 D/ExternalStorage( 3387): After updating volumes, found 1 active roots
-12-09 02:20:16.278 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=1 for 158ms
-12-09 02:20:16.295 W/ResourceType( 3225): No package identifier when getting name for resource number 0x00000001
-12-09 02:20:16.492 E/MDM     ( 2524): [238] acuj.a: Couldn't connect to Google API client: otb{statusCode=API_UNAVAILABLE, resolution=null, message=null}
-12-09 02:20:16.499 I/PaymentBundleManager( 2283): Maintaining payment bundles
-12-09 02:20:16.537 I/PaymentBundleManager( 2283): Finished maintaining payment bundles
-12-09 02:20:16.792 I/CmaSystemUpdateService( 2524): Runtime init receiver: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x8000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) } with flags: 3
-12-09 02:20:16.793 I/CmaSystemUpdateService( 2524): receiver: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x8000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
-12-09 02:20:16.969 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 1.123s
-12-09 02:20:16.970 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 1.088s
-12-09 02:20:16.970 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 385ms
-12-09 02:20:17.014 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:17.135 I/TelephonySpam( 2524): SpamListSync - scheduleOneTimeTask
-12-09 02:20:17.284 I/TelephonySpam( 2524): ShortCodeSync - Schedule Short Code Sync Tasks
-12-09 02:20:17.284 I/TelephonySpam( 2524): ShortCodeSync - Schedule Short Code Periodic Task
-12-09 02:20:17.762 I/TelephonySpam( 2524): ShortCodeSync - Schedule Short Code One Time Task
-12-09 02:20:17.762 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:18.187 I/TelephonySpam( 2524): TelephonySpamInit - Creating a looper to listen to call state changes.
-12-09 02:20:18.318 I/CheckinRequestProcessor( 2524): updateCheckinIdTokenFileFromResponse, Reading existing AID
-12-09 02:20:18.336 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:18.347 I/Choreographer( 3225): Skipped 41 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:18.562 I/art     ( 3225): Background sticky concurrent mark sweep GC freed 66362(3MB) AllocSpace objects, 2(40KB) LOS objects, 45% free, 2MB/4MB, paused 9.722ms total 164.871ms
-12-09 02:20:18.578 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 1.537s
-12-09 02:20:18.598 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:18.636 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=1 for 1.512s
-12-09 02:20:18.637 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=2 for 1.376s
-12-09 02:20:18.637 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=3 for 1.350s
-12-09 02:20:18.637 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=4 for 301ms
-12-09 02:20:18.799 W/art     ( 2283): Long monitor contention event with owner method=void com.google.android.gms.common.apiservice.LifecycleSynchronizer.onAfterExecution() from :com.google.android.gms@13280023@13.2.80 (040800-211705629):1 waiters=0 for 841ms
-12-09 02:20:19.129 I/UpdateIcingCorporaServi( 2089): Updating corpora: APPS=com.evancharlton.mileage.test, CONTACTS=MAYBE
-12-09 02:20:19.132 I/System.out( 3225): URI: //
-12-09 02:20:19.132 I/System.out( 3225): params: {json={"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:19.132 I/System.out( 3225): }
-12-09 02:20:19.132 I/System.out( 3225): header: {date=Sun, 09 Dec 2018 02:20:19 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
-12-09 02:20:19.132 I/System.out( 3225): params: {json={"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:19.132 I/System.out( 3225): }
-12-09 02:20:19.132 I/System.out( 3225): ProP json = {"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:19.132 I/System.out( 3225): files: {}
-12-09 02:20:19.132 I/System.out( 3225): command: {"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:19.133 I/InstrumentationBackend( 3225): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
-12-09 02:20:19.149 I/Auth    ( 2524): [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
-12-09 02:20:19.150 I/Auth    ( 2524): [SupervisedAccountIntentOperation] This operation is disabled
-12-09 02:20:19.441 I/UpdateIcingCorporaServi( 2089): UpdateCorporaTask done [took 312 ms] updated apps [took 312 ms] 
-12-09 02:20:19.465 I/Choreographer( 3225): Skipped 32 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:19.466 W/art     ( 2524): Suspending all threads took: 8.935ms
-12-09 02:20:19.513 I/ChromeSync( 2524): [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.evancharlton.mileage.test flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
-12-09 02:20:19.749 I/FontsPackageChangeOp( 2524): Package com.evancharlton.mileage.test has no metadata
-12-09 02:20:19.766 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 12288
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): Retrieving snapshot for com.google.android.gms.tapandpay failed
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): java.util.concurrent.TimeoutException: Timed out waiting for Task
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at aprc.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):26)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at ainj.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):2)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at ainj.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):28)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at ainj.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):36)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at com.google.android.gms.tapandpay.phenotype.PhenotypeCommitIntentOperation.onHandleIntent(:com.google.android.gms@13280023@13.2.80 (040800-211705629):8)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@13280023@13.2.80 (040800-211705629):2)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at dkm.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):34)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at odq.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):11)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at dkr.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629):12)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at dko.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629):9)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
-12-09 02:20:19.958 E/PhenotypeFlagCommitter( 2283): 	at java.lang.Thread.run(Thread.java:818)
-12-09 02:20:20.252 I/Vision  ( 2524): Supported ABIS: [x86_64, x86]
-12-09 02:20:20.445 I/PeopleContactsSync( 2524): triggerPendingContactsCleanup: no accounts
-12-09 02:20:20.540 W/art     ( 2283): Long monitor contention event with owner method=void com.google.android.gms.common.apiservice.LifecycleSynchronizer.onBeforeDispatching() from :com.google.android.gms@13280023@13.2.80 (040800-211705629):1 waiters=0 for 580ms
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): Error retrieving account
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): java.lang.IllegalStateException: No current tap-and-pay account
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at aodb.b(:com.google.android.gms@13280023@13.2.80 (040800-211705629):3)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at aodb.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):1)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at aowy.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):27)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):1)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.b(:com.google.android.gms@13280023@13.2.80 (040800-211705629))
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at com.google.android.gms.tapandpay.phenotype.PhenotypeCommitIntentOperation.onHandleIntent(:com.google.android.gms@13280023@13.2.80 (040800-211705629):19)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@13280023@13.2.80 (040800-211705629):2)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at dkm.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):34)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at odq.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):11)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at dkr.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629):12)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at dko.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629):9)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
-12-09 02:20:20.562 E/SeTransactionSyncTask( 2283): 	at java.lang.Thread.run(Thread.java:818)
-12-09 02:20:20.594 I/System.out( 3225): result:{"bonusInformation":[],"message":"","success":true}
-12-09 02:20:20.857 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 132ms
-12-09 02:20:20.995 D/hwcomposer( 1225): hw_composer sent 417 syncs in 60s
-12-09 02:20:21.135 I/Wear_Controller( 2524): Wear requires a companion app to be installed.
-12-09 02:20:21.136 I/Wear_Controller( 2524): onStartup - Wear is not available on this device.
-12-09 02:20:21.260 I/GCoreUlr( 2283): Starting service, intent=Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) }, extras=Bundle[{receiverAction=init, is_boot=true}]
-12-09 02:20:21.668 E/BluetoothAdapter( 2283): Bluetooth binder is null
-12-09 02:20:21.731 I/TpHceSessionManager( 2283): getInstance: new instance created
-12-09 02:20:22.072 W/art     ( 2524): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 337ms
-12-09 02:20:22.297 I/CheckinRequestProcessor( 2524): CheckinNowTaskTag : Checkin Succeeded: https://android.clients.google.com/checkin (fragment #1): 
-12-09 02:20:22.549 I/Choreographer( 3225): Skipped 93 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:22.565 I/art     ( 2283): Background partial concurrent mark sweep GC freed 27650(2MB) AllocSpace objects, 0(0B) LOS objects, 25% free, 11MB/15MB, paused 1.480ms total 271.963ms
-12-09 02:20:22.566 I/LatinIME( 1893): Starting input. Cursor position = 0,0
-12-09 02:20:22.572 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 32768
-12-09 02:20:22.764 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 541ms
-12-09 02:20:22.776 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=1 for 480ms
-12-09 02:20:22.778 I/Vision  ( 2524): Details: ocr_x86_64.zip, 0fb7c6deb2cc950b075feb4cce4deacb18b64576
-12-09 02:20:22.889 I/Vision  ( 2524): Engine already satisfied by existing download for ocr
-12-09 02:20:23.179 I/ActivityManager( 1594): Killing 2930:com.android.managedprovisioning/u0a10 (adj 15): empty #17
-12-09 02:20:23.232 I/Choreographer( 1594): Skipped 30 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:23.243 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 527ms
-12-09 02:20:23.442 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:23.459 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=0 for 272ms
-12-09 02:20:23.545 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:23.751 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=0 for 206ms
-12-09 02:20:23.769 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 526ms
-12-09 02:20:24.108 I/Choreographer( 3225): Skipped 92 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:24.109 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 32768
-12-09 02:20:24.114 W/art     ( 2524): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 601ms
-12-09 02:20:24.115 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 622ms
-12-09 02:20:24.190 W/MDM     ( 2524): [185] acuj.c: FMD does not own an admin that uses USES_POLICY_DISABLE_KEYGUARD_FEATURES
-12-09 02:20:24.190 W/MDM     ( 2524): [185] acuj.c: enableNfc
-12-09 02:20:24.190 W/MDM     ( 2524): [185] acuj.c: EnableNfc flag is true
-12-09 02:20:24.284 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:24.297 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:24.579 W/InputConnectionWrapper.ICC( 1893): Timed out waiting on IInputContextCallback
-12-09 02:20:24.928 I/ActivityManager( 1594): Start proc 3453:com.android.providers.calendar/u0a1 for broadcast com.android.providers.calendar/.CalendarProviderBroadcastReceiver
-12-09 02:20:24.972 I/InputConnectionWrapper.ICC( 1893): Got out-of-sequence callback 12 (expected 13) in setSelectedText, ignoring.
-12-09 02:20:24.995 I/Choreographer( 3225): Skipped 52 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:25.248 W/art     ( 2524): Long monitor contention event with owner method=boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int) from Binder.java:4294967294 waiters=0 for 323ms
-12-09 02:20:25.251 W/System  ( 3453): ClassLoader referenced unknown path: /system/priv-app/CalendarProvider/lib/x86_64
-12-09 02:20:25.306 I/CalendarProvider2( 3453): Created com.android.providers.calendar.CalendarAlarmManager@e9261a4(com.android.providers.calendar.CalendarProvider2@6ebbb0d)
-12-09 02:20:25.310 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:25.326 D/Documents( 3356): Update found 6 roots in 13452ms
-12-09 02:20:25.647 I/Choreographer( 3225): Skipped 34 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:25.672 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 32768
-12-09 02:20:25.678 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:25.737 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:25.882 I/MagicTether( 2283): [HostValidator] InvalidHost. MobileData: true, Tethering: false, whitelist: false, ble: false
-12-09 02:20:25.882 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:25.882 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 146ms
-12-09 02:20:25.912 I/ActivityManager( 1594): Killing 2501:com.android.deskclock/u0a26 (adj 15): empty #17
-12-09 02:20:25.933 D/Documents( 3356): Update found 6 roots in 9470ms
-12-09 02:20:25.945 W/art     ( 2283): Long monitor contention event with owner method=void xno.a(xnk, xla) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):113 waiters=0 for 553ms
-12-09 02:20:25.946 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:26.084 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:26.229 I/Icing   ( 2524): Internal init done: storage state 0
-12-09 02:20:26.231 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=10 for 286ms
-12-09 02:20:26.239 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=10 for 111ms
-12-09 02:20:26.240 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.am.ActivityManagerService.bindService(android.app.IApplicationThread, android.os.IBinder, android.content.Intent, java.lang.String, android.app.IServiceConnection, int, java.lang.String, int) from ActivityManagerService.java:15911 waiters=7 for 101ms
-12-09 02:20:26.285 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 403ms
-12-09 02:20:26.378 I/Places  ( 2283): ?: Couldn't find platform key file.
-12-09 02:20:26.385 W/art     ( 1594): Long monitor contention event with owner method=android.app.IActivityManager$ContentProviderHolder com.android.server.am.ActivityManagerService.getContentProviderImpl(android.app.IApplicationThread, java.lang.String, android.os.IBinder, boolean, int) from ActivityManagerService.java:9413 waiters=9 for 157ms
-12-09 02:20:26.390 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=5 for 149ms
-12-09 02:20:26.404 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=4 for 105ms
-12-09 02:20:26.523 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 591ms
-12-09 02:20:26.632 E/SurfaceFlinger( 1225): ro.sf.lcd_density must be defined as a build property
-12-09 02:20:26.634 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 551ms
-12-09 02:20:26.642 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=3 for 433ms
-12-09 02:20:26.644 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=4 for 266ms
-12-09 02:20:26.664 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 8294400
-12-09 02:20:26.670 I/GCoreUlr( 2283): WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
-12-09 02:20:26.683 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 1.797s
-12-09 02:20:26.705 I/Choreographer( 1893): Skipped 257 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:26.837 D/        ( 3476): HostConnection::get() New Host Connection established 0x7f5b03f52480, tid 3476
-12-09 02:20:26.839 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:26.879 E/EGL_emulation( 1225): tid 1225: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
-12-09 02:20:26.913 W/art     ( 2524): Long monitor contention event with owner method=boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int) from Binder.java:4294967294 waiters=0 for 370ms
-12-09 02:20:26.914 W/art     ( 2524): Long monitor contention event with owner method=boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int) from Binder.java:4294967294 waiters=3 for 264ms
-12-09 02:20:26.936 I/Icing   ( 2524): Post-init done
-12-09 02:20:26.971 W/art     ( 2283): Long monitor contention event with owner method=void xno.a(xnk, xla) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):113 waiters=0 for 302ms
-12-09 02:20:26.974 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:27.008 I/Icing   ( 2524): doRemovePackageData com.evancharlton.mileage
-12-09 02:20:27.017 I/Icing   ( 2524): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
-12-09 02:20:27.017 I/Icing   ( 2524): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=32
-12-09 02:20:27.077 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:27.176 I/Icing   ( 2524): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
-12-09 02:20:27.177 I/Icing   ( 2524): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=32
-12-09 02:20:27.405 I/CalendarProvider2( 3453): Sending notification intent: Intent { act=android.intent.action.PROVIDER_CHANGED dat=content://com.android.calendar }
-12-09 02:20:27.405 W/ContentResolver( 3453): Failed to get type for: content://com.android.calendar (Unknown URL content://com.android.calendar)
-12-09 02:20:27.471 I/GeofencerStateMachine( 2283): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=null]
-12-09 02:20:27.496 I/GeofencerStateMachine( 2283): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=null]
-12-09 02:20:27.850 W/ctxmgr  ( 2283): [WorkManager]Long workInfo: pkg=com.google.android.gms, lbl=RegisterContextListener, start=2018-12-09 02:20:14.160+0000, stop=2018-12-09 02:20:27.850+0000, durtn=13690ms
-12-09 02:20:27.869 I/GeofencerStateMachine( 2283): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=null]
-12-09 02:20:27.904 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 524ms
-12-09 02:20:27.919 W/art     ( 2524): Long monitor contention event with owner method=void zsh.a(zsl) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):31 waiters=0 for 725ms
-12-09 02:20:27.921 W/art     ( 2524): Long monitor contention event with owner method=void zsh.a(zsl) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):31 waiters=1 for 584ms
-12-09 02:20:27.923 W/art     ( 2524): Long monitor contention event with owner method=void zsh.a(zsl) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):31 waiters=2 for 566ms
-12-09 02:20:28.134 W/art     ( 2524): Long monitor contention event with owner method=boolean ppd.handleMessage(android.os.Message) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):2 waiters=0 for 180ms
-12-09 02:20:28.257 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 407ms
-12-09 02:20:28.258 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 187ms
-12-09 02:20:28.297 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:28.312 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:29.088 I/GeofencerStateMachine( 2283): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=null]
-12-09 02:20:29.165 I/System.out( 3225): URI: //
-12-09 02:20:29.165 I/System.out( 3225): params: {json={"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
-12-09 02:20:29.165 I/System.out( 3225): }
-12-09 02:20:29.165 I/System.out( 3225): header: {date=Sun, 09 Dec 2018 02:20:29 GMT, accept=*/*, content-length=92, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
-12-09 02:20:29.165 I/System.out( 3225): params: {json={"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
-12-09 02:20:29.165 I/System.out( 3225): }
-12-09 02:20:29.165 I/System.out( 3225): ProP json = {"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
-12-09 02:20:29.165 I/System.out( 3225): files: {}
-12-09 02:20:29.165 I/System.out( 3225): command: {"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
-12-09 02:20:29.166 I/InstrumentationBackend( 3225): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[åß9∂º–ç¬  ß29å∂˚¡–ºß123]'
-12-09 02:20:29.497 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:29.497 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:29.676 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:29.676 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:29.706 I/System.out( 3225): result:{"bonusInformation":[],"message":"","success":true}
-12-09 02:20:29.713 W/art     ( 2283): Long monitor contention event with owner method=azst azrz.c() from :com.google.android.gms@13280023@13.2.80 (040800-211705629):28 waiters=0 for 3.030s
-12-09 02:20:29.773 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:29.828 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=0 for 429ms
-12-09 02:20:29.944 W/art     ( 1594): Long monitor contention event with owner method=void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean) from BroadcastQueue.java:639 waiters=3 for 150ms
-12-09 02:20:30.078 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 175ms
-12-09 02:20:30.248 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:30.281 E/SurfaceFlinger( 1225): ro.sf.lcd_density must be defined as a build property
-12-09 02:20:30.282 I/Places  ( 2283): ?: Couldn't find platform key file.
-12-09 02:20:30.350 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:30.587 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 8294400
-12-09 02:20:30.640 D/        ( 3493): HostConnection::get() New Host Connection established 0x7f8157652480, tid 3493
-12-09 02:20:30.641 W/ctxmgr  ( 2283): [WorkManager]Long workInfo: pkg=com.google.android.gms, lbl=ListenerInvokerRunner, start=2018-12-09 02:20:27.850+0000, stop=2018-12-09 02:20:30.632+0000, durtn=2782ms
-12-09 02:20:30.732 E/EGL_emulation( 1225): tid 1225: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
-12-09 02:20:30.866 I/GeofencerStateMachine( 2283): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=null]
-12-09 02:20:30.869 I/GeofencerStateMachine( 2283): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=null]
-12-09 02:20:31.144 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:31.311 I/IcingInternalCorpora( 2524): EventIndexer: starting incremental update
-12-09 02:20:31.316 I/IcingInternalCorpora( 2524): EventIndexer: 0 added, 0 removed, 0 changed, 0 unchanged, 0 errors.
-12-09 02:20:31.316 I/IcingInternalCorpora( 2524): EventIndexer: finished after 6 ms.
-12-09 02:20:31.761 I/ActivityManager( 1594): Waited long enough for: ServiceRecord{fc094ae u0 com.google.android.calendar/com.android.calendar.alerts.AlertService}
-12-09 02:20:31.770 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:31.948 I/InputReader( 1594): Reconfiguring input devices.  changes=0x00000010
-12-09 02:20:31.949 I/GeofencerStateMachine( 2283): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=null]
-12-09 02:20:32.056 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:32.073 D/Documents( 3356): Update found 6 roots in 238ms
-12-09 02:20:32.152 I/Icing   ( 2524): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
-12-09 02:20:32.152 I/Icing   ( 2524): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=32
-12-09 02:20:32.353 I/art     ( 2283): Background sticky concurrent mark sweep GC freed 35759(2MB) AllocSpace objects, 8(180KB) LOS objects, 20% free, 12MB/15MB, paused 17.195ms total 81.269ms
-12-09 02:20:32.852 I/System.out( 3225): URI: //map
-12-09 02:20:32.852 I/System.out( 3225): params: {json={"query":"android.widget.EditText id:'odometer'","operation":{"method_name":"query","arguments":[]}}
-12-09 02:20:32.852 I/System.out( 3225): }
-12-09 02:20:33.129 W/art     ( 2283): Long monitor contention event with owner method=void xno.a(xnk, xla) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):113 waiters=0 for 2.770s
-12-09 02:20:33.136 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:33.192 W/ResourceType( 3225): No package identifier when getting name for resource number 0x00000001
-12-09 02:20:33.335 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:33.385 W/art     ( 2283): Long monitor contention event with owner method=boolean azrz.a() from :com.google.android.gms@13280023@13.2.80 (040800-211705629):98 waiters=0 for 3.672s
-12-09 02:20:33.405 I/System.out( 3225): URI: //gesture
-12-09 02:20:33.405 I/System.out( 3225): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'odometer'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
-12-09 02:20:33.405 I/System.out( 3225): }
-12-09 02:20:33.426 I/Icing   ( 2524): Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0, imm upload false
-12-09 02:20:33.511 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:33.618 W/ResourceType( 3225): No package identifier when getting name for resource number 0x00000001
-12-09 02:20:33.630 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:33.732 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:34.101 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.am.ActivityManagerService.bindService(android.app.IApplicationThread, android.os.IBinder, android.content.Intent, java.lang.String, android.app.IServiceConnection, int, java.lang.String, int) from ActivityManagerService.java:15911 waiters=0 for 389ms
-12-09 02:20:34.107 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.am.ActivityManagerService.bindService(android.app.IApplicationThread, android.os.IBinder, android.content.Intent, java.lang.String, android.app.IServiceConnection, int, java.lang.String, int) from ActivityManagerService.java:15911 waiters=1 for 395ms
-12-09 02:20:34.109 W/art     ( 1594): Long monitor contention event with owner method=int com.android.server.am.ActivityManagerService.bindService(android.app.IApplicationThread, android.os.IBinder, android.content.Intent, java.lang.String, android.app.IServiceConnection, int, java.lang.String, int) from ActivityManagerService.java:15911 waiters=2 for 377ms
-12-09 02:20:34.217 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:34.217 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 487ms
-12-09 02:20:34.286 I/Icing   ( 2524): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0, imm upload false
-12-09 02:20:34.492 I/LatinIME( 1893): Starting input. Cursor position = 0,0
-12-09 02:20:34.501 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 217ms
-12-09 02:20:34.544 W/art     ( 3225): Suspending all threads took: 38.582ms
-12-09 02:20:34.576 I/art     ( 3225): Background partial concurrent mark sweep GC freed 45101(2MB) AllocSpace objects, 3(60KB) LOS objects, 39% free, 2MB/3MB, paused 39.748ms total 96.137ms
-12-09 02:20:34.680 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:34.790 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:35.092 I/System.out( 3225): URI: //
-12-09 02:20:35.092 I/System.out( 3225): params: {json={"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:35.092 I/System.out( 3225): }
-12-09 02:20:35.092 I/System.out( 3225): header: {date=Sun, 09 Dec 2018 02:20:35 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
-12-09 02:20:35.092 I/System.out( 3225): params: {json={"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:35.092 I/System.out( 3225): }
-12-09 02:20:35.092 I/System.out( 3225): ProP json = {"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:35.092 I/System.out( 3225): files: {}
-12-09 02:20:35.092 I/System.out( 3225): command: {"command":"set_selection","arguments":[-1,-1]}
-12-09 02:20:35.094 I/InstrumentationBackend( 3225): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
-12-09 02:20:35.287 I/System.out( 3225): result:{"bonusInformation":[],"message":"","success":true}
-12-09 02:20:35.375 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:35.526 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=1 for 152ms
-12-09 02:20:35.558 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 180ms
-12-09 02:20:35.559 W/art     ( 2283): Long monitor contention event with owner method=boolean azrz.a() from :com.google.android.gms@13280023@13.2.80 (040800-211705629):98 waiters=1 for 3.398s
-12-09 02:20:35.573 W/art     ( 2283): Long monitor contention event with owner method=azst azrz.c() from :com.google.android.gms@13280023@13.2.80 (040800-211705629):28 waiters=1 for 2.148s
-12-09 02:20:35.574 W/art     ( 2283): Long monitor contention event with owner method=azst azrz.c() from :com.google.android.gms@13280023@13.2.80 (040800-211705629):28 waiters=2 for 625ms
-12-09 02:20:35.575 I/art     ( 1893): Background sticky concurrent mark sweep GC freed 4611(604KB) AllocSpace objects, 4(96KB) LOS objects, 27% free, 2MB/3MB, paused 7.730ms total 32.083ms
-12-09 02:20:35.629 I/Choreographer( 1893): Skipped 73 frames!  The application may be doing too much work on its main thread.
-12-09 02:20:35.760 I/System.out( 3225): URI: //
-12-09 02:20:35.760 I/System.out( 3225): params: {json={"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
-12-09 02:20:35.760 I/System.out( 3225): }
-12-09 02:20:35.760 I/System.out( 3225): header: {date=Sun, 09 Dec 2018 02:20:35 GMT, accept=*/*, content-length=93, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
-12-09 02:20:35.760 I/System.out( 3225): params: {json={"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
-12-09 02:20:35.760 I/System.out( 3225): }
-12-09 02:20:35.760 I/System.out( 3225): ProP json = {"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
-12-09 02:20:35.760 I/System.out( 3225): files: {}
-12-09 02:20:35.760 I/System.out( 3225): command: {"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
-12-09 02:20:35.761 I/InstrumentationBackend( 3225): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[=+œå∑ß≈´∂ç®ƒ√†©∫¡™£]'
-12-09 02:20:35.763 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:35.763 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:35.765 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:35.765 E/SpannableStringBuilder( 3225): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
-12-09 02:20:35.789 I/System.out( 3225): result:{"bonusInformation":[],"message":"","success":true}
-12-09 02:20:35.917 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:36.460 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:36.651 E/SurfaceFlinger( 1225): ro.sf.lcd_density must be defined as a build property
-12-09 02:20:36.711 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:36.717 D/gralloc_ranchu( 1225): gralloc_alloc: Creating ashmem region of size 8294400
-12-09 02:20:36.719 I/Icing   ( 2524): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0, imm upload false
-12-09 02:20:36.719 I/Icing   ( 2524): doRemovePackageData com.evancharlton.mileage.test
-12-09 02:20:36.737 D/        ( 3508): HostConnection::get() New Host Connection established 0x7fee8abd2480, tid 3508
-12-09 02:20:36.906 E/EGL_emulation( 1225): tid 1225: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
-12-09 02:20:37.024 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 275ms
-12-09 02:20:37.047 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:37.069 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:37.252 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:37.285 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=2 for 238ms
-12-09 02:20:37.331 I/IcingInternalCorpora( 2524): Received calendar change notification.
-12-09 02:20:37.393 W/art     ( 2283): Long monitor contention event with owner method=boolean android.app.ActivityThread.releaseProvider(android.content.IContentProvider, boolean) from ActivityThread.java:4898 waiters=1 for 357ms
-12-09 02:20:37.502 I/AccountManagerService( 1594): getTypesVisibleToCaller: isPermitted? true
-12-09 02:20:37.568 W/art     ( 2283): Long monitor contention event with owner method=android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean) from ActivityThread.java:4864 waiters=0 for 111ms
-12-09 02:20:37.569 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:37.856 I/Icing   ( 2524): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0, imm upload true
-12-09 02:20:37.984 I/UpdateIcingCorporaServi( 2089): Updating corpora: APPS=com.google.android.gms, CONTACTS=MAYBE
-12-09 02:20:38.129 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:38.133 I/UpdateIcingCorporaServi( 2089): UpdateCorporaTask done [took 149 ms] updated apps [took 148 ms] 
-12-09 02:20:38.516 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=0 for 400ms
-12-09 02:20:38.753 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=1 for 298ms
-12-09 02:20:38.764 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=2 for 308ms
-12-09 02:20:38.772 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:38.773 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=3 for 289ms
-12-09 02:20:38.780 W/art     ( 1594): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=5 for 283ms
-12-09 02:20:38.787 I/ActivityManager( 1594): Killing 2977:com.google.process.gapps/u0a33 (adj 15): empty #17
-12-09 02:20:38.806 W/art     ( 2283): Long monitor contention event with owner method=boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int) from Binder.java:4294967294 waiters=0 for 571ms
-12-09 02:20:38.821 E/NetworkScheduler( 2283): Invalid component specified.
-12-09 02:20:38.986 I/art     ( 1594): Background sticky concurrent mark sweep GC freed 34650(2MB) AllocSpace objects, 12(536KB) LOS objects, 26% free, 9MB/13MB, paused 9.673ms total 133.858ms
+12-09 02:37:40.483 W/ActivityManager( 1593): Finishing task with all activities already finished
+12-09 02:37:40.483 W/ActivityManager( 1593): Duplicate finish request for ActivityRecord{fd29dfd u0 com.evancharlton.mileage/.Mileage t86 f}
+12-09 02:37:40.515 W/ActivityManager( 1593): Finishing task with all activities already finished
+12-09 02:37:40.515 W/ActivityManager( 1593): Duplicate finish request for ActivityRecord{fd29dfd u0 com.evancharlton.mileage/.Mileage t86 f}
+12-09 02:37:40.523 W/ActivityManager( 1593): Finishing task with all activities already finished
+12-09 02:37:40.523 W/ActivityManager( 1593): Duplicate finish request for ActivityRecord{fd29dfd u0 com.evancharlton.mileage/.Mileage t86 f}
+12-09 02:37:40.692 D/EGL_emulation( 1954): eglMakeCurrent: 0x7fa698fa1d20: ver 2 0 (tinfo 0x7fa698f828e0)
+12-09 02:37:40.753 I/art     ( 1593): Background partial concurrent mark sweep GC freed 6619(560KB) AllocSpace objects, 3(60KB) LOS objects, 30% free, 9MB/13MB, paused 29.972ms total 262.015ms
+12-09 02:37:40.943 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 102ms
+12-09 02:37:41.082 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 315333 , only wrote 315297
+12-09 02:37:41.100 D/AndroidRuntime( 3800): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 02:37:41.101 D/AndroidRuntime( 3800): CheckJNI is ON
+12-09 02:37:41.155 D/ICU     ( 3800): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 02:37:41.309 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:41.317 E/memtrack( 3800): Couldn't load memtrack module (No such file or directory)
+12-09 02:37:41.317 E/android.os.Debug( 3800): failed to load memtrack module: -2
+12-09 02:37:41.318 I/Radio-JNI( 3800): register_android_hardware_Radio DONE
+12-09 02:37:41.341 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:41.351 D/AndroidRuntime( 3800): Calling main entry com.android.commands.am.Am
+12-09 02:37:41.354 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:41.354 I/ActivityManager( 1593): Force stopping com.evancharlton.mileage appid=10075 user=0: start instr
+12-09 02:37:41.354 I/ActivityManager( 1593): Killing 3756:com.evancharlton.mileage/u0a75 (adj 0): stop com.evancharlton.mileage
+12-09 02:37:41.374 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:41.382 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:41.450 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 331526 , only wrote 331161
+12-09 02:37:41.450 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 331167 , only wrote 331161
+12-09 02:37:41.453 W/ActivityManager( 1593): Crash of app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}
+12-09 02:37:41.453 I/ActivityManager( 1593): Force stopping com.evancharlton.mileage appid=10075 user=0: finished inst
+12-09 02:37:41.482 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 332544 , only wrote 331822
+12-09 02:37:41.536 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:41.570 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:41.600 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 147ms
+12-09 02:37:41.725 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 349816 , only wrote 339754
+12-09 02:37:41.997 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 281ms
+12-09 02:37:42.044 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 242ms
+12-09 02:37:42.124 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 261ms
+12-09 02:37:42.199 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 202ms
+12-09 02:37:42.354 I/ActivityManager( 1593): Start proc 3809:com.evancharlton.mileage/u0a75 for added application com.evancharlton.mileage
+12-09 02:37:42.354 W/art     ( 1593): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=0 for 999ms
+12-09 02:37:42.366 D/AndroidRuntime( 3800): Shutting down VM
+12-09 02:37:42.390 W/art     ( 1593): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=1 for 874ms
+12-09 02:37:42.907 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 350ms
+12-09 02:37:42.995 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 352ms
+12-09 02:37:43.070 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 320ms
+12-09 02:37:43.295 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 224ms
+12-09 02:37:43.357 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 234ms
+12-09 02:37:43.447 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 252ms
+12-09 02:37:43.717 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 210ms
+12-09 02:37:43.717 I/WindowState( 1593): WIN DEATH: Window{93fe9bb u0 com.evancharlton.mileage/com.evancharlton.mileage.Mileage EXITING}
+12-09 02:37:43.722 W/InputMethodManagerService( 1593): Got RemoteException sending setActive(false) notification to pid 3756 uid 10075
+12-09 02:37:43.724 W/art     ( 1593): Long monitor contention event with owner method=com.android.internal.view.InputBindResult com.android.server.InputMethodManagerService.windowGainedFocus(com.android.internal.view.IInputMethodClient, android.os.IBinder, int, int, int, android.view.inputmethod.EditorInfo, com.android.internal.view.IInputContext) from InputMethodManagerService.java:2177 waiters=0 for 2.269s
+12-09 02:37:43.724 I/Choreographer( 1954): Skipped 177 frames!  The application may be doing too much work on its main thread.
+12-09 02:37:43.726 W/art     ( 1593): Long monitor contention event with owner method=java.util.List com.android.server.am.ActivityManagerService.getAllStackInfos() from ActivityManagerService.java:8937 waiters=0 for 1.179s
+12-09 02:37:43.734 W/art     ( 1593): Long monitor contention event with owner method=java.util.List com.android.server.am.ActivityManagerService.getAllStackInfos() from ActivityManagerService.java:8937 waiters=1 for 1.132s
+12-09 02:37:43.734 W/art     ( 1593): Long monitor contention event with owner method=java.util.List com.android.server.am.ActivityManagerService.getAllStackInfos() from ActivityManagerService.java:8937 waiters=2 for 828ms
+12-09 02:37:43.760 W/System  ( 3809): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 02:37:43.760 W/System  ( 3809): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 02:37:43.798 I/art     ( 1708): Background partial concurrent mark sweep GC freed 2697(135KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 3MB/5MB, paused 13.843ms total 40.010ms
+12-09 02:37:43.914 I/System.out( 3809): Main activity name automatically set to: com.evancharlton.mileage.Mileage
+12-09 02:37:43.938 I/System.out( 3809): Calabash did not load Mono. This is only a problem if you are trying to test a Mono application
+12-09 02:37:43.938 I/calabash( 3809): Test server port: 7102
+12-09 02:37:43.939 I/InstrumentationBackend( 3809): Added:'GetPreferences', with key:'get_preferences'
+12-09 02:37:44.006 I/InstrumentationBackend( 3809): Added:'SetPreferences', with key:'set_preferences'
+12-09 02:37:44.010 I/InstrumentationBackend( 3809): Added:'ClearPreferences', with key:'clear_preferences'
+12-09 02:37:44.011 I/InstrumentationBackend( 3809): Added:'PressElement', with key:'press_l10n_element'
+12-09 02:37:44.011 I/InstrumentationBackend( 3809): Added:'WaitForElement', with key:'wait_for_l10n_element'
+12-09 02:37:44.011 I/InstrumentationBackend( 3809): Added:'NullAction', with key:'nullAction'
+12-09 02:37:44.011 I/InstrumentationBackend( 3809): Added:'PressKey', with key:'press_key'
+12-09 02:37:44.012 I/InstrumentationBackend( 3809): Added:'SetActivityOrientation', with key:'set_activity_orientation'
+12-09 02:37:44.012 I/InstrumentationBackend( 3809): Added:'GetActivityOrientation', with key:'get_activity_orientation'
+12-09 02:37:44.012 I/InstrumentationBackend( 3809): Added:'FakeGPSLocation', with key:'set_gps_coordinates'
+12-09 02:37:44.012 I/InstrumentationBackend( 3809): Added:'SetPropertyByCssSelector', with key:'set_property_by_css_selector'
+12-09 02:37:44.012 I/InstrumentationBackend( 3809): Added:'GetUrl', with key:'get_url'
+12-09 02:37:44.013 I/InstrumentationBackend( 3809): Added:'ScrollTo', with key:'scroll_to'
+12-09 02:37:44.023 I/InstrumentationBackend( 3809): Added:'GetLoadProgress', with key:'get_load_progress'
+12-09 02:37:44.023 I/InstrumentationBackend( 3809): Added:'DumpHtml', with key:'dump_html'
+12-09 02:37:44.024 I/InstrumentationBackend( 3809): Added:'DumpBodyHtml', with key:'dump_body_html'
+12-09 02:37:44.024 I/InstrumentationBackend( 3809): Added:'EnterTextByCssSelector', with key:'enter_text_by_selector'
+12-09 02:37:44.025 I/InstrumentationBackend( 3809): Added:'AndroidSDKVersion', with key:'android_sdk_version'
+12-09 02:37:44.025 I/InstrumentationBackend( 3809): Added:'Version', with key:'version'
+12-09 02:37:44.025 I/InstrumentationBackend( 3809): Added:'Drag', with key:'drag'
+12-09 02:37:44.030 I/InstrumentationBackend( 3809): Added:'TouchCoordinates', with key:'touch_coordinate'
+12-09 02:37:44.030 I/InstrumentationBackend( 3809): Added:'LongPressCoordinate', with key:'long_press_coordinate'
+12-09 02:37:44.030 I/InstrumentationBackend( 3809): Added:'DragCoordinates', with key:'drag_coordinates'
+12-09 02:37:44.030 I/InstrumentationBackend( 3809): Added:'ResumeApplication', with key:'resume_application'
+12-09 02:37:44.030 I/InstrumentationBackend( 3809): Added:'Swipe', with key:'swipe'
+12-09 02:37:44.031 I/InstrumentationBackend( 3809): Added:'DoubleTapCoordinate', with key:'double_tap_coordinate'
+12-09 02:37:44.031 I/InstrumentationBackend( 3809): Added:'ClickOnScreen', with key:'click_on_screen'
+12-09 02:37:44.031 I/InstrumentationBackend( 3809): Added:'GetActivityName', with key:'get_activity_name'
+12-09 02:37:44.031 I/InstrumentationBackend( 3809): Added:'ScrollToView', with key:'scroll_to_view'
+12-09 02:37:44.031 I/InstrumentationBackend( 3809): Added:'ViewConfiguration', with key:'view_configuration'
+12-09 02:37:44.032 I/InstrumentationBackend( 3809): Added:'IsCurrentActivityFocused', with key:'is_current_activity_focused'
+12-09 02:37:44.032 I/InstrumentationBackend( 3809): Added:'SendTcp', with key:'send_tcp'
+12-09 02:37:44.032 I/InstrumentationBackend( 3809): Added:'DpToDevicePixel', with key:'dp_to_device_pixel'
+12-09 02:37:44.032 I/InstrumentationBackend( 3809): Added:'KeyboardEnterText', with key:'keyboard_enter_text'
+12-09 02:37:44.033 I/InstrumentationBackend( 3809): Added:'DeleteSurroundingText', with key:'delete_surrounding_text'
+12-09 02:37:44.033 I/InstrumentationBackend( 3809): Added:'SetComposingRegion', with key:'set_composing_region'
+12-09 02:37:44.033 I/InstrumentationBackend( 3809): Added:'SetSelection', with key:'set_selection'
+12-09 02:37:44.033 I/InstrumentationBackend( 3809): Added:'KeyboardKeyEvent', with key:'keyboard_key_event'
+12-09 02:37:44.038 I/InstrumentationBackend( 3809): Added:'PressUserActionButton', with key:'press_user_action_button'
+12-09 02:37:44.042 I/InstrumentationBackend( 3809): Added:'HideSoftKeyboard', with key:'hide_soft_keyboard'
+12-09 02:37:44.042 I/InstrumentationBackend( 3809): Added:'ListActions', with key:'list_actions'
+12-09 02:37:44.042 I/calabash( 3809): Instantiating http server at 7102
+12-09 02:37:44.062 I/System.out( 3809): HTTP Daemon listening on: 7102
+12-09 02:37:44.254 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 287ms
+12-09 02:37:44.255 I/Choreographer( 1954): Skipped 30 frames!  The application may be doing too much work on its main thread.
+12-09 02:37:44.280 I/System.out( 3809): URI: //ping
+12-09 02:37:44.280 I/System.out( 3809): params: {json={}
+12-09 02:37:44.280 I/System.out( 3809): }
+12-09 02:37:44.285 W/OpenGLRenderer( 1954): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+12-09 02:37:44.325 I/System.out( 3809): URI: //ping
+12-09 02:37:44.325 I/System.out( 3809): params: {json={}
+12-09 02:37:44.325 I/System.out( 3809): }
+12-09 02:37:44.450 I/System.out( 3809): URI: //ready
+12-09 02:37:44.450 I/System.out( 3809): params: {json={}
+12-09 02:37:44.450 I/System.out( 3809): }
+12-09 02:37:44.494 I/System.out( 3809): URI: //
+12-09 02:37:44.494 I/System.out( 3809): params: {json={"command":"version","arguments":[]}
+12-09 02:37:44.494 I/System.out( 3809): }
+12-09 02:37:44.494 I/System.out( 3809): header: {date=Sun, 09 Dec 2018 02:37:44 GMT, accept=*/*, content-length=36, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 02:37:44.494 I/System.out( 3809): params: {json={"command":"version","arguments":[]}
+12-09 02:37:44.495 I/System.out( 3809): }
+12-09 02:37:44.495 I/System.out( 3809): ProP json = {"command":"version","arguments":[]}
+12-09 02:37:44.495 I/System.out( 3809): files: {}
+12-09 02:37:44.495 I/System.out( 3809): command: {"command":"version","arguments":[]}
+12-09 02:37:44.537 I/InstrumentationBackend( 3809): Got command:'Command:'Line:null,version', arguments:'[]'
+12-09 02:37:44.605 I/System.out( 3809): result:{"bonusInformation":[],"message":"0.9.8","success":true}
+12-09 02:37:44.735 W/WindowAnimator( 1593): Failed to dispatch window animation state change.
+12-09 02:37:44.735 W/WindowAnimator( 1593): android.os.DeadObjectException
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.os.BinderProxy.transactNative(Native Method)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.os.BinderProxy.transact(Binder.java:503)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.view.IWindow$Stub$Proxy.onAnimationStopped(IWindow.java:534)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at com.android.server.wm.WindowAnimator.updateWindowsLocked(WindowAnimator.java:286)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at com.android.server.wm.WindowAnimator.animateLocked(WindowAnimator.java:678)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at com.android.server.wm.WindowAnimator.-wrap0(WindowAnimator.java)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at com.android.server.wm.WindowAnimator$1.doFrame(WindowAnimator.java:123)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:856)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.view.Choreographer.doFrame(Choreographer.java:603)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.os.Handler.handleCallback(Handler.java:739)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.os.Looper.loop(Looper.java:148)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-09 02:37:44.735 W/WindowAnimator( 1593): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+12-09 02:37:44.858 I/System.out( 3809): URI: //start-application
+12-09 02:37:44.858 I/System.out( 3809): params: {json={"intent":null}
+12-09 02:37:44.858 I/System.out( 3809): }
+12-09 02:37:44.942 I/art     ( 3809): Background sticky concurrent mark sweep GC freed 27096(1603KB) AllocSpace objects, 13(260KB) LOS objects, 57% free, 1618KB/3MB, paused 7.947ms total 328.834ms
+12-09 02:37:45.025 I/ActivityManager( 1593): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.evancharlton.mileage/.Mileage} from uid 10075 on display 0
+12-09 02:37:45.424 W/art     ( 1593): Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:946 waiters=0 for 282ms
+12-09 02:37:45.579 I/calabash( 3809): newActivity1
+12-09 02:37:45.584 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 02:37:45.618 I/calabash( 3809): newActivity1
+12-09 02:37:45.620 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@95b72b4
+12-09 02:37:45.620 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 02:37:45.620 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 02:37:45.620 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 02:37:45.620 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 02:37:45.620 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 02:37:45.620 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 02:37:45.620 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 02:37:45.620 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 02:37:45.621 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@95b72b4
+12-09 02:37:45.621 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 02:37:45.621 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 02:37:45.621 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 02:37:45.621 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 02:37:45.621 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 02:37:45.621 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 02:37:45.621 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 02:37:45.726 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@95b72b4
+12-09 02:37:45.726 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 02:37:45.726 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 02:37:45.726 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 02:37:45.726 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 02:37:45.726 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 02:37:45.726 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 02:37:45.726 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 02:37:45.734 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@95b72b4
+12-09 02:37:45.734 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 02:37:45.734 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 02:37:45.734 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 02:37:45.734 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 02:37:45.734 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 02:37:45.734 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 02:37:45.734 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 02:37:45.790 V/PhoneStatusBar( 1708): setLightsOn(true)
+12-09 02:37:45.885 D/EGL_emulation( 1954): eglMakeCurrent: 0x7fa698fa1d20: ver 2 0 (tinfo 0x7fa698f828e0)
+12-09 02:37:45.894 E/Surface ( 1954): getSlotFromBufferLocked: unknown buffer: 0x7fa698fa2b80
+12-09 02:37:46.001 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 211ms
+12-09 02:37:46.359 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 141ms
+12-09 02:37:46.639 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 02:37:46.796 D/        ( 3809): HostConnection::get() New Host Connection established 0x7fa68ce1d380, tid 3809
+12-09 02:37:46.998 D/hwcomposer( 1223): hw_composer sent 558 syncs in 60s
+12-09 02:37:47.063 I/ActivityManager( 1593): Displayed com.evancharlton.mileage/.Mileage: +1s636ms
+12-09 02:37:47.071 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 02:37:47.694 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 02:37:48.098 I/System.out( 3809): URI: //map
+12-09 02:37:48.098 I/System.out( 3809): params: {json={"query":"android.widget.EditText id:'price'","operation":{"method_name":"query","arguments":[]}}
+12-09 02:37:48.098 I/System.out( 3809): }
+12-09 02:37:48.191 W/ResourceType( 3809): No package identifier when getting name for resource number 0x00000001
+12-09 02:37:48.369 I/art     ( 3809): Background sticky concurrent mark sweep GC freed 45145(2MB) AllocSpace objects, 3(60KB) LOS objects, 30% free, 2MB/3MB, paused 1.176ms total 158.926ms
+12-09 02:37:48.370 I/System.out( 3809): URI: //gesture
+12-09 02:37:48.370 I/System.out( 3809): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'price'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 02:37:48.370 I/System.out( 3809): }
+12-09 02:37:48.388 W/ResourceType( 3809): No package identifier when getting name for resource number 0x00000001
+12-09 02:37:48.701 I/art     ( 1894): Background sticky concurrent mark sweep GC freed 2268(194KB) AllocSpace objects, 0(0B) LOS objects, 15% free, 1081KB/1286KB, paused 5.317ms total 30.709ms
+12-09 02:37:48.921 I/art     ( 1894): Background sticky concurrent mark sweep GC freed 450(111KB) AllocSpace objects, 0(0B) LOS objects, 11% free, 1142KB/1286KB, paused 945us total 132.387ms
+12-09 02:37:48.952 W/RichInputMethodSubtype( 1894): Can't find emoji subtype
+12-09 02:37:48.952 W/RichInputMethodSubtype( 1894): No input method subtype found; returning dummy subtype: Multi-lingual subtype: android.view.inputmethod.InputMethodSubtype@d78b2ed0, zz
+12-09 02:37:49.086 I/art     ( 1894): Background partial concurrent mark sweep GC freed 1752(117KB) AllocSpace objects, 1(16KB) LOS objects, 46% free, 1173KB/2MB, paused 1.062ms total 122.978ms
+12-09 02:37:49.321 I/art     ( 1894): Background sticky concurrent mark sweep GC freed 14385(2MB) AllocSpace objects, 7(252KB) LOS objects, 1% free, 2MB/2MB, paused 1.496ms total 203.667ms
+12-09 02:37:49.322 I/System.out( 3809): URI: //
+12-09 02:37:49.322 I/System.out( 3809): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:49.322 I/System.out( 3809): }
+12-09 02:37:49.322 I/System.out( 3809): header: {date=Sun, 09 Dec 2018 02:37:49 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 02:37:49.322 I/System.out( 3809): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:49.322 I/System.out( 3809): }
+12-09 02:37:49.322 I/System.out( 3809): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:49.322 I/System.out( 3809): files: {}
+12-09 02:37:49.322 I/System.out( 3809): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:49.324 I/InstrumentationBackend( 3809): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 02:37:49.335 I/System.out( 3809): result:{"bonusInformation":[],"message":"","success":true}
+12-09 02:37:49.376 W/art     ( 1894): Suspending all threads took: 7.446ms
+12-09 02:37:49.383 I/art     ( 1894): Background sticky concurrent mark sweep GC freed 212(35KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 2MB/2MB, paused 12.680ms total 53.354ms
+12-09 02:37:49.397 W/ViewPager( 1894): Requested offscreen page limit 0 too small; defaulting to 1
+12-09 02:37:49.435 I/LatinIME( 1894): Starting input. Cursor position = 0,0
+12-09 02:37:49.438 W/AudioTrack( 1593): AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 48000 Hz, output 44100 Hz
+12-09 02:37:49.566 I/art     ( 1894): Background partial concurrent mark sweep GC freed 1220(106KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 2MB/3MB, paused 950us total 153.789ms
+12-09 02:37:49.786 E/SurfaceFlinger( 1223): ro.sf.lcd_density must be defined as a build property
+12-09 02:37:49.787 D/OpenGLRenderer( 1894): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+12-09 02:37:49.802 D/        ( 1894): HostConnection::get() New Host Connection established 0x7fa696efdb20, tid 1894
+12-09 02:37:49.870 W/AudioFlinger( 1309): write blocked for 412 msecs, 1 delayed writes, thread 0xf43c0000
+12-09 02:37:49.887 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:49.902 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:49.917 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:49.918 D/AudioFlinger( 1309): mixer(0xf43c0000) throttle end: throttle time(11)
+12-09 02:37:49.936 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.017 D/        ( 1894): HostConnection::get() New Host Connection established 0x7fa698f91660, tid 3843
+12-09 02:37:50.021 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.022 I/System.out( 3809): URI: //
+12-09 02:37:50.022 I/System.out( 3809): params: {json={"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
+12-09 02:37:50.022 I/System.out( 3809): }
+12-09 02:37:50.023 I/System.out( 3809): header: {date=Sun, 09 Dec 2018 02:37:49 GMT, accept=*/*, content-length=75, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 02:37:50.023 I/System.out( 3809): params: {json={"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
+12-09 02:37:50.023 I/System.out( 3809): }
+12-09 02:37:50.023 I/System.out( 3809): ProP json = {"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
+12-09 02:37:50.023 I/System.out( 3809): files: {}
+12-09 02:37:50.023 I/System.out( 3809): command: {"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
+12-09 02:37:50.038 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.047 I/OpenGLRenderer( 1894): Initialized EGL, version 1.4
+12-09 02:37:50.053 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.055 I/InstrumentationBackend( 3809): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[-321ßå∂˚¡–ºß123]'
+12-09 02:37:50.055 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:50.055 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:50.060 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:50.060 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:50.073 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.098 D/EGL_emulation( 1894): eglCreateContext: 0x7fa69cfbab20: maj 2 min 0 rcv 2
+12-09 02:37:50.106 W/art     ( 3809): Suspending all threads took: 7.720ms
+12-09 02:37:50.132 D/EGL_emulation( 1894): eglMakeCurrent: 0x7fa69cfbab20: ver 2 0 (tinfo 0x7fa68d49c5c0)
+12-09 02:37:50.135 I/System.out( 3809): result:{"bonusInformation":[],"message":"","success":true}
+12-09 02:37:50.181 I/art     ( 3809): Background sticky concurrent mark sweep GC freed 41389(1948KB) AllocSpace objects, 6(120KB) LOS objects, 41% free, 2MB/4MB, paused 8.883ms total 106.821ms
+12-09 02:37:50.196 D/EGL_emulation( 1894): eglMakeCurrent: 0x7fa69cfbab20: ver 2 0 (tinfo 0x7fa68d49c5c0)
+12-09 02:37:50.286 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 360067 , only wrote 359584
+12-09 02:37:50.286 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 359591 , only wrote 359584
+12-09 02:37:50.286 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.302 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 360296 , only wrote 360245
+12-09 02:37:50.303 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.303 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.317 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.334 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.349 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.366 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.394 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.394 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.416 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.437 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.462 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.482 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.498 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.556 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 371427 , only wrote 370821
+12-09 02:37:50.579 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.604 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.613 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.634 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:50.725 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 378263 , only wrote 377431
+12-09 02:37:50.825 E/SurfaceFlinger( 1223): ro.sf.lcd_density must be defined as a build property
+12-09 02:37:50.892 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 384812 , only wrote 384702
+12-09 02:37:50.896 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 02:37:50.975 D/        ( 3847): HostConnection::get() New Host Connection established 0x7ff7dd9d2480, tid 3847
+12-09 02:37:50.990 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 389020 , only wrote 388668
+12-09 02:37:51.011 E/EGL_emulation( 1223): tid 1223: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 02:37:51.149 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.177 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.197 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.211 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.221 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.525 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.558 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.570 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.670 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 418648 , only wrote 418413
+12-09 02:37:51.670 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 418420 , only wrote 418413
+12-09 02:37:51.696 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 419566 , only wrote 419074
+12-09 02:37:51.734 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 420741 , only wrote 420396
+12-09 02:37:51.781 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.794 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.842 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.842 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 425145 , only wrote 425023
+12-09 02:37:51.842 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 425028 , only wrote 425023
+12-09 02:37:51.842 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.860 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 425813 , only wrote 425684
+12-09 02:37:51.860 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.860 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.881 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:51.897 W/audio_hw_generic( 1309): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 02:37:52.034 I/System.out( 3809): URI: //map
+12-09 02:37:52.034 I/System.out( 3809): params: {json={"query":"android.widget.EditText id:'volume'","operation":{"method_name":"query","arguments":[]}}
+12-09 02:37:52.034 I/System.out( 3809): }
+12-09 02:37:52.084 W/ResourceType( 3809): No package identifier when getting name for resource number 0x00000001
+12-09 02:37:52.279 I/art     ( 3809): Background partial concurrent mark sweep GC freed 48590(2MB) AllocSpace objects, 5(100KB) LOS objects, 39% free, 2MB/3MB, paused 1.027ms total 149.137ms
+12-09 02:37:52.298 I/System.out( 3809): URI: //gesture
+12-09 02:37:52.298 I/System.out( 3809): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'volume'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 02:37:52.298 I/System.out( 3809): }
+12-09 02:37:52.328 W/ResourceType( 3809): No package identifier when getting name for resource number 0x00000001
+12-09 02:37:52.746 W/art     ( 3809): Suspending all threads took: 20.891ms
+12-09 02:37:52.800 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 467136 , only wrote 466666
+12-09 02:37:52.800 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 466672 , only wrote 466666
+12-09 02:37:52.815 I/art     ( 3809): Background sticky concurrent mark sweep GC freed 44999(2036KB) AllocSpace objects, 2(40KB) LOS objects, 37% free, 2MB/3MB, paused 21.949ms total 133.682ms
+12-09 02:37:52.818 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 467448 , only wrote 467327
+12-09 02:37:53.013 W/audio_hw_generic( 1309): Not supplying enough data to HAL, expected position 483302 , only wrote 475920
+12-09 02:37:53.314 I/System.out( 3809): URI: //
+12-09 02:37:53.315 I/System.out( 3809): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:53.315 I/System.out( 3809): }
+12-09 02:37:53.315 I/System.out( 3809): header: {date=Sun, 09 Dec 2018 02:37:53 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 02:37:53.315 I/System.out( 3809): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:53.315 I/System.out( 3809): }
+12-09 02:37:53.315 I/System.out( 3809): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:53.315 I/System.out( 3809): files: {}
+12-09 02:37:53.315 I/System.out( 3809): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:53.316 I/InstrumentationBackend( 3809): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 02:37:53.339 I/System.out( 3809): result:{"bonusInformation":[],"message":"","success":true}
+12-09 02:37:54.876 I/LatinIME( 1894): Starting input. Cursor position = 0,0
+12-09 02:37:55.116 W/art     ( 1593): Long monitor contention event with owner method=int com.android.server.am.ActivityManagerService.bindService(android.app.IApplicationThread, android.os.IBinder, android.content.Intent, java.lang.String, android.app.IServiceConnection, int, java.lang.String, int) from ActivityManagerService.java:15911 waiters=0 for 169ms
+12-09 02:37:55.427 W/art     ( 1593): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=0 for 303ms
+12-09 02:37:55.562 I/Choreographer( 1894): Skipped 43 frames!  The application may be doing too much work on its main thread.
+12-09 02:37:55.591 I/AccountManagerService( 1593): getTypesVisibleToCaller: isPermitted? true
+12-09 02:37:55.674 I/System.out( 3809): URI: //
+12-09 02:37:55.674 I/System.out( 3809): params: {json={"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
+12-09 02:37:55.674 I/System.out( 3809): }
+12-09 02:37:55.674 I/System.out( 3809): header: {date=Sun, 09 Dec 2018 02:37:55 GMT, accept=*/*, content-length=92, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 02:37:55.675 I/System.out( 3809): params: {json={"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
+12-09 02:37:55.675 I/System.out( 3809): }
+12-09 02:37:55.675 I/System.out( 3809): ProP json = {"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
+12-09 02:37:55.675 I/System.out( 3809): files: {}
+12-09 02:37:55.675 I/System.out( 3809): command: {"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
+12-09 02:37:55.676 I/InstrumentationBackend( 3809): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[åß9∂º–ç¬  ß29å∂˚¡–ºß123]'
+12-09 02:37:55.708 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:55.709 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:55.713 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:55.713 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:55.728 I/System.out( 3809): result:{"bonusInformation":[],"message":"","success":true}
+12-09 02:37:56.437 E/SurfaceFlinger( 1223): ro.sf.lcd_density must be defined as a build property
+12-09 02:37:56.511 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 02:37:56.548 D/        ( 3861): HostConnection::get() New Host Connection established 0x7f5ba49d2480, tid 3861
+12-09 02:37:56.614 E/EGL_emulation( 1223): tid 1223: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 02:37:57.718 I/System.out( 3809): URI: //map
+12-09 02:37:57.718 I/System.out( 3809): params: {json={"query":"android.widget.EditText id:'odometer'","operation":{"method_name":"query","arguments":[]}}
+12-09 02:37:57.718 I/System.out( 3809): }
+12-09 02:37:57.889 W/ResourceType( 3809): No package identifier when getting name for resource number 0x00000001
+12-09 02:37:58.042 I/System.out( 3809): URI: //gesture
+12-09 02:37:58.042 I/System.out( 3809): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'odometer'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 02:37:58.042 I/System.out( 3809): }
+12-09 02:37:58.061 W/ResourceType( 3809): No package identifier when getting name for resource number 0x00000001
+12-09 02:37:58.618 I/LatinIME( 1894): Starting input. Cursor position = 0,0
+12-09 02:37:58.790 I/art     ( 3809): Background sticky concurrent mark sweep GC freed 44807(2016KB) AllocSpace objects, 2(40KB) LOS objects, 34% free, 2MB/3MB, paused 1.995ms total 158.555ms
+12-09 02:37:58.963 I/Choreographer( 1894): Skipped 31 frames!  The application may be doing too much work on its main thread.
+12-09 02:37:59.313 I/System.out( 3809): URI: //
+12-09 02:37:59.313 I/System.out( 3809): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:59.313 I/System.out( 3809): }
+12-09 02:37:59.313 I/System.out( 3809): header: {date=Sun, 09 Dec 2018 02:37:59 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 02:37:59.325 I/System.out( 3809): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:59.326 I/System.out( 3809): }
+12-09 02:37:59.326 I/System.out( 3809): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:59.326 I/System.out( 3809): files: {}
+12-09 02:37:59.326 I/System.out( 3809): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 02:37:59.327 I/InstrumentationBackend( 3809): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 02:37:59.339 I/System.out( 3809): result:{"bonusInformation":[],"message":"","success":true}
+12-09 02:37:59.595 I/System.out( 3809): URI: //
+12-09 02:37:59.595 I/System.out( 3809): params: {json={"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
+12-09 02:37:59.595 I/System.out( 3809): }
+12-09 02:37:59.595 I/System.out( 3809): header: {date=Sun, 09 Dec 2018 02:37:59 GMT, accept=*/*, content-length=93, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 02:37:59.595 I/System.out( 3809): params: {json={"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
+12-09 02:37:59.595 I/System.out( 3809): }
+12-09 02:37:59.595 I/System.out( 3809): ProP json = {"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
+12-09 02:37:59.595 I/System.out( 3809): files: {}
+12-09 02:37:59.596 I/System.out( 3809): command: {"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
+12-09 02:37:59.597 I/InstrumentationBackend( 3809): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[=+œå∑ß≈´∂ç®ƒ√†©∫¡™£]'
+12-09 02:37:59.598 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:59.606 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:59.619 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:59.619 E/SpannableStringBuilder( 3809): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 02:37:59.824 I/System.out( 3809): result:{"bonusInformation":[],"message":"","success":true}
+12-09 02:37:59.946 I/art     ( 3809): Background partial concurrent mark sweep GC freed 27999(1391KB) AllocSpace objects, 9(180KB) LOS objects, 39% free, 2MB/3MB, paused 15.846ms total 320.551ms
+12-09 02:38:00.601 E/SurfaceFlinger( 1223): ro.sf.lcd_density must be defined as a build property
+12-09 02:38:00.678 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 02:38:00.867 D/        ( 3871): HostConnection::get() New Host Connection established 0x7f58c65d2480, tid 3871
+12-09 02:38:00.888 E/EGL_emulation( 1223): tid 1223: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
