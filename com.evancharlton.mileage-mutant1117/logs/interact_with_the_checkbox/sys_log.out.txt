@@ -1,0 +1,40 @@
+--------- beginning of main
+12-09 08:06:30.933 D/AndroidRuntime(11476): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:06:30.960 D/AndroidRuntime(11476): CheckJNI is ON
+12-09 08:06:30.998 D/ICU     (11476): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:06:31.323 E/memtrack(11476): Couldn't load memtrack module (No such file or directory)
+12-09 08:06:31.327 E/android.os.Debug(11476): failed to load memtrack module: -2
+12-09 08:06:31.328 I/Radio-JNI(11476): register_android_hardware_Radio DONE
+12-09 08:06:31.338 D/AndroidRuntime(11476): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:06:31.411 I/ActivityManager( 1595): Force stopping com.evancharlton.mileage appid=10131 user=0: start instr
+12-09 08:06:31.417 I/ActivityManager( 1595): Start proc 11486:com.evancharlton.mileage/u0a131 for added application com.evancharlton.mileage
+12-09 08:06:31.417 D/AndroidRuntime(11476): Shutting down VM
+12-09 08:06:31.477 W/System  (11486): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:06:31.483 W/System  (11486): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:06:31.497 D/AndroidRuntime(11486): Shutting down VM
+--------- beginning of crash
+12-09 08:06:31.497 E/AndroidRuntime(11486): FATAL EXCEPTION: main
+12-09 08:06:31.497 E/AndroidRuntime(11486): Process: com.evancharlton.mileage, PID: 11486
+12-09 08:06:31.497 E/AndroidRuntime(11486): java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:79)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:06:31.497 E/AndroidRuntime(11486): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:06:31.498 W/ActivityManager( 1595): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:06:31.498 W/ActivityManager( 1595):   java.lang.VerifyError
+12-09 08:06:31.498 W/ActivityManager( 1595):   java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:06:31.498 I/ActivityManager( 1595): Force stopping com.evancharlton.mileage appid=10131 user=0: finished inst
+12-09 08:06:31.499 I/ActivityManager( 1595): Killing 11486:com.evancharlton.mileage/u0a131 (adj 0): stop com.evancharlton.mileage
+12-09 08:06:31.935 I/AccountManagerService( 1595): getTypesVisibleToCaller: isPermitted? true
+12-09 08:07:00.247 D/hwcomposer( 1224): hw_composer sent 1 syncs in 60s
+12-09 08:07:28.874 I/UsageStatsService( 1595): User[0] Flushing usage stats to disk

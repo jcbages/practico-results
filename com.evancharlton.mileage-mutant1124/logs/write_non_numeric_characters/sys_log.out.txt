@@ -1,0 +1,44 @@
+--------- beginning of main
+12-09 08:33:44.749 D/AndroidRuntime(16015): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:33:44.752 D/AndroidRuntime(16015): CheckJNI is ON
+12-09 08:33:44.790 D/ICU     (16015): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:33:44.918 E/memtrack(16015): Couldn't load memtrack module (No such file or directory)
+12-09 08:33:44.918 E/android.os.Debug(16015): failed to load memtrack module: -2
+12-09 08:33:44.920 I/Radio-JNI(16015): register_android_hardware_Radio DONE
+12-09 08:33:45.030 D/AndroidRuntime(16015): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:33:45.032 I/ActivityManager( 1595): Force stopping com.evancharlton.mileage appid=10139 user=0: start instr
+12-09 08:33:45.091 I/ActivityManager( 1595): Start proc 16023:com.evancharlton.mileage/u0a139 for added application com.evancharlton.mileage
+12-09 08:33:45.092 D/AndroidRuntime(16015): Shutting down VM
+12-09 08:33:45.100 E/art     (16015): Thread attaching while runtime is shutting down: Binder_2
+12-09 08:33:45.100 I/AndroidRuntime(16015): NOTE: attach of thread 'Binder_2' failed
+12-09 08:33:45.334 W/System  (16023): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:33:45.337 W/System  (16023): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:33:45.382 W/art     (16023): Suspending all threads took: 7.333ms
+12-09 08:33:45.412 I/art     (16023): Background sticky concurrent mark sweep GC freed 3282(169KB) AllocSpace objects, 0(0B) LOS objects, 57% free, 557KB/1299KB, paused 20.458ms total 45.505ms
+12-09 08:33:45.429 D/AndroidRuntime(16023): Shutting down VM
+--------- beginning of crash
+12-09 08:33:45.430 E/AndroidRuntime(16023): FATAL EXCEPTION: main
+12-09 08:33:45.430 E/AndroidRuntime(16023): Process: com.evancharlton.mileage, PID: 16023
+12-09 08:33:45.430 E/AndroidRuntime(16023): java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:79)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:33:45.430 E/AndroidRuntime(16023): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:33:45.432 W/ActivityManager( 1595): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:33:45.432 W/ActivityManager( 1595):   java.lang.VerifyError
+12-09 08:33:45.432 W/ActivityManager( 1595):   java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:33:45.432 I/ActivityManager( 1595): Force stopping com.evancharlton.mileage appid=10139 user=0: finished inst
+12-09 08:33:45.432 I/ActivityManager( 1595): Killing 16023:com.evancharlton.mileage/u0a139 (adj 0): stop com.evancharlton.mileage
+12-09 08:33:45.813 I/AccountManagerService( 1595): getTypesVisibleToCaller: isPermitted? true
+12-09 08:34:00.979 D/hwcomposer( 1224): hw_composer sent 1 syncs in 60s
+12-09 08:35:00.179 D/hwcomposer( 1224): hw_composer sent 1 syncs in 60s

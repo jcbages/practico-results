@@ -1,0 +1,41 @@
+--------- beginning of main
+12-09 08:07:50.222 D/AndroidRuntime(11514): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:07:50.236 D/AndroidRuntime(11514): CheckJNI is ON
+12-09 08:07:50.248 D/ICU     (11514): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:07:50.513 E/memtrack(11514): Couldn't load memtrack module (No such file or directory)
+12-09 08:07:50.518 E/android.os.Debug(11514): failed to load memtrack module: -2
+12-09 08:07:50.520 I/Radio-JNI(11514): register_android_hardware_Radio DONE
+12-09 08:07:50.533 D/AndroidRuntime(11514): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:07:50.553 I/ActivityManager( 1595): Force stopping com.evancharlton.mileage appid=10131 user=0: start instr
+12-09 08:07:50.663 I/ActivityManager( 1595): Start proc 11523:com.evancharlton.mileage/u0a131 for added application com.evancharlton.mileage
+12-09 08:07:50.670 D/AndroidRuntime(11514): Shutting down VM
+12-09 08:07:50.758 W/System  (11523): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:07:50.758 W/System  (11523): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:07:50.784 D/AndroidRuntime(11523): Shutting down VM
+--------- beginning of crash
+12-09 08:07:50.795 E/AndroidRuntime(11523): FATAL EXCEPTION: main
+12-09 08:07:50.795 E/AndroidRuntime(11523): Process: com.evancharlton.mileage, PID: 11523
+12-09 08:07:50.795 E/AndroidRuntime(11523): java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:79)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:07:50.795 E/AndroidRuntime(11523): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:07:50.802 W/ActivityManager( 1595): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:07:50.802 W/ActivityManager( 1595):   java.lang.VerifyError
+12-09 08:07:50.802 W/ActivityManager( 1595):   java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:07:50.802 I/ActivityManager( 1595): Force stopping com.evancharlton.mileage appid=10131 user=0: finished inst
+12-09 08:07:50.808 I/ActivityManager( 1595): Killing 11523:com.evancharlton.mileage/u0a131 (adj 0): stop com.evancharlton.mileage
+12-09 08:07:51.228 W/art     ( 1595): Long monitor contention event with owner method=android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, java.lang.String, int) from ActivityManagerService.java:15676 waiters=0 for 216ms
+12-09 08:07:51.497 I/AccountManagerService( 1595): getTypesVisibleToCaller: isPermitted? true
+12-09 08:08:00.215 D/hwcomposer( 1224): hw_composer sent 2 syncs in 60s
+12-09 08:09:00.293 D/hwcomposer( 1224): hw_composer sent 2 syncs in 60s
