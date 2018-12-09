@@ -1,0 +1,43 @@
+--------- beginning of main
+12-09 08:32:34.733 D/AndroidRuntime(18274): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:32:34.747 D/AndroidRuntime(18274): CheckJNI is ON
+12-09 08:32:34.769 D/ICU     (18274): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:32:35.074 E/memtrack(18274): Couldn't load memtrack module (No such file or directory)
+12-09 08:32:35.077 E/android.os.Debug(18274): failed to load memtrack module: -2
+12-09 08:32:35.079 I/Radio-JNI(18274): register_android_hardware_Radio DONE
+12-09 08:32:35.094 D/AndroidRuntime(18274): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:32:35.096 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10141 user=0: start instr
+12-09 08:32:35.259 I/ActivityManager( 1591): Start proc 18283:com.evancharlton.mileage/u0a141 for added application com.evancharlton.mileage
+12-09 08:32:35.260 W/art     ( 1591): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=0 for 163ms
+12-09 08:32:35.260 D/AndroidRuntime(18274): Shutting down VM
+12-09 08:32:35.267 W/art     ( 1591): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=1 for 169ms
+12-09 08:32:35.391 W/System  (18283): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:32:35.392 W/System  (18283): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:32:35.406 D/AndroidRuntime(18283): Shutting down VM
+--------- beginning of crash
+12-09 08:32:35.430 E/AndroidRuntime(18283): FATAL EXCEPTION: main
+12-09 08:32:35.430 E/AndroidRuntime(18283): Process: com.evancharlton.mileage, PID: 18283
+12-09 08:32:35.430 E/AndroidRuntime(18283): java.lang.ExceptionInInitializerError
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:32:35.430 E/AndroidRuntime(18283): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 08:32:35.430 E/AndroidRuntime(18283): 	... 12 more
+12-09 08:32:35.469 W/ActivityManager( 1591): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:32:35.469 W/ActivityManager( 1591):   java.lang.NullPointerException
+12-09 08:32:35.469 W/ActivityManager( 1591):   java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:32:35.469 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10141 user=0: finished inst
+12-09 08:32:35.469 I/ActivityManager( 1591): Killing 18283:com.evancharlton.mileage/u0a141 (adj 0): stop com.evancharlton.mileage
+12-09 08:32:36.037 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:33:00.197 D/hwcomposer( 1223): hw_composer sent 1 syncs in 60s

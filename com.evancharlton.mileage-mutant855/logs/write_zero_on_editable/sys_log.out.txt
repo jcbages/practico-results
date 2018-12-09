@@ -1,0 +1,112 @@
+--------- beginning of main
+12-09 08:31:14.520 I/art     (18196): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7ExtendedSSLSession>
+12-09 08:31:14.520 I/art     (18196): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7ExtendedSSLSession>
+12-09 08:31:14.520 I/art     (18196): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java8ExtendedSSLSession>
+12-09 08:31:14.520 I/art     (18196): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java8ExtendedSSLSession>
+12-09 08:31:14.543 I/ProviderInstaller(18196): Installed default security provider GmsCore_OpenSSL
+12-09 08:31:14.832 I/art     (18196): Background sticky concurrent mark sweep GC freed 29611(2MB) AllocSpace objects, 6(120KB) LOS objects, 12% free, 7MB/8MB, paused 6.208ms total 114.930ms
+12-09 08:31:14.835 W/Primes  (18196): Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+12-09 08:31:15.061 D/AndroidRuntime(18221): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:31:15.062 D/AndroidRuntime(18221): CheckJNI is ON
+12-09 08:31:15.103 D/ICU     (18221): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:31:15.268 E/memtrack(18221): Couldn't load memtrack module (No such file or directory)
+12-09 08:31:15.268 E/android.os.Debug(18221): failed to load memtrack module: -2
+12-09 08:31:15.269 I/Radio-JNI(18221): register_android_hardware_Radio DONE
+12-09 08:31:15.298 D/WVCdm   ( 1307): Instantiating CDM.
+12-09 08:31:15.344 I/art     (18196): Background sticky concurrent mark sweep GC freed 3759(557KB) AllocSpace objects, 2(40KB) LOS objects, 8% free, 7MB/8MB, paused 5.261ms total 32.242ms
+12-09 08:31:15.424 D/AndroidRuntime(18221): Calling main entry com.android.commands.am.Am
+12-09 08:31:15.425 I/WVCdm   ( 1307): CdmEngine::OpenSession
+12-09 08:31:15.425 I/WVCdm   ( 1307): Level3 Library Sep 28 2015 13:08:28
+12-09 08:31:15.426 W/WVCdm   ( 1307): Could not read /data/mediadrm/IDM1013/ay64.dat2: No such file or directory
+12-09 08:31:15.426 W/WVCdm   ( 1307): Could not load liboemcrypto.so. Falling back to L3.  dlopen failed: library "liboemcrypto.so" not found
+12-09 08:31:15.437 I/WVCdm   ( 1307): CdmEngine::QueryKeyControlInfo
+--------- beginning of system
+12-09 08:31:15.603 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10141 user=0: start instr
+12-09 08:31:15.607 I/DynamiteModule(18196): Considering local module com.google.android.gms.googlecertificates:4 and remote module com.google.android.gms.googlecertificates:4
+12-09 08:31:15.607 I/DynamiteModule(18196): Selected local version of com.google.android.gms.googlecertificates
+12-09 08:31:15.608 W/WVCdm   ( 1307): BufferReader::Read<T> : Failure during parse: Not enough bytes (4)
+12-09 08:31:15.608 W/WVCdm   ( 1307): CdmEngine::ExtractWidevinePssh: Unable to read atom size.
+12-09 08:31:15.608 I/WVCdm   ( 1307): CdmEngine::GenerateKeyRequest
+12-09 08:31:15.609 D/WVCdm   ( 1307): PrepareKeyRequest: nonce=3260220259
+12-09 08:31:15.628 I/ActivityManager( 1591): Start proc 18238:com.evancharlton.mileage/u0a141 for added application com.evancharlton.mileage
+12-09 08:31:15.629 D/AndroidRuntime(18221): Shutting down VM
+12-09 08:31:15.734 W/System  (18238): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:31:15.734 W/System  (18238): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:31:15.763 D/AndroidRuntime(18238): Shutting down VM
+--------- beginning of crash
+12-09 08:31:15.763 E/AndroidRuntime(18238): FATAL EXCEPTION: main
+12-09 08:31:15.763 E/AndroidRuntime(18238): Process: com.evancharlton.mileage, PID: 18238
+12-09 08:31:15.763 E/AndroidRuntime(18238): java.lang.ExceptionInInitializerError
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:31:15.763 E/AndroidRuntime(18238): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 08:31:15.763 E/AndroidRuntime(18238): 	... 12 more
+12-09 08:31:15.764 W/ActivityManager( 1591): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:31:15.764 W/ActivityManager( 1591):   java.lang.NullPointerException
+12-09 08:31:15.764 W/ActivityManager( 1591):   java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:31:15.764 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10141 user=0: finished inst
+12-09 08:31:15.764 I/ActivityManager( 1591): Killing 18238:com.evancharlton.mileage/u0a141 (adj 0): stop com.evancharlton.mileage
+12-09 08:31:15.834 I/art     (18196): Background partial concurrent mark sweep GC freed 13829(1026KB) AllocSpace objects, 1(68KB) LOS objects, 28% free, 9MB/13MB, paused 5.418ms total 124.012ms
+12-09 08:31:16.072 I/art     ( 1591): Background partial concurrent mark sweep GC freed 33884(2MB) AllocSpace objects, 7(140KB) LOS objects, 29% free, 9MB/13MB, paused 5.819ms total 100.560ms
+12-09 08:31:16.098 I/WVCdm   ( 1307): CdmEngine::CloseSession
+12-09 08:31:16.141 I/Auth    ( 1916): [ReflectiveChannelBinder] Successfully bound channel!
+12-09 08:31:16.219 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:31:16.302 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:31:16.320 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:31:16.327 W/Conscrypt( 1916): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+12-09 08:31:16.327 W/Conscrypt( 1916): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:31:16.327 W/Conscrypt( 1916): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@13280023@13.2.80 (040800-211705629):13)
+12-09 08:31:16.327 W/Conscrypt( 1916): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+12-09 08:31:16.327 W/Conscrypt( 1916): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+12-09 08:31:16.327 W/Conscrypt( 1916): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+12-09 08:31:16.336 W/Conscrypt( 1916): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+12-09 08:31:16.336 W/Conscrypt( 1916): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:31:16.336 W/Conscrypt( 1916): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@13280023@13.2.80 (040800-211705629):13)
+12-09 08:31:16.336 W/Conscrypt( 1916): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+12-09 08:31:16.336 W/Conscrypt( 1916): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+12-09 08:31:16.336 W/Conscrypt( 1916): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+12-09 08:31:16.343 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:31:16.369 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:31:16.494 W/GLSUser ( 1916): [AppCertManager] IOException while requesting key: 
+12-09 08:31:16.494 W/GLSUser ( 1916): java.io.IOException: Invalid device key response.
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at hnl.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):11)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at hnl.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):64)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at hnj.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):6)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at hnf.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):1)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at hne.a(:com.google.android.gms@13280023@13.2.80 (040800-211705629):9)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at com.google.android.gms.auth.account.be.legacy.AuthCronChimeraService.b(:com.google.android.gms@13280023@13.2.80 (040800-211705629):6)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at gmd.call(:com.google.android.gms@13280023@13.2.80 (040800-211705629):3)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at qcr.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629):21)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at qiv.run(:com.google.android.gms@13280023@13.2.80 (040800-211705629))
+12-09 08:31:16.494 W/GLSUser ( 1916): 	at java.lang.Thread.run(Thread.java:818)
+12-09 08:31:16.515 W/Conscrypt( 1916): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+12-09 08:31:16.515 W/Conscrypt( 1916): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:31:16.515 W/Conscrypt( 1916): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@13280023@13.2.80 (040800-211705629):13)
+12-09 08:31:16.515 W/Conscrypt( 1916): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+12-09 08:31:16.515 W/Conscrypt( 1916): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+12-09 08:31:16.515 W/Conscrypt( 1916): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+12-09 08:31:16.634 W/Conscrypt( 1916): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+12-09 08:31:16.646 W/Conscrypt( 1916): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:31:16.647 W/Conscrypt( 1916): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@13280023@13.2.80 (040800-211705629):13)
+12-09 08:31:16.647 W/Conscrypt( 1916): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+12-09 08:31:16.647 W/Conscrypt( 1916): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+12-09 08:31:16.647 W/Conscrypt( 1916): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+12-09 08:31:17.033 W/art     ( 1916): Long monitor contention event with owner method=void xno.a(xnk, xla) from :com.google.android.gms@13280023@13.2.80 (040800-211705629):113 waiters=0 for 307ms
+12-09 08:31:17.037 I/EventLogChimeraService( 2354): Aggregate from 1544342593924 (log), 1544342593924 (data)
+12-09 08:31:18.194 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:31:18.284 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:32:00.159 D/hwcomposer( 1223): hw_composer sent 7 syncs in 60s
