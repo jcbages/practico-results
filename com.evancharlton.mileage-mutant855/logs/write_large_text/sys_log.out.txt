@@ -1,0 +1,83 @@
+--------- beginning of main
+12-09 08:33:54.817 D/AndroidRuntime(18312): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:33:54.819 D/AndroidRuntime(18312): CheckJNI is ON
+12-09 08:33:54.843 D/ICU     (18312): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:33:55.065 E/memtrack(18312): Couldn't load memtrack module (No such file or directory)
+12-09 08:33:55.070 E/android.os.Debug(18312): failed to load memtrack module: -2
+12-09 08:33:55.073 I/Radio-JNI(18312): register_android_hardware_Radio DONE
+12-09 08:33:55.085 D/AndroidRuntime(18312): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:33:55.226 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10141 user=0: start instr
+12-09 08:33:55.335 I/ActivityManager( 1591): Start proc 18321:com.evancharlton.mileage/u0a141 for added application com.evancharlton.mileage
+12-09 08:33:55.342 D/AndroidRuntime(18312): Shutting down VM
+12-09 08:33:55.410 W/System  (18321): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:33:55.413 W/System  (18321): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:33:55.494 D/AndroidRuntime(18321): Shutting down VM
+--------- beginning of crash
+12-09 08:33:55.494 E/AndroidRuntime(18321): FATAL EXCEPTION: main
+12-09 08:33:55.494 E/AndroidRuntime(18321): Process: com.evancharlton.mileage, PID: 18321
+12-09 08:33:55.494 E/AndroidRuntime(18321): java.lang.ExceptionInInitializerError
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:33:55.494 E/AndroidRuntime(18321): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+12-09 08:33:55.494 E/AndroidRuntime(18321): 	... 12 more
+12-09 08:33:55.518 W/ActivityManager( 1591): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:33:55.518 W/ActivityManager( 1591):   java.lang.NullPointerException
+12-09 08:33:55.518 W/ActivityManager( 1591):   java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+12-09 08:33:55.518 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10141 user=0: finished inst
+12-09 08:33:55.519 I/ActivityManager( 1591): Killing 18321:com.evancharlton.mileage/u0a141 (adj 0): stop com.evancharlton.mileage
+12-09 08:33:55.642 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12502 waiters=0 for 123ms
+12-09 08:33:55.906 I/AccountManagerService( 1591): getTypesVisibleToCaller: isPermitted? true
+12-09 08:34:00.143 D/hwcomposer( 1223): hw_composer sent 2 syncs in 60s
+12-09 08:34:17.737 E/BluetoothAdapter( 1591): Bluetooth binder is null
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): Failed to read cpu-freq
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): java.io.FileNotFoundException: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state: open failed: ENOENT (No such file or directory)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at libcore.io.IoBridge.open(IoBridge.java:452)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at java.io.FileReader.<init>(FileReader.java:66)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at com.android.internal.os.KernelCpuSpeedReader.readDelta(KernelCpuSpeedReader.java:49)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at com.android.internal.os.BatteryStatsImpl.updateCpuTimeLocked(BatteryStatsImpl.java:8002)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at com.android.server.am.BatteryStatsService.updateExternalStats(BatteryStatsService.java:1366)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at com.android.server.am.BatteryStatsService$BatteryStatsHandler.handleMessage(BatteryStatsService.java:125)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at libcore.io.Posix.open(Native Method)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	at libcore.io.IoBridge.open(IoBridge.java:438)
+12-09 08:34:17.739 E/KernelCpuSpeedReader( 1591): 	... 11 more
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): Failed to read uid_cputime
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): java.io.FileNotFoundException: /proc/uid_cputime/show_uid_stat: open failed: ENOENT (No such file or directory)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at libcore.io.IoBridge.open(IoBridge.java:452)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at java.io.FileReader.<init>(FileReader.java:66)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at com.android.internal.os.KernelUidCpuTimeReader.readDelta(KernelUidCpuTimeReader.java:71)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at com.android.internal.os.BatteryStatsImpl.updateCpuTimeLocked(BatteryStatsImpl.java:8031)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at com.android.server.am.BatteryStatsService.updateExternalStats(BatteryStatsService.java:1366)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at com.android.server.am.BatteryStatsService$BatteryStatsHandler.handleMessage(BatteryStatsService.java:125)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at libcore.io.Posix.open(Native Method)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	at libcore.io.IoBridge.open(IoBridge.java:438)
+12-09 08:34:17.746 E/KernelUidCpuTimeReader( 1591): 	... 11 more
+12-09 08:35:00.278 D/hwcomposer( 1223): hw_composer sent 1 syncs in 60s
+12-09 08:35:12.631 W/ProcessCpuTracker( 1591): Skipping unknown process pid 18338
