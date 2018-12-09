@@ -1,0 +1,179 @@
+--------- beginning of main
+12-09 08:07:42.746 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 229ms
+--------- beginning of system
+12-09 08:07:42.929 I/WindowManager( 1591): Screenshot max retries 4 of Token{12b6599 ActivityRecord{26b2ee0 u0 com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.StatusReporterActivity t426 f}} appWin=Window{d981010 u0 Starting com.evancharlton.mileage.test} drawState=3
+12-09 08:07:42.933 W/art     ( 1591): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=0 for 2.300s
+12-09 08:07:42.933 W/art     ( 1591): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.finishActivity(android.os.IBinder, int, android.content.Intent, boolean) from ActivityManagerService.java:4245 waiters=1 for 1.736s
+12-09 08:07:43.232 W/art     ( 1591): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=1 for 210ms
+12-09 08:07:43.487 D/AndroidRuntime(13349): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:07:43.497 D/AndroidRuntime(13349): CheckJNI is ON
+12-09 08:07:43.514 W/InputMethodManagerService( 1591): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@723432f attribute=null, token = android.os.BinderProxy@9885c06
+12-09 08:07:43.584 D/ICU     (13349): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:07:44.127 E/memtrack(13349): Couldn't load memtrack module (No such file or directory)
+12-09 08:07:44.127 E/android.os.Debug(13349): failed to load memtrack module: -2
+12-09 08:07:44.129 I/Radio-JNI(13349): register_android_hardware_Radio DONE
+12-09 08:07:44.153 D/AndroidRuntime(13349): Calling main entry com.android.commands.am.Am
+12-09 08:07:44.190 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10131 user=0: start instr
+12-09 08:07:44.190 I/ActivityManager( 1591): Killing 13332:com.evancharlton.mileage/u0a131 (adj 0): stop com.evancharlton.mileage
+12-09 08:07:44.330 W/ActivityManager( 1591): Crash of app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.ClearAppData2}
+12-09 08:07:44.330 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10131 user=0: finished inst
+12-09 08:07:44.357 I/ActivityManager( 1591): Start proc 13358:com.evancharlton.mileage/u0a131 for added application com.evancharlton.mileage
+12-09 08:07:44.365 D/AndroidRuntime(13349): Shutting down VM
+12-09 08:07:44.368 W/art     ( 1591): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=0 for 167ms
+12-09 08:07:44.457 W/System  (13358): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:07:44.457 W/System  (13358): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:07:44.561 I/System.out(13358): Main activity name automatically set to: com.evancharlton.mileage.Mileage
+12-09 08:07:44.565 I/System.out(13358): Calabash did not load Mono. This is only a problem if you are trying to test a Mono application
+12-09 08:07:44.565 I/calabash(13358): Test server port: 7102
+12-09 08:07:44.566 I/InstrumentationBackend(13358): Added:'GetPreferences', with key:'get_preferences'
+12-09 08:07:44.616 I/InstrumentationBackend(13358): Added:'SetPreferences', with key:'set_preferences'
+12-09 08:07:44.621 I/InstrumentationBackend(13358): Added:'ClearPreferences', with key:'clear_preferences'
+12-09 08:07:44.621 I/InstrumentationBackend(13358): Added:'PressElement', with key:'press_l10n_element'
+12-09 08:07:44.621 I/InstrumentationBackend(13358): Added:'WaitForElement', with key:'wait_for_l10n_element'
+12-09 08:07:44.621 I/InstrumentationBackend(13358): Added:'NullAction', with key:'nullAction'
+12-09 08:07:44.622 I/InstrumentationBackend(13358): Added:'PressKey', with key:'press_key'
+12-09 08:07:44.622 I/InstrumentationBackend(13358): Added:'SetActivityOrientation', with key:'set_activity_orientation'
+12-09 08:07:44.622 I/InstrumentationBackend(13358): Added:'GetActivityOrientation', with key:'get_activity_orientation'
+12-09 08:07:44.622 I/InstrumentationBackend(13358): Added:'FakeGPSLocation', with key:'set_gps_coordinates'
+12-09 08:07:44.622 I/InstrumentationBackend(13358): Added:'SetPropertyByCssSelector', with key:'set_property_by_css_selector'
+12-09 08:07:44.623 I/InstrumentationBackend(13358): Added:'GetUrl', with key:'get_url'
+12-09 08:07:44.623 I/InstrumentationBackend(13358): Added:'ScrollTo', with key:'scroll_to'
+12-09 08:07:44.623 I/InstrumentationBackend(13358): Added:'GetLoadProgress', with key:'get_load_progress'
+12-09 08:07:44.624 I/InstrumentationBackend(13358): Added:'DumpHtml', with key:'dump_html'
+12-09 08:07:44.624 I/InstrumentationBackend(13358): Added:'DumpBodyHtml', with key:'dump_body_html'
+12-09 08:07:44.624 I/InstrumentationBackend(13358): Added:'EnterTextByCssSelector', with key:'enter_text_by_selector'
+12-09 08:07:44.625 I/InstrumentationBackend(13358): Added:'AndroidSDKVersion', with key:'android_sdk_version'
+12-09 08:07:44.628 I/InstrumentationBackend(13358): Added:'Version', with key:'version'
+12-09 08:07:44.629 I/InstrumentationBackend(13358): Added:'Drag', with key:'drag'
+12-09 08:07:44.629 I/InstrumentationBackend(13358): Added:'TouchCoordinates', with key:'touch_coordinate'
+12-09 08:07:44.629 I/InstrumentationBackend(13358): Added:'LongPressCoordinate', with key:'long_press_coordinate'
+12-09 08:07:44.629 I/InstrumentationBackend(13358): Added:'DragCoordinates', with key:'drag_coordinates'
+12-09 08:07:44.629 I/InstrumentationBackend(13358): Added:'ResumeApplication', with key:'resume_application'
+12-09 08:07:44.629 I/InstrumentationBackend(13358): Added:'Swipe', with key:'swipe'
+12-09 08:07:44.630 I/InstrumentationBackend(13358): Added:'DoubleTapCoordinate', with key:'double_tap_coordinate'
+12-09 08:07:44.630 I/InstrumentationBackend(13358): Added:'ClickOnScreen', with key:'click_on_screen'
+12-09 08:07:44.630 I/InstrumentationBackend(13358): Added:'GetActivityName', with key:'get_activity_name'
+12-09 08:07:44.630 I/InstrumentationBackend(13358): Added:'ScrollToView', with key:'scroll_to_view'
+12-09 08:07:44.630 I/InstrumentationBackend(13358): Added:'ViewConfiguration', with key:'view_configuration'
+12-09 08:07:44.636 I/InstrumentationBackend(13358): Added:'IsCurrentActivityFocused', with key:'is_current_activity_focused'
+12-09 08:07:44.637 I/InstrumentationBackend(13358): Added:'SendTcp', with key:'send_tcp'
+12-09 08:07:44.637 I/InstrumentationBackend(13358): Added:'DpToDevicePixel', with key:'dp_to_device_pixel'
+12-09 08:07:44.637 I/InstrumentationBackend(13358): Added:'KeyboardEnterText', with key:'keyboard_enter_text'
+12-09 08:07:44.637 I/InstrumentationBackend(13358): Added:'DeleteSurroundingText', with key:'delete_surrounding_text'
+12-09 08:07:44.637 I/InstrumentationBackend(13358): Added:'SetComposingRegion', with key:'set_composing_region'
+12-09 08:07:44.638 I/InstrumentationBackend(13358): Added:'SetSelection', with key:'set_selection'
+12-09 08:07:44.638 I/InstrumentationBackend(13358): Added:'KeyboardKeyEvent', with key:'keyboard_key_event'
+12-09 08:07:44.638 I/InstrumentationBackend(13358): Added:'PressUserActionButton', with key:'press_user_action_button'
+12-09 08:07:44.638 I/InstrumentationBackend(13358): Added:'HideSoftKeyboard', with key:'hide_soft_keyboard'
+12-09 08:07:44.639 I/InstrumentationBackend(13358): Added:'ListActions', with key:'list_actions'
+12-09 08:07:44.639 I/calabash(13358): Instantiating http server at 7102
+12-09 08:07:44.639 I/System.out(13358): HTTP Daemon listening on: 7102
+12-09 08:07:44.754 I/System.out(13358): URI: //ping
+12-09 08:07:44.754 I/System.out(13358): params: {json={}
+12-09 08:07:44.754 I/System.out(13358): }
+12-09 08:07:44.801 I/art     (13358): Background sticky concurrent mark sweep GC freed 3682(419KB) AllocSpace objects, 4(80KB) LOS objects, 41% free, 969KB/1644KB, paused 33.880ms total 39.958ms
+12-09 08:07:44.881 I/System.out(13358): URI: //ping
+12-09 08:07:44.881 I/System.out(13358): params: {json={}
+12-09 08:07:44.881 I/System.out(13358): }
+12-09 08:07:44.935 I/System.out(13358): URI: //ready
+12-09 08:07:44.935 I/System.out(13358): params: {json={}
+12-09 08:07:44.935 I/System.out(13358): }
+12-09 08:07:44.973 I/System.out(13358): URI: //
+12-09 08:07:44.973 I/System.out(13358): params: {json={"command":"version","arguments":[]}
+12-09 08:07:44.973 I/System.out(13358): }
+12-09 08:07:44.973 I/System.out(13358): header: {date=Sun, 09 Dec 2018 08:07:44 GMT, accept=*/*, content-length=36, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:07:44.973 I/System.out(13358): params: {json={"command":"version","arguments":[]}
+12-09 08:07:44.973 I/System.out(13358): }
+12-09 08:07:44.973 I/System.out(13358): ProP json = {"command":"version","arguments":[]}
+12-09 08:07:44.974 I/System.out(13358): files: {}
+12-09 08:07:44.974 I/System.out(13358): command: {"command":"version","arguments":[]}
+12-09 08:07:44.990 I/InstrumentationBackend(13358): Got command:'Command:'Line:null,version', arguments:'[]'
+12-09 08:07:45.169 I/System.out(13358): result:{"bonusInformation":[],"message":"0.9.8","success":true}
+12-09 08:07:45.201 I/art     (13358): Background partial concurrent mark sweep GC freed 14387(773KB) AllocSpace objects, 9(180KB) LOS objects, 46% free, 1194KB/2MB, paused 962us total 208.018ms
+12-09 08:07:45.245 I/System.out(13358): URI: //start-application
+12-09 08:07:45.245 I/System.out(13358): params: {json={"intent":null}
+12-09 08:07:45.245 I/System.out(13358): }
+12-09 08:07:45.297 I/ActivityManager( 1591): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.evancharlton.mileage/.Mileage} from uid 10131 on display 0
+12-09 08:07:45.406 I/calabash(13358): newActivity1
+12-09 08:07:45.512 I/calabash(13358): newActivity1
+12-09 08:07:45.545 D/gralloc_ranchu( 1223): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:07:45.550 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@ee0efe6
+12-09 08:07:45.550 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:07:45.550 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:07:45.550 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:07:45.550 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 08:07:45.550 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 08:07:45.550 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 08:07:45.550 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:07:45.550 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:07:45.551 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@ee0efe6
+12-09 08:07:45.551 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:07:45.551 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:07:45.551 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:07:45.551 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 08:07:45.551 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 08:07:45.551 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:07:45.551 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:07:45.720 V/PhoneStatusBar( 1692): setLightsOn(true)
+12-09 08:07:45.821 D/EGL_emulation( 1946): eglMakeCurrent: 0x7f85871b4dc0: ver 2 0 (tinfo 0x7f8587182d60)
+12-09 08:07:45.823 E/Surface ( 1946): getSlotFromBufferLocked: unknown buffer: 0x7f85871b5c20
+12-09 08:07:45.837 D/FillupsProvider(13358): Creating database
+12-09 08:07:46.031 I/art     (13358): Background sticky concurrent mark sweep GC freed 9572(545KB) AllocSpace objects, 0(0B) LOS objects, 18% free, 1802KB/2MB, paused 9.199ms total 190.147ms
+12-09 08:07:46.073 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@ee0efe6
+12-09 08:07:46.073 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:07:46.073 W/ActivityManager( 1591): Bad activity token: android.os.BinderProxy@ee0efe6
+12-09 08:07:46.073 W/ActivityManager( 1591): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:07:46.073 W/ActivityManager( 1591): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:07:46.224 I/art     (13358): Background partial concurrent mark sweep GC freed 1975(264KB) AllocSpace objects, 1(20KB) LOS objects, 39% free, 1872KB/3MB, paused 5.467ms total 142.844ms
+12-09 08:07:46.227 D/AndroidRuntime(13358): Shutting down VM
+--------- beginning of crash
+12-09 08:07:46.227 E/AndroidRuntime(13358): FATAL EXCEPTION: main
+12-09 08:07:46.227 E/AndroidRuntime(13358): Process: com.evancharlton.mileage, PID: 13358
+12-09 08:07:46.227 E/AndroidRuntime(13358): java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3103)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3134)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2481)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:07:46.227 E/AndroidRuntime(13358): Caused by: java.lang.RuntimeException: Unable to resume activity {com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3103)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:179)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:524)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at sh.calaba.instrumentationbackend.CalabashInstrumentation.callActivityOnResume(CalabashInstrumentation.java:80)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.Activity.performResume(Activity.java:6312)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3092)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	... 10 more
+12-09 08:07:46.227 E/AndroidRuntime(13358): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at com.evancharlton.mileage.FillupActivity.setDataFormats(FillupActivity.java:266)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at com.evancharlton.mileage.FillupActivity.initUI(FillupActivity.java:241)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at com.evancharlton.mileage.BaseFormActivity.onResume(BaseFormActivity.java:45)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at com.evancharlton.mileage.FillupActivity.onResume(FillupActivity.java:90)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at sh.calaba.instrumentationbackend.CalabashInstrumentation.callActivityOnResume(CalabashInstrumentation.java:80)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.Activity.performResume(Activity.java:6312)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3092)
+12-09 08:07:46.227 E/AndroidRuntime(13358): 	... 17 more
+12-09 08:07:46.229 W/ActivityManager( 1591): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:07:46.229 W/ActivityManager( 1591):   java.lang.NullPointerException
+12-09 08:07:46.229 W/ActivityManager( 1591):   java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.EditText.setHint(java.lang.CharSequence)' on a null object reference
+12-09 08:07:46.229 I/ActivityManager( 1591): Force stopping com.evancharlton.mileage appid=10131 user=0: finished inst
+12-09 08:07:46.229 I/ActivityManager( 1591): Killing 13358:com.evancharlton.mileage/u0a131 (adj 0): stop com.evancharlton.mileage
