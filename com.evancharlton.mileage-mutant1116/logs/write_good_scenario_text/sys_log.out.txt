@@ -1,0 +1,44 @@
+--------- beginning of main
+12-09 07:57:34.392 D/AndroidRuntime(10823): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:57:34.408 D/AndroidRuntime(10823): CheckJNI is ON
+12-09 07:57:34.421 D/ICU     (10823): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:57:34.578 E/memtrack(10823): Couldn't load memtrack module (No such file or directory)
+12-09 07:57:34.578 E/android.os.Debug(10823): failed to load memtrack module: -2
+12-09 07:57:34.699 I/Radio-JNI(10823): register_android_hardware_Radio DONE
+12-09 07:57:34.714 D/AndroidRuntime(10823): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 07:57:34.734 I/ActivityManager( 1595): Force stopping com.evancharlton.mileage appid=10129 user=0: start instr
+12-09 07:57:34.754 I/ActivityManager( 1595): Start proc 10831:com.evancharlton.mileage/u0a129 for added application com.evancharlton.mileage
+12-09 07:57:34.755 I/ProcessStatsService( 1595): Prepared write state in 1ms
+12-09 07:57:34.757 D/AndroidRuntime(10823): Shutting down VM
+12-09 07:57:34.775 E/art     (10823): Thread attaching while runtime is shutting down: Binder_1
+12-09 07:57:34.775 I/AndroidRuntime(10823): NOTE: attach of thread 'Binder_1' failed
+12-09 07:57:34.854 W/System  (10831): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 07:57:34.862 W/System  (10831): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 07:57:34.917 D/AndroidRuntime(10831): Shutting down VM
+--------- beginning of crash
+12-09 07:57:34.917 E/AndroidRuntime(10831): FATAL EXCEPTION: main
+12-09 07:57:34.917 E/AndroidRuntime(10831): Process: com.evancharlton.mileage, PID: 10831
+12-09 07:57:34.917 E/AndroidRuntime(10831): java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:79)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at java.lang.Class.newInstance(Native Method)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at android.os.Looper.loop(Looper.java:148)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 07:57:34.917 E/AndroidRuntime(10831): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 07:57:34.931 W/ActivityManager( 1595): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 07:57:34.931 W/ActivityManager( 1595):   java.lang.VerifyError
+12-09 07:57:34.931 W/ActivityManager( 1595):   java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 07:57:34.931 I/ActivityManager( 1595): Force stopping com.evancharlton.mileage appid=10129 user=0: finished inst
+12-09 07:57:34.931 I/ActivityManager( 1595): Killing 10831:com.evancharlton.mileage/u0a129 (adj 0): stop com.evancharlton.mileage
+12-09 07:57:35.039 W/ActivityManager( 1595): Spurious death for ProcessRecord{c01c9c7 0:com.evancharlton.mileage/u0a129}, curProc for 10831: null
+12-09 07:57:35.041 W/art     ( 1595): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12502 waiters=0 for 109ms
+12-09 07:57:35.417 I/AccountManagerService( 1595): getTypesVisibleToCaller: isPermitted? true
+12-09 07:58:00.307 D/hwcomposer( 1224): hw_composer sent 2 syncs in 60s

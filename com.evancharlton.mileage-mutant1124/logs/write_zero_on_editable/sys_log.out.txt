@@ -1,0 +1,48 @@
+--------- beginning of main
+12-09 08:35:03.829 D/AndroidRuntime(16053): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:35:03.836 D/AndroidRuntime(16053): CheckJNI is ON
+12-09 08:35:03.861 D/ICU     (16053): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:35:04.043 E/memtrack(16053): Couldn't load memtrack module (No such file or directory)
+12-09 08:35:04.050 E/android.os.Debug(16053): failed to load memtrack module: -2
+12-09 08:35:04.051 I/Radio-JNI(16053): register_android_hardware_Radio DONE
+12-09 08:35:04.062 D/AndroidRuntime(16053): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 08:35:04.078 I/ActivityManager( 1595): Force stopping com.evancharlton.mileage appid=10139 user=0: start instr
+12-09 08:35:10.023 W/ActivityManager( 1595): Slow operation: 5932ms so far, now at startProcess: returned from zygote!
+12-09 08:35:10.023 W/ActivityManager( 1595): Slow operation: 5933ms so far, now at startProcess: done updating battery stats
+12-09 08:35:10.023 W/ActivityManager( 1595): Slow operation: 5933ms so far, now at startProcess: building log message
+12-09 08:35:10.024 I/ActivityManager( 1595): Start proc 16061:com.evancharlton.mileage/u0a139 for added application com.evancharlton.mileage
+12-09 08:35:10.024 W/ActivityManager( 1595): Slow operation: 5933ms so far, now at startProcess: starting to update pids map
+12-09 08:35:10.024 W/ActivityManager( 1595): Slow operation: 5933ms so far, now at startProcess: done updating pids map
+12-09 08:35:10.024 D/AndroidRuntime(16053): Shutting down VM
+12-09 08:35:10.027 W/art     ( 1595): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=0 for 5.936s
+12-09 08:35:10.027 W/art     ( 1595): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=1 for 5.889s
+12-09 08:35:10.030 W/art     ( 1595): Long monitor contention event with owner method=boolean com.android.server.am.ActivityManagerService.startInstrumentation(android.content.ComponentName, java.lang.String, int, android.os.Bundle, android.app.IInstrumentationWatcher, android.app.IUiAutomationConnection, int, java.lang.String) from ActivityManagerService.java:17066 waiters=2 for 5.840s
+12-09 08:35:10.060 W/System  (16061): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:35:10.066 W/System  (16061): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:35:10.101 D/AndroidRuntime(16061): Shutting down VM
+--------- beginning of crash
+12-09 08:35:10.101 E/AndroidRuntime(16061): FATAL EXCEPTION: main
+12-09 08:35:10.101 E/AndroidRuntime(16061): Process: com.evancharlton.mileage, PID: 16061
+12-09 08:35:10.101 E/AndroidRuntime(16061): java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:79)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at java.lang.Class.newInstance(Native Method)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at android.app.ActivityThread.installProvider(ActivityThread.java:5141)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:4748)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4688)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at android.app.ActivityThread.-wrap1(ActivityThread.java)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 08:35:10.101 E/AndroidRuntime(16061): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 08:35:10.103 W/ActivityManager( 1595): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 08:35:10.103 W/ActivityManager( 1595):   java.lang.VerifyError
+12-09 08:35:10.103 W/ActivityManager( 1595):   java.lang.VerifyError: Rejecting class com.evancharlton.mileage.provider.tables.VehiclesTable because it failed compile-time verification (declaration of 'com.evancharlton.mileage.provider.tables.VehiclesTable' appears in /data/app/com.evancharlton.mileage-1/base.apk)
+12-09 08:35:10.103 I/ActivityManager( 1595): Force stopping com.evancharlton.mileage appid=10139 user=0: finished inst
+12-09 08:35:10.103 I/ActivityManager( 1595): Killing 16061:com.evancharlton.mileage/u0a139 (adj 0): stop com.evancharlton.mileage
+12-09 08:35:10.502 W/art     ( 1595): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) from ActivityManagerService.java:15949 waiters=0 for 112ms
+12-09 08:35:10.671 I/AccountManagerService( 1595): getTypesVisibleToCaller: isPermitted? true
+12-09 08:36:00.308 D/hwcomposer( 1224): hw_composer sent 2 syncs in 60s
