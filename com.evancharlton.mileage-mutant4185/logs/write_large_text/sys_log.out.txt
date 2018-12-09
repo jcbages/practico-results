@@ -1,0 +1,996 @@
+--------- beginning of main
+12-09 07:46:58.454 D/AndroidRuntime( 6328): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:46:58.456 D/AndroidRuntime( 6328): CheckJNI is ON
+12-09 07:46:58.474 D/ICU     ( 6328): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:46:58.720 E/memtrack( 6328): Couldn't load memtrack module (No such file or directory)
+12-09 07:46:58.726 E/android.os.Debug( 6328): failed to load memtrack module: -2
+12-09 07:46:58.728 I/Radio-JNI( 6328): register_android_hardware_Radio DONE
+12-09 07:46:58.750 D/AndroidRuntime( 6328): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-09 07:46:58.809 I/ActivityManager( 1593): Force stopping com.evancharlton.mileage appid=10119 user=0: start instr
+12-09 07:46:58.827 I/ActivityManager( 1593): Start proc 6337:com.evancharlton.mileage/u0a119 for added application com.evancharlton.mileage
+12-09 07:46:58.878 D/AndroidRuntime( 6328): Shutting down VM
+12-09 07:46:58.956 W/System  ( 6337): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 07:46:58.956 W/System  ( 6337): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 07:46:59.002 I/System.out( 6337): Main activity name automatically set to: com.evancharlton.mileage.Mileage
+12-09 07:46:59.010 I/System.out( 6337): Calabash did not load Mono. This is only a problem if you are trying to test a Mono application
+12-09 07:46:59.115 I/calabash( 6337): Test server port: 7102
+12-09 07:46:59.116 I/InstrumentationBackend( 6337): Added:'GetPreferences', with key:'get_preferences'
+12-09 07:46:59.366 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 42035(1577KB) AllocSpace objects, 0(0B) LOS objects, 75% free, 961KB/3MB, paused 2.545ms total 359.459ms
+12-09 07:46:59.368 I/InstrumentationBackend( 6337): Added:'SetPreferences', with key:'set_preferences'
+12-09 07:46:59.369 I/InstrumentationBackend( 6337): Added:'ClearPreferences', with key:'clear_preferences'
+12-09 07:46:59.369 I/InstrumentationBackend( 6337): Added:'PressElement', with key:'press_l10n_element'
+12-09 07:46:59.369 I/InstrumentationBackend( 6337): Added:'WaitForElement', with key:'wait_for_l10n_element'
+12-09 07:46:59.369 I/InstrumentationBackend( 6337): Added:'NullAction', with key:'nullAction'
+12-09 07:46:59.370 I/InstrumentationBackend( 6337): Added:'PressKey', with key:'press_key'
+12-09 07:46:59.371 I/InstrumentationBackend( 6337): Added:'SetActivityOrientation', with key:'set_activity_orientation'
+12-09 07:46:59.378 I/InstrumentationBackend( 6337): Added:'GetActivityOrientation', with key:'get_activity_orientation'
+12-09 07:46:59.378 I/InstrumentationBackend( 6337): Added:'FakeGPSLocation', with key:'set_gps_coordinates'
+12-09 07:46:59.378 I/InstrumentationBackend( 6337): Added:'SetPropertyByCssSelector', with key:'set_property_by_css_selector'
+12-09 07:46:59.379 I/InstrumentationBackend( 6337): Added:'GetUrl', with key:'get_url'
+12-09 07:46:59.388 I/InstrumentationBackend( 6337): Added:'ScrollTo', with key:'scroll_to'
+12-09 07:46:59.394 I/InstrumentationBackend( 6337): Added:'GetLoadProgress', with key:'get_load_progress'
+12-09 07:46:59.394 I/InstrumentationBackend( 6337): Added:'DumpHtml', with key:'dump_html'
+12-09 07:46:59.395 I/InstrumentationBackend( 6337): Added:'DumpBodyHtml', with key:'dump_body_html'
+12-09 07:46:59.395 I/InstrumentationBackend( 6337): Added:'EnterTextByCssSelector', with key:'enter_text_by_selector'
+12-09 07:46:59.396 I/InstrumentationBackend( 6337): Added:'AndroidSDKVersion', with key:'android_sdk_version'
+12-09 07:46:59.396 I/InstrumentationBackend( 6337): Added:'Version', with key:'version'
+12-09 07:46:59.396 I/InstrumentationBackend( 6337): Added:'Drag', with key:'drag'
+12-09 07:46:59.396 I/InstrumentationBackend( 6337): Added:'TouchCoordinates', with key:'touch_coordinate'
+12-09 07:46:59.396 I/InstrumentationBackend( 6337): Added:'LongPressCoordinate', with key:'long_press_coordinate'
+12-09 07:46:59.397 I/InstrumentationBackend( 6337): Added:'DragCoordinates', with key:'drag_coordinates'
+12-09 07:46:59.397 I/InstrumentationBackend( 6337): Added:'ResumeApplication', with key:'resume_application'
+12-09 07:46:59.397 I/InstrumentationBackend( 6337): Added:'Swipe', with key:'swipe'
+12-09 07:46:59.397 I/InstrumentationBackend( 6337): Added:'DoubleTapCoordinate', with key:'double_tap_coordinate'
+12-09 07:46:59.397 I/InstrumentationBackend( 6337): Added:'ClickOnScreen', with key:'click_on_screen'
+12-09 07:46:59.397 I/InstrumentationBackend( 6337): Added:'GetActivityName', with key:'get_activity_name'
+12-09 07:46:59.398 I/InstrumentationBackend( 6337): Added:'ScrollToView', with key:'scroll_to_view'
+12-09 07:46:59.399 I/InstrumentationBackend( 6337): Added:'ViewConfiguration', with key:'view_configuration'
+12-09 07:46:59.399 I/InstrumentationBackend( 6337): Added:'IsCurrentActivityFocused', with key:'is_current_activity_focused'
+12-09 07:46:59.399 I/InstrumentationBackend( 6337): Added:'SendTcp', with key:'send_tcp'
+12-09 07:46:59.399 I/InstrumentationBackend( 6337): Added:'DpToDevicePixel', with key:'dp_to_device_pixel'
+12-09 07:46:59.400 I/InstrumentationBackend( 6337): Added:'KeyboardEnterText', with key:'keyboard_enter_text'
+12-09 07:46:59.400 I/InstrumentationBackend( 6337): Added:'DeleteSurroundingText', with key:'delete_surrounding_text'
+12-09 07:46:59.400 I/InstrumentationBackend( 6337): Added:'SetComposingRegion', with key:'set_composing_region'
+12-09 07:46:59.401 I/InstrumentationBackend( 6337): Added:'SetSelection', with key:'set_selection'
+12-09 07:46:59.401 I/InstrumentationBackend( 6337): Added:'KeyboardKeyEvent', with key:'keyboard_key_event'
+12-09 07:46:59.401 I/InstrumentationBackend( 6337): Added:'PressUserActionButton', with key:'press_user_action_button'
+12-09 07:46:59.401 I/InstrumentationBackend( 6337): Added:'HideSoftKeyboard', with key:'hide_soft_keyboard'
+12-09 07:46:59.402 I/InstrumentationBackend( 6337): Added:'ListActions', with key:'list_actions'
+12-09 07:46:59.406 I/calabash( 6337): Instantiating http server at 7102
+12-09 07:46:59.414 I/System.out( 6337): HTTP Daemon listening on: 7102
+12-09 07:46:59.547 I/System.out( 6337): URI: //ping
+12-09 07:46:59.547 I/System.out( 6337): params: {json={}
+12-09 07:46:59.547 I/System.out( 6337): }
+12-09 07:46:59.631 I/System.out( 6337): URI: //ping
+12-09 07:46:59.631 I/System.out( 6337): params: {json={}
+12-09 07:46:59.631 I/System.out( 6337): }
+12-09 07:46:59.684 I/System.out( 6337): URI: //ready
+12-09 07:46:59.684 I/System.out( 6337): params: {json={}
+12-09 07:46:59.684 I/System.out( 6337): }
+12-09 07:46:59.759 I/System.out( 6337): URI: //
+12-09 07:46:59.766 I/System.out( 6337): params: {json={"command":"version","arguments":[]}
+12-09 07:46:59.766 I/System.out( 6337): }
+12-09 07:46:59.766 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:46:59 GMT, accept=*/*, content-length=36, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:46:59.766 I/System.out( 6337): params: {json={"command":"version","arguments":[]}
+12-09 07:46:59.766 I/System.out( 6337): }
+12-09 07:46:59.766 I/System.out( 6337): ProP json = {"command":"version","arguments":[]}
+12-09 07:46:59.766 I/System.out( 6337): files: {}
+12-09 07:46:59.766 I/System.out( 6337): command: {"command":"version","arguments":[]}
+12-09 07:46:59.777 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,version', arguments:'[]'
+12-09 07:46:59.793 I/System.out( 6337): result:{"bonusInformation":[],"message":"0.9.8","success":true}
+12-09 07:46:59.866 I/System.out( 6337): URI: //start-application
+12-09 07:46:59.866 I/System.out( 6337): params: {json={"intent":null}
+12-09 07:46:59.866 I/System.out( 6337): }
+12-09 07:46:59.950 I/ActivityManager( 1593): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.evancharlton.mileage/.Mileage} from uid 10119 on display 0
+12-09 07:47:00.131 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:00.141 I/calabash( 6337): newActivity1
+12-09 07:47:00.218 D/hwcomposer( 1226): hw_composer sent 685 syncs in 60s
+12-09 07:47:00.269 I/calabash( 6337): newActivity1
+12-09 07:47:00.289 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@799635
+12-09 07:47:00.289 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:00.289 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:00.289 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:00.289 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 07:47:00.289 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 07:47:00.289 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 07:47:00.289 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:00.289 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:00.355 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@799635
+12-09 07:47:00.355 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:00.355 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:00.355 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:00.355 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 07:47:00.355 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 07:47:00.355 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:00.355 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:00.442 I/art     ( 6337): Background partial concurrent mark sweep GC freed 36190(2MB) AllocSpace objects, 15(300KB) LOS objects, 42% free, 1380KB/2MB, paused 1.165ms total 199.097ms
+12-09 07:47:00.498 V/PhoneStatusBar( 1697): setLightsOn(true)
+12-09 07:47:00.727 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@799635
+12-09 07:47:00.727 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:00.727 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@799635
+12-09 07:47:00.727 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:00.727 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:00.754 D/EGL_emulation( 1931): eglMakeCurrent: 0x7f276feb4dc0: ver 2 0 (tinfo 0x7f276fe82ce0)
+12-09 07:47:00.760 E/Surface ( 1931): getSlotFromBufferLocked: unknown buffer: 0x7f276c455de0
+12-09 07:47:01.331 W/art     ( 1593): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3103 waiters=1 for 151ms
+12-09 07:47:01.333 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:01.400 D/        ( 6337): HostConnection::get() New Host Connection established 0x7f276c57f0a0, tid 6337
+12-09 07:47:01.698 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:01.903 I/ActivityManager( 1593): Displayed com.evancharlton.mileage/.Mileage: +1s788ms
+12-09 07:47:02.415 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:03.003 I/System.out( 6337): URI: //map
+12-09 07:47:03.003 I/System.out( 6337): params: {json={"query":"android.widget.EditText id:'price'","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:03.003 I/System.out( 6337): }
+12-09 07:47:03.143 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:03.214 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 32932(1555KB) AllocSpace objects, 0(0B) LOS objects, 36% free, 2MB/3MB, paused 5.343ms total 29.441ms
+12-09 07:47:03.297 I/System.out( 6337): URI: //gesture
+12-09 07:47:03.297 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'price'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:03.297 I/System.out( 6337): }
+12-09 07:47:03.332 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:03.684 I/LatinIME( 1870): Starting input. Cursor position = 0,0
+12-09 07:47:03.846 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 44718(2018KB) AllocSpace objects, 2(40KB) LOS objects, 32% free, 2MB/3MB, paused 1.272ms total 154.394ms
+12-09 07:47:03.963 D/EGL_emulation( 1870): eglMakeCurrent: 0x7f2764105460: ver 2 0 (tinfo 0x7f276bdbaa60)
+12-09 07:47:04.399 I/System.out( 6337): URI: //
+12-09 07:47:04.399 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:04.399 I/System.out( 6337): }
+12-09 07:47:04.399 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:04 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:04.399 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:04.399 I/System.out( 6337): }
+12-09 07:47:04.399 I/System.out( 6337): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:04.399 I/System.out( 6337): files: {}
+12-09 07:47:04.399 I/System.out( 6337): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:04.401 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 07:47:04.423 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:04.635 I/System.out( 6337): URI: //
+12-09 07:47:04.635 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["98879898249712372391"]}
+12-09 07:47:04.635 I/System.out( 6337): }
+12-09 07:47:04.635 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:04 GMT, accept=*/*, content-length=70, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:04.635 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["98879898249712372391"]}
+12-09 07:47:04.635 I/System.out( 6337): }
+12-09 07:47:04.635 I/System.out( 6337): ProP json = {"command":"keyboard_enter_text","arguments":["98879898249712372391"]}
+12-09 07:47:04.635 I/System.out( 6337): files: {}
+12-09 07:47:04.635 I/System.out( 6337): command: {"command":"keyboard_enter_text","arguments":["98879898249712372391"]}
+12-09 07:47:04.636 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[98879898249712372391]'
+12-09 07:47:04.637 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:04.637 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:04.912 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:04.912 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:04.936 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:05.546 E/SurfaceFlinger( 1226): ro.sf.lcd_density must be defined as a build property
+12-09 07:47:05.594 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:05.668 D/        ( 6368): HostConnection::get() New Host Connection established 0x7f0d75312480, tid 6368
+12-09 07:47:05.738 E/EGL_emulation( 1226): tid 1226: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:47:06.839 I/System.out( 6337): URI: //map
+12-09 07:47:06.842 I/System.out( 6337): params: {json={"query":"android.widget.EditText id:'volume'","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:06.842 I/System.out( 6337): }
+12-09 07:47:07.164 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:07.381 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 57122(2MB) AllocSpace objects, 3(60KB) LOS objects, 36% free, 2MB/3MB, paused 1.175ms total 183.238ms
+12-09 07:47:07.381 I/System.out( 6337): URI: //gesture
+12-09 07:47:07.381 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'volume'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:07.381 I/System.out( 6337): }
+12-09 07:47:07.444 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:08.006 I/LatinIME( 1870): Starting input. Cursor position = 0,0
+12-09 07:47:08.366 I/art     ( 6337): Background partial concurrent mark sweep GC freed 45856(2MB) AllocSpace objects, 3(60KB) LOS objects, 39% free, 2MB/3MB, paused 2.853ms total 359.558ms
+12-09 07:47:08.674 I/Choreographer( 1870): Skipped 49 frames!  The application may be doing too much work on its main thread.
+12-09 07:47:09.115 I/System.out( 6337): URI: //
+12-09 07:47:09.115 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:09.115 I/System.out( 6337): }
+12-09 07:47:09.115 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:09 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:09.115 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:09.115 I/System.out( 6337): }
+12-09 07:47:09.115 I/System.out( 6337): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:09.115 I/System.out( 6337): files: {}
+12-09 07:47:09.115 I/System.out( 6337): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:09.116 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 07:47:09.167 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:09.354 I/System.out( 6337): URI: //
+12-09 07:47:09.354 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["98879891284721092831"]}
+12-09 07:47:09.354 I/System.out( 6337): }
+12-09 07:47:09.354 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:09 GMT, accept=*/*, content-length=70, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:09.354 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["98879891284721092831"]}
+12-09 07:47:09.355 I/System.out( 6337): }
+12-09 07:47:09.355 I/System.out( 6337): ProP json = {"command":"keyboard_enter_text","arguments":["98879891284721092831"]}
+12-09 07:47:09.355 I/System.out( 6337): files: {}
+12-09 07:47:09.355 I/System.out( 6337): command: {"command":"keyboard_enter_text","arguments":["98879891284721092831"]}
+12-09 07:47:09.356 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[98879891284721092831]'
+12-09 07:47:09.356 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:09.356 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:09.483 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:09.483 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:09.516 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:10.230 E/SurfaceFlinger( 1226): ro.sf.lcd_density must be defined as a build property
+12-09 07:47:10.298 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:10.313 D/        ( 6378): HostConnection::get() New Host Connection established 0x7fde274d2480, tid 6378
+12-09 07:47:10.387 E/EGL_emulation( 1226): tid 1226: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:47:11.395 I/System.out( 6337): URI: //map
+12-09 07:47:11.396 I/System.out( 6337): params: {json={"query":"android.widget.EditText id:'odometer'","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:11.396 I/System.out( 6337): }
+12-09 07:47:11.412 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:11.623 I/System.out( 6337): URI: //gesture
+12-09 07:47:11.623 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'odometer'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:11.623 I/System.out( 6337): }
+12-09 07:47:11.643 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:11.943 I/LatinIME( 1870): Starting input. Cursor position = 0,0
+12-09 07:47:12.064 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 37312(1578KB) AllocSpace objects, 1(20KB) LOS objects, 17% free, 2MB/3MB, paused 4.642ms total 103.047ms
+12-09 07:47:12.564 I/System.out( 6337): URI: //
+12-09 07:47:12.564 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:12.564 I/System.out( 6337): }
+12-09 07:47:12.564 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:12 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:12.564 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:12.564 I/System.out( 6337): }
+12-09 07:47:12.564 I/System.out( 6337): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:12.564 I/System.out( 6337): files: {}
+12-09 07:47:12.564 I/System.out( 6337): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:12.570 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 07:47:12.613 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:12.747 I/System.out( 6337): URI: //
+12-09 07:47:12.747 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["74394723984721092831"]}
+12-09 07:47:12.747 I/System.out( 6337): }
+12-09 07:47:12.748 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:12 GMT, accept=*/*, content-length=70, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:12.748 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["74394723984721092831"]}
+12-09 07:47:12.748 I/System.out( 6337): }
+12-09 07:47:12.748 I/System.out( 6337): ProP json = {"command":"keyboard_enter_text","arguments":["74394723984721092831"]}
+12-09 07:47:12.748 I/System.out( 6337): files: {}
+12-09 07:47:12.748 I/System.out( 6337): command: {"command":"keyboard_enter_text","arguments":["74394723984721092831"]}
+12-09 07:47:12.751 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[74394723984721092831]'
+12-09 07:47:12.771 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:12.771 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:12.810 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:12.811 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:12.822 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:13.286 E/SurfaceFlinger( 1226): ro.sf.lcd_density must be defined as a build property
+12-09 07:47:13.287 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:13.371 D/        ( 6388): HostConnection::get() New Host Connection established 0x7f065f712480, tid 6388
+12-09 07:47:13.415 E/EGL_emulation( 1226): tid 1226: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:47:15.343 I/System.out( 6337): URI: //map
+12-09 07:47:15.343 I/System.out( 6337): params: {json={"query":"android.widget.Button index:2","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:15.343 I/System.out( 6337): }
+12-09 07:47:15.373 W/art     ( 6337): Suspending all threads took: 5.395ms
+12-09 07:47:15.416 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 22482(1007KB) AllocSpace objects, 5(100KB) LOS objects, 19% free, 2MB/3MB, paused 6.868ms total 61.026ms
+12-09 07:47:15.581 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 38443(1746KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 2MB/3MB, paused 6.730ms total 125.464ms
+12-09 07:47:15.583 I/System.out( 6337): URI: //gesture
+12-09 07:47:15.583 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.Button index:2","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:15.583 I/System.out( 6337): }
+12-09 07:47:16.019 W/art     ( 6337): Suspending all threads took: 11.630ms
+12-09 07:47:16.030 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:16.040 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:16.058 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:16.081 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 28455(1274KB) AllocSpace objects, 0(0B) LOS objects, 10% free, 3MB/3MB, paused 19.111ms total 120.052ms
+12-09 07:47:16.138 I/calabash( 6337): newActivity1
+12-09 07:47:16.170 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@b059607
+12-09 07:47:16.170 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:16.170 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:16.170 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:16.170 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 07:47:16.170 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 07:47:16.170 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 07:47:16.170 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:16.170 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:16.213 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@b059607
+12-09 07:47:16.213 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:16.213 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:16.213 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:16.213 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 07:47:16.213 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 07:47:16.213 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:16.213 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:16.220 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8957302 , only wrote 8955228
+12-09 07:47:16.220 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8955235 , only wrote 8955228
+12-09 07:47:16.256 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8956794 , only wrote 8955889
+12-09 07:47:16.274 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@b059607
+12-09 07:47:16.274 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:16.274 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@b059607
+12-09 07:47:16.274 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:16.274 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:16.367 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8960796 , only wrote 8960516
+12-09 07:47:16.368 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 8184(504KB) AllocSpace objects, 1(20KB) LOS objects, 16% free, 3MB/3MB, paused 48.682ms total 85.279ms
+12-09 07:47:16.392 I/LatinIME( 1870): Starting input. Cursor position = -1,-1
+12-09 07:47:16.407 I/art     ( 1593): Background partial concurrent mark sweep GC freed 32915(2MB) AllocSpace objects, 21(420KB) LOS objects, 29% free, 9MB/13MB, paused 5.528ms total 100.692ms
+12-09 07:47:16.579 E/SurfaceFlinger( 1226): ro.sf.lcd_density must be defined as a build property
+12-09 07:47:16.589 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:16.595 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8970553 , only wrote 8970431
+12-09 07:47:16.595 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8970438 , only wrote 8970431
+12-09 07:47:16.598 D/Mileage ( 6337): Recalculating
+12-09 07:47:16.614 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8971288 , only wrote 8971092
+12-09 07:47:16.631 D/Mileage.ABS( 6337): Finished backup
+12-09 07:47:16.632 D/Mileage.ABS( 6337): Not backing up; 30
+12-09 07:47:16.632 D/Mileage.ABS( 6337): Not backing up; 30
+12-09 07:47:16.658 D/        ( 6395): HostConnection::get() New Host Connection established 0x7f59b8e52480, tid 6395
+12-09 07:47:16.705 E/EGL_emulation( 1226): tid 1226: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:47:16.769 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8977917 , only wrote 8977702
+12-09 07:47:16.972 D/FillupAdapter( 6337): Average economy: 0.7523746539172881
+12-09 07:47:16.980 D/Mileage.ABS( 6337): Not backing up; 378
+12-09 07:47:17.078 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8991326 , only wrote 8990922
+12-09 07:47:17.078 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8990929 , only wrote 8990922
+12-09 07:47:17.099 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 8991830 , only wrote 8991583
+12-09 07:47:17.114 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.133 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.162 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.175 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.177 W/RichInputConnection( 1870): Slow InputConnection: GET_TEXT_BEFORE_CURSOR took 201 ms.
+12-09 07:47:17.179 I/InputAttributes( 1870): InputType.TYPE_NULL is specified
+12-09 07:47:17.191 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.211 I/Choreographer( 1870): Skipped 54 frames!  The application may be doing too much work on its main thread.
+12-09 07:47:17.260 D/EGL_emulation( 1870): eglMakeCurrent: 0x7f2764105460: ver 2 0 (tinfo 0x7f276bdbaa60)
+12-09 07:47:17.263 E/Surface ( 1870): getSlotFromBufferLocked: unknown buffer: 0x7f2764107260
+12-09 07:47:17.497 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9009147 , only wrote 9005464
+12-09 07:47:17.497 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9005471 , only wrote 9005464
+12-09 07:47:17.514 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9006202 , only wrote 9006125
+12-09 07:47:17.514 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.546 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.570 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.575 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.594 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.618 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.690 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.690 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9013902 , only wrote 9012074
+12-09 07:47:17.690 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9012080 , only wrote 9012074
+12-09 07:47:17.714 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9013117 , only wrote 9012735
+12-09 07:47:17.714 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.738 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.754 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.763 I/System.out( 6337): URI: //gesture
+12-09 07:47:17.763 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.TabWidget descendant TextView index:0","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:17.763 I/System.out( 6337): }
+12-09 07:47:17.768 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:17.931 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9022290 , only wrote 9021989
+12-09 07:47:17.931 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9021997 , only wrote 9021989
+12-09 07:47:17.955 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9023025 , only wrote 9022650
+12-09 07:47:18.101 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9029108 , only wrote 9027938
+12-09 07:47:18.526 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9046662 , only wrote 9046446
+12-09 07:47:18.546 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9047342 , only wrote 9047107
+12-09 07:47:18.642 D/AudioFlinger( 1307): mixer(0xf4340000) throttle end: throttle time(3)
+12-09 07:47:18.689 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 48235(2MB) AllocSpace objects, 1(20KB) LOS objects, 35% free, 2MB/3MB, paused 1.688ms total 153.682ms
+12-09 07:47:19.103 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:19.229 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9077227 , only wrote 9076852
+12-09 07:47:19.733 I/System.out( 6337): URI: //map
+12-09 07:47:19.733 I/System.out( 6337): params: {json={"query":"android.widget.EditText id:'price'","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:19.733 I/System.out( 6337): }
+12-09 07:47:19.976 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:20.026 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.027 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9112024 , only wrote 9111885
+12-09 07:47:20.027 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9111891 , only wrote 9111885
+12-09 07:47:20.055 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9113118 , only wrote 9112546
+12-09 07:47:20.086 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9113940 , only wrote 9113868
+12-09 07:47:20.158 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 45185(2034KB) AllocSpace objects, 2(40KB) LOS objects, 33% free, 2MB/3MB, paused 18.835ms total 62.025ms
+12-09 07:47:20.191 I/System.out( 6337): URI: //gesture
+12-09 07:47:20.191 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'price'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:20.191 I/System.out( 6337): }
+12-09 07:47:20.326 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9124452 , only wrote 9124444
+12-09 07:47:20.331 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:20.366 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.375 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.387 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.418 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.432 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.509 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.509 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9132523 , only wrote 9131054
+12-09 07:47:20.510 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9131060 , only wrote 9131054
+12-09 07:47:20.530 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9131957 , only wrote 9131715
+12-09 07:47:20.672 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.702 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.770 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.770 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9142279 , only wrote 9140969
+12-09 07:47:20.770 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9140986 , only wrote 9140969
+12-09 07:47:20.786 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9141680 , only wrote 9141630
+12-09 07:47:20.803 I/LatinIME( 1870): Starting input. Cursor position = 0,0
+12-09 07:47:20.838 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.838 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.858 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.886 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.888 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.903 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.926 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:20.927 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 45345(2MB) AllocSpace objects, 3(60KB) LOS objects, 31% free, 2MB/3MB, paused 1.163ms total 120.275ms
+12-09 07:47:21.087 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9154907 , only wrote 9151545
+12-09 07:47:21.100 D/EGL_emulation( 1870): eglMakeCurrent: 0x7f2764105460: ver 2 0 (tinfo 0x7f276bdbaa60)
+12-09 07:47:21.132 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9153500 , only wrote 9152867
+12-09 07:47:21.243 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9157761 , only wrote 9157494
+12-09 07:47:21.419 I/System.out( 6337): URI: //
+12-09 07:47:21.419 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:21.419 I/System.out( 6337): }
+12-09 07:47:21.419 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:21 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:21.419 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:21.419 I/System.out( 6337): }
+12-09 07:47:21.419 I/System.out( 6337): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:21.419 I/System.out( 6337): files: {}
+12-09 07:47:21.419 I/System.out( 6337): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:21.421 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 07:47:21.499 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:21.546 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:21.546 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9170881 , only wrote 9170714
+12-09 07:47:21.546 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9170720 , only wrote 9170714
+12-09 07:47:21.546 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:21.562 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9171415 , only wrote 9171375
+12-09 07:47:21.562 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:21.670 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9180047 , only wrote 9176002
+12-09 07:47:21.724 I/System.out( 6337): URI: //
+12-09 07:47:21.727 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["97123743947239847210"]}
+12-09 07:47:21.727 I/System.out( 6337): }
+12-09 07:47:21.727 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:21 GMT, accept=*/*, content-length=70, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:21.727 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["97123743947239847210"]}
+12-09 07:47:21.727 I/System.out( 6337): }
+12-09 07:47:21.728 I/System.out( 6337): ProP json = {"command":"keyboard_enter_text","arguments":["97123743947239847210"]}
+12-09 07:47:21.728 I/System.out( 6337): files: {}
+12-09 07:47:21.728 I/System.out( 6337): command: {"command":"keyboard_enter_text","arguments":["97123743947239847210"]}
+12-09 07:47:21.729 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[97123743947239847210]'
+12-09 07:47:21.729 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:21.729 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:22.026 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:22.026 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:22.053 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:22.121 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 28201(1284KB) AllocSpace objects, 5(100KB) LOS objects, 28% free, 2MB/3MB, paused 5.710ms total 90.478ms
+12-09 07:47:22.211 I/System.out( 6337): URI: //map
+12-09 07:47:22.211 I/System.out( 6337): params: {json={"query":"android.widget.EditText id:'volume'","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:22.211 I/System.out( 6337): }
+12-09 07:47:22.287 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:22.394 I/System.out( 6337): URI: //gesture
+12-09 07:47:22.398 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'volume'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:22.398 I/System.out( 6337): }
+12-09 07:47:22.409 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:22.814 I/LatinIME( 1870): Starting input. Cursor position = 0,0
+12-09 07:47:23.383 I/System.out( 6337): URI: //
+12-09 07:47:23.383 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:23.383 I/System.out( 6337): }
+12-09 07:47:23.383 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:23 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:23.383 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:23.383 I/System.out( 6337): }
+12-09 07:47:23.383 I/System.out( 6337): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:23.383 I/System.out( 6337): files: {}
+12-09 07:47:23.383 I/System.out( 6337): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:23.385 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 07:47:23.398 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:23.432 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 14714(742KB) AllocSpace objects, 4(80KB) LOS objects, 23% free, 2MB/3MB, paused 5.128ms total 31.077ms
+12-09 07:47:23.523 I/System.out( 6337): URI: //
+12-09 07:47:23.523 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["98123743947721092831"]}
+12-09 07:47:23.524 I/System.out( 6337): }
+12-09 07:47:23.524 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:23 GMT, accept=*/*, content-length=70, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:23.524 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["98123743947721092831"]}
+12-09 07:47:23.524 I/System.out( 6337): }
+12-09 07:47:23.524 I/System.out( 6337): ProP json = {"command":"keyboard_enter_text","arguments":["98123743947721092831"]}
+12-09 07:47:23.524 I/System.out( 6337): files: {}
+12-09 07:47:23.524 I/System.out( 6337): command: {"command":"keyboard_enter_text","arguments":["98123743947721092831"]}
+12-09 07:47:23.525 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[98123743947721092831]'
+12-09 07:47:23.525 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:23.526 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:23.646 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:23.646 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:23.668 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:23.863 I/System.out( 6337): URI: //map
+12-09 07:47:23.863 I/System.out( 6337): params: {json={"query":"android.widget.EditText id:'odometer'","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:23.863 I/System.out( 6337): }
+12-09 07:47:23.883 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:24.022 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 27135(1129KB) AllocSpace objects, 1(20KB) LOS objects, 0% free, 3MB/3MB, paused 1.270ms total 107.488ms
+12-09 07:47:24.142 I/System.out( 6337): URI: //gesture
+12-09 07:47:24.143 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'odometer'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:24.143 I/System.out( 6337): }
+12-09 07:47:24.258 W/ResourceType( 6337): No package identifier when getting name for resource number 0x00000001
+12-09 07:47:27.400 I/UsageStatsService( 1593): User[0] Flushing usage stats to disk
+12-09 07:47:27.403 I/InputDispatcher( 1593): Window 'Window{d6356ed u0 com.evancharlton.mileage/com.evancharlton.mileage.Mileage}' spent 3069.2ms processing the last input event: MotionEvent(deviceId=0, source=0x00001002, action=2, actionButton=0x00000000, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, displayId=0, pointers=[0: (180.0, 188.0)]), policyFlags=0x69000000
+12-09 07:47:27.501 I/LatinIME( 1870): Starting input. Cursor position = 0,0
+12-09 07:47:27.582 W/art     ( 6337): Suspending all threads took: 30.718ms
+12-09 07:47:27.643 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 44966(2022KB) AllocSpace objects, 1(20KB) LOS objects, 36% free, 2MB/4MB, paused 40.518ms total 103.288ms
+12-09 07:47:28.179 I/System.out( 6337): URI: //
+12-09 07:47:28.179 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:28.179 I/System.out( 6337): }
+12-09 07:47:28.179 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:28 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:28.179 I/System.out( 6337): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:28.179 I/System.out( 6337): }
+12-09 07:47:28.179 I/System.out( 6337): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:28.179 I/System.out( 6337): files: {}
+12-09 07:47:28.179 I/System.out( 6337): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 07:47:28.181 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 07:47:28.195 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:28.348 I/System.out( 6337): URI: //
+12-09 07:47:28.348 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["98879898284721092831"]}
+12-09 07:47:28.348 I/System.out( 6337): }
+12-09 07:47:28.348 I/System.out( 6337): header: {date=Sun, 09 Dec 2018 07:47:28 GMT, accept=*/*, content-length=70, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 07:47:28.348 I/System.out( 6337): params: {json={"command":"keyboard_enter_text","arguments":["98879898284721092831"]}
+12-09 07:47:28.348 I/System.out( 6337): }
+12-09 07:47:28.348 I/System.out( 6337): ProP json = {"command":"keyboard_enter_text","arguments":["98879898284721092831"]}
+12-09 07:47:28.348 I/System.out( 6337): files: {}
+12-09 07:47:28.348 I/System.out( 6337): command: {"command":"keyboard_enter_text","arguments":["98879898284721092831"]}
+12-09 07:47:28.349 I/InstrumentationBackend( 6337): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[98879898284721092831]'
+12-09 07:47:28.350 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:28.354 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:28.409 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:28.409 E/SpannableStringBuilder( 6337): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 07:47:28.432 I/System.out( 6337): result:{"bonusInformation":[],"message":"","success":true}
+12-09 07:47:29.600 I/System.out( 6337): URI: //map
+12-09 07:47:29.600 I/System.out( 6337): params: {json={"query":"android.widget.Button index:2","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:29.600 I/System.out( 6337): }
+12-09 07:47:29.676 W/art     ( 6337): Suspending all threads took: 8.976ms
+12-09 07:47:29.706 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 45623(1968KB) AllocSpace objects, 2(40KB) LOS objects, 28% free, 2MB/4MB, paused 10.451ms total 54.414ms
+12-09 07:47:29.736 I/System.out( 6337): URI: //gesture
+12-09 07:47:29.737 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.Button index:2","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:29.737 I/System.out( 6337): }
+12-09 07:47:30.254 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:30.266 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:30.278 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:30.293 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 30128(1277KB) AllocSpace objects, 2(40KB) LOS objects, 12% free, 3MB/4MB, paused 4.099ms total 107.474ms
+12-09 07:47:30.484 I/art     ( 6337): Background partial concurrent mark sweep GC freed 26304(1553KB) AllocSpace objects, 7(140KB) LOS objects, 40% free, 2MB/4MB, paused 1.170ms total 158.218ms
+12-09 07:47:30.514 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:30.538 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:30.553 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:30.583 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:30.631 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9194904 , only wrote 9193849
+12-09 07:47:30.767 I/LatinIME( 1870): Starting input. Cursor position = -1,-1
+12-09 07:47:30.769 I/Choreographer( 6337): Skipped 36 frames!  The application may be doing too much work on its main thread.
+12-09 07:47:30.803 E/SurfaceFlinger( 1226): ro.sf.lcd_density must be defined as a build property
+12-09 07:47:30.806 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:30.832 D/        ( 6426): HostConnection::get() New Host Connection established 0x7f1317f52480, tid 6426
+12-09 07:47:30.851 E/EGL_emulation( 1226): tid 1226: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:47:30.942 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9207578 , only wrote 9207069
+12-09 07:47:30.942 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9207076 , only wrote 9207069
+12-09 07:47:30.980 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9208740 , only wrote 9207730
+12-09 07:47:30.982 D/Mileage.ABS( 6337): Finished backup
+12-09 07:47:31.062 D/Mileage.ABS( 6337): Not backing up; 111
+12-09 07:47:31.106 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9213268 , only wrote 9209052
+12-09 07:47:31.140 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9210571 , only wrote 9210374
+12-09 07:47:31.146 D/Mileage.ABS( 6337): Not backing up; 195
+12-09 07:47:31.146 D/Mileage.ABS( 6337): Not backing up; 195
+12-09 07:47:31.173 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.189 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.202 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.485 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9225585 , only wrote 9225577
+12-09 07:47:31.662 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.666 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.687 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9234467 , only wrote 9234170
+12-09 07:47:31.687 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.702 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.717 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.734 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.739 W/RichInputConnection( 1870): Slow InputConnection: GET_TEXT_BEFORE_CURSOR took 251 ms.
+12-09 07:47:31.759 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.780 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.780 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.801 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.819 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.899 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9243511 , only wrote 9243424
+12-09 07:47:31.933 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9244945 , only wrote 9244746
+12-09 07:47:31.933 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:31.933 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:32.014 I/InputAttributes( 1870): InputType.TYPE_NULL is specified
+12-09 07:47:32.020 I/System.out( 6337): URI: //map
+12-09 07:47:32.020 I/System.out( 6337): params: {json={"query":"android.widget.ListView index:0 android.widget.TextView index:0","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:32.020 I/System.out( 6337): }
+12-09 07:47:32.073 I/Choreographer( 1870): Skipped 78 frames!  The application may be doing too much work on its main thread.
+12-09 07:47:32.074 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9250980 , only wrote 9250695
+12-09 07:47:32.075 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9250702 , only wrote 9250695
+12-09 07:47:32.120 D/EGL_emulation( 1870): eglMakeCurrent: 0x7f2764105460: ver 2 0 (tinfo 0x7f276bdbaa60)
+12-09 07:47:32.121 E/Surface ( 1870): getSlotFromBufferLocked: unknown buffer: 0x7f276c454440
+12-09 07:47:32.207 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9256534 , only wrote 9255983
+12-09 07:47:32.207 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9255990 , only wrote 9255983
+12-09 07:47:32.223 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9256671 , only wrote 9256644
+12-09 07:47:32.223 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:32.238 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:32.258 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:32.272 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:32.286 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:32.298 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:32.594 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 43433(1571KB) AllocSpace objects, 1(20KB) LOS objects, 37% free, 2MB/4MB, paused 1.065ms total 103.373ms
+12-09 07:47:32.830 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 32481(1516KB) AllocSpace objects, 1(20KB) LOS objects, 37% free, 2MB/4MB, paused 7.506ms total 118.335ms
+12-09 07:47:32.831 I/System.out( 6337): URI: //gesture
+12-09 07:47:32.831 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.ListView index:0 android.widget.TextView index:0","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:32.832 I/System.out( 6337): }
+12-09 07:47:33.017 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 42607(1428KB) AllocSpace objects, 1(20KB) LOS objects, 34% free, 2MB/4MB, paused 1.179ms total 105.578ms
+12-09 07:47:33.293 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9303828 , only wrote 9303575
+12-09 07:47:33.293 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9303582 , only wrote 9303575
+12-09 07:47:33.313 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9304478 , only wrote 9304236
+12-09 07:47:33.510 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 29546(1412KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 2MB/4MB, paused 1.060ms total 112.852ms
+12-09 07:47:33.563 I/ActivityManager( 1593): START u0 {cmp=com.evancharlton.mileage/.FillupInfoActivity (has extras)} from uid 10119 on display 0
+12-09 07:47:33.654 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:33.654 D/AudioFlinger( 1307): mixer(0xf4340000) throttle end: throttle time(11)
+12-09 07:47:33.662 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:33.678 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:33.679 D/AudioFlinger( 1307): mixer(0xf4340000) throttle end: throttle time(11)
+12-09 07:47:33.764 I/calabash( 6337): newActivity1
+12-09 07:47:33.950 V/PhoneStatusBar( 1697): setLightsOn(true)
+12-09 07:47:34.073 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.087 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.093 E/SurfaceFlinger( 1226): ro.sf.lcd_density must be defined as a build property
+12-09 07:47:34.106 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.119 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:34.130 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.143 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.159 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.176 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.211 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:34.268 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.288 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9334726 , only wrote 9334642
+12-09 07:47:34.288 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9334649 , only wrote 9334642
+12-09 07:47:34.289 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.309 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9335535 , only wrote 9335303
+12-09 07:47:34.309 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.309 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.324 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.339 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.342 D/        ( 6434): HostConnection::get() New Host Connection established 0x7ff983b52480, tid 6434
+12-09 07:47:34.366 E/EGL_emulation( 1226): tid 1226: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:47:34.369 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.433 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:34.646 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9350180 , only wrote 9346540
+12-09 07:47:34.646 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9346547 , only wrote 9346540
+12-09 07:47:34.674 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9347772 , only wrote 9347201
+12-09 07:47:34.724 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.735 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.750 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.770 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:34.855 I/ActivityManager( 1593): Displayed com.evancharlton.mileage/.FillupInfoActivity: +1s126ms
+12-09 07:47:35.311 I/System.out( 6337): URI: //map
+12-09 07:47:35.311 I/System.out( 6337): params: {json={"query":"android.widget.Button index:1","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:35.311 I/System.out( 6337): }
+12-09 07:47:35.535 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9385157 , only wrote 9383556
+12-09 07:47:35.535 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9383563 , only wrote 9383556
+12-09 07:47:35.556 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9384497 , only wrote 9384217
+12-09 07:47:35.557 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:35.667 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:35.714 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 34817(1471KB) AllocSpace objects, 1(20KB) LOS objects, 9% free, 3MB/4MB, paused 8.788ms total 58.311ms
+12-09 07:47:35.791 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:35.844 I/System.out( 6337): URI: //gesture
+12-09 07:47:35.844 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.Button index:1","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:35.844 I/System.out( 6337): }
+12-09 07:47:35.857 I/art     ( 6337): WaitForGcToComplete blocked for 11.765ms for cause Background
+12-09 07:47:36.003 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 21983(1085KB) AllocSpace objects, 2(40KB) LOS objects, 22% free, 3MB/4MB, paused 1.112ms total 144.933ms
+12-09 07:47:36.103 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9408304 , only wrote 9408013
+12-09 07:47:36.139 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:36.271 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9415419 , only wrote 9415284
+12-09 07:47:36.373 I/ActivityManager( 1593): START u0 {cmp=com.evancharlton.mileage/.FillupInfoActivity (has extras)} from uid 10119 on display 0
+12-09 07:47:36.438 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9422667 , only wrote 9422555
+12-09 07:47:36.497 W/art     ( 6337): Suspending all threads took: 11.390ms
+12-09 07:47:36.533 I/calabash( 6337): newActivity1
+12-09 07:47:36.575 I/art     ( 6337): Background partial concurrent mark sweep GC freed 32402(1585KB) AllocSpace objects, 3(60KB) LOS objects, 39% free, 3MB/5MB, paused 12.628ms total 187.234ms
+12-09 07:47:36.616 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9430399 , only wrote 9429826
+12-09 07:47:36.616 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9429833 , only wrote 9429826
+12-09 07:47:36.631 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9430495 , only wrote 9430487
+12-09 07:47:36.739 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9435225 , only wrote 9435114
+12-09 07:47:36.739 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9435122 , only wrote 9435114
+12-09 07:47:36.754 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9435785 , only wrote 9435775
+12-09 07:47:36.863 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9440570 , only wrote 9439741
+12-09 07:47:36.901 V/PhoneStatusBar( 1697): setLightsOn(true)
+12-09 07:47:36.902 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:36.938 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:36.957 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:36.959 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:36.959 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:36.989 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9445282 , only wrote 9445029
+12-09 07:47:36.989 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:36.989 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.043 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9447413 , only wrote 9446351
+12-09 07:47:37.143 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9450764 , only wrote 9449656
+12-09 07:47:37.143 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9449667 , only wrote 9449656
+12-09 07:47:37.164 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9450564 , only wrote 9450317
+12-09 07:47:37.261 E/SurfaceFlinger( 1226): ro.sf.lcd_density must be defined as a build property
+12-09 07:47:37.267 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:37.371 D/        ( 6440): HostConnection::get() New Host Connection established 0x7fb3cd312480, tid 6440
+12-09 07:47:37.423 E/EGL_emulation( 1226): tid 1226: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:47:37.482 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 254ms
+12-09 07:47:37.489 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.521 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.576 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9468516 , only wrote 9468164
+12-09 07:47:37.576 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9468172 , only wrote 9468164
+12-09 07:47:37.642 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.658 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.675 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.706 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.720 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.732 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.807 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.838 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.854 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.867 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.882 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.899 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:37.938 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 194ms
+12-09 07:47:38.011 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9487345 , only wrote 9487333
+12-09 07:47:38.012 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9487340 , only wrote 9487333
+12-09 07:47:38.103 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9491348 , only wrote 9491299
+12-09 07:47:38.103 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9491306 , only wrote 9491299
+12-09 07:47:38.146 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9493219 , only wrote 9491960
+12-09 07:47:38.166 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:38.202 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:38.202 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:38.341 W/art     ( 1593): Long monitor contention event with owner method=java.util.List com.android.server.am.ActivityManagerService.getAllStackInfos() from ActivityManagerService.java:8937 waiters=0 for 414ms
+12-09 07:47:38.360 I/System.out( 6337): URI: //map
+12-09 07:47:38.360 I/System.out( 6337): params: {json={"query":"android.widget.Button index:0","operation":{"method_name":"query","arguments":[]}}
+12-09 07:47:38.360 I/System.out( 6337): }
+12-09 07:47:38.403 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9503258 , only wrote 9503197
+12-09 07:47:38.403 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9503204 , only wrote 9503197
+12-09 07:47:38.712 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:38.778 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 107ms
+12-09 07:47:38.782 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:38.793 I/ActivityManager( 1593): Displayed com.evancharlton.mileage/.FillupInfoActivity: +2s366ms
+12-09 07:47:39.129 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:39.146 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:39.159 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:39.160 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 143ms
+12-09 07:47:39.174 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:39.186 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:39.213 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:39.234 W/art     ( 6337): Suspending all threads took: 16.308ms
+12-09 07:47:39.279 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9541831 , only wrote 9541535
+12-09 07:47:39.279 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9541545 , only wrote 9541535
+12-09 07:47:39.299 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9542397 , only wrote 9542196
+12-09 07:47:39.329 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 45531(2045KB) AllocSpace objects, 2(40KB) LOS objects, 33% free, 3MB/5MB, paused 32.168ms total 107.349ms
+12-09 07:47:39.396 I/System.out( 6337): URI: //gesture
+12-09 07:47:39.396 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.Button index:0","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:39.396 I/System.out( 6337): }
+12-09 07:47:39.525 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9561919 , only wrote 9552111
+12-09 07:47:39.907 I/ActivityManager( 1593): START u0 {cmp=com.evancharlton.mileage/.FillupInfoActivity (has extras)} from uid 10119 on display 0
+12-09 07:47:39.970 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.006 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.026 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.028 D/AudioFlinger( 1307): mixer(0xf4340000) throttle end: throttle time(22)
+12-09 07:47:40.034 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.045 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.057 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 50241(2MB) AllocSpace objects, 2(40KB) LOS objects, 37% free, 3MB/5MB, paused 10.102ms total 122.985ms
+12-09 07:47:40.061 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.077 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.099 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.115 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.176 I/calabash( 6337): newActivity1
+12-09 07:47:40.293 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.554 V/PhoneStatusBar( 1697): setLightsOn(true)
+12-09 07:47:40.613 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:40.617 E/SurfaceFlinger( 1226): ro.sf.lcd_density must be defined as a build property
+12-09 07:47:40.691 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.692 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:40.706 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.725 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.738 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.758 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.773 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.788 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.810 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.825 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.832 D/        ( 6446): HostConnection::get() New Host Connection established 0x7f315ddd2480, tid 6446
+12-09 07:47:40.843 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:40.862 E/EGL_emulation( 1226): tid 1226: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:47:41.034 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:41.087 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9602029 , only wrote 9601686
+12-09 07:47:41.201 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.214 I/ActivityManager( 1593): Displayed com.evancharlton.mileage/.FillupInfoActivity: +1s285ms
+12-09 07:47:41.222 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.247 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.267 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.412 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9616019 , only wrote 9614906
+12-09 07:47:41.412 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9614913 , only wrote 9614906
+12-09 07:47:41.461 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.480 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.492 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.507 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.518 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.651 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9625441 , only wrote 9623499
+12-09 07:47:41.651 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9623506 , only wrote 9623499
+12-09 07:47:41.671 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9624370 , only wrote 9624160
+12-09 07:47:41.723 W/art     ( 1593): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 178ms
+12-09 07:47:41.815 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9630539 , only wrote 9629448
+12-09 07:47:41.851 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9631032 , only wrote 9629448
+12-09 07:47:41.867 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9630120 , only wrote 9630109
+12-09 07:47:41.901 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.921 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.937 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.963 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.963 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:41.994 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:42.059 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9638576 , only wrote 9638041
+12-09 07:47:42.059 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9638048 , only wrote 9638041
+12-09 07:47:42.075 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9638748 , only wrote 9638702
+12-09 07:47:42.090 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:42.458 D/AndroidRuntime( 6449): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 07:47:42.467 D/AndroidRuntime( 6449): CheckJNI is ON
+12-09 07:47:42.490 D/ICU     ( 6449): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 07:47:42.549 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9659620 , only wrote 9659193
+12-09 07:47:42.549 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9659200 , only wrote 9659193
+12-09 07:47:42.574 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9660298 , only wrote 9659854
+12-09 07:47:42.710 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9665837 , only wrote 9665803
+12-09 07:47:42.710 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9665810 , only wrote 9665803
+12-09 07:47:42.714 E/memtrack( 6449): Couldn't load memtrack module (No such file or directory)
+12-09 07:47:42.714 E/android.os.Debug( 6449): failed to load memtrack module: -2
+12-09 07:47:42.715 I/Radio-JNI( 6449): register_android_hardware_Radio DONE
+12-09 07:47:42.738 D/AndroidRuntime( 6449): Calling main entry com.android.commands.input.Input
+12-09 07:47:42.762 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:42.803 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9669878 , only wrote 9669769
+12-09 07:47:42.803 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9669776 , only wrote 9669769
+12-09 07:47:42.811 I/Input   ( 6449): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=3074620, downTime=3074620, deviceId=-1, source=0x101 }
+12-09 07:47:42.823 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9670639 , only wrote 9670430
+12-09 07:47:42.835 I/Input   ( 6449): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=3074620, downTime=3074620, deviceId=-1, source=0x101 }
+12-09 07:47:42.869 D/AndroidRuntime( 6449): Shutting down VM
+12-09 07:47:42.878 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@c18a671
+12-09 07:47:42.878 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:42.878 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:42.878 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:42.878 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 07:47:42.878 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 07:47:42.878 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:42.878 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:42.963 V/PhoneStatusBar( 1697): setLightsOn(true)
+12-09 07:47:42.997 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:43.080 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9692030 , only wrote 9681006
+12-09 07:47:43.173 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:43.175 I/System.out( 6337): URI: //gesture
+12-09 07:47:43.175 I/System.out( 6337): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.TabWidget descendant TextView index:2","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 07:47:43.175 I/System.out( 6337): }
+12-09 07:47:43.904 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:44.249 I/calabash( 6337): newActivity1
+12-09 07:47:44.294 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@7b5c02e
+12-09 07:47:44.294 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:44.294 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:44.294 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:44.294 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 07:47:44.294 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 07:47:44.294 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 07:47:44.294 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:44.294 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:44.295 W/ActivityManager( 1593): Bad activity token: android.os.BinderProxy@7b5c02e
+12-09 07:47:44.295 W/ActivityManager( 1593): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 07:47:44.295 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 07:47:44.295 W/ActivityManager( 1593): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 07:47:44.295 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 07:47:44.295 W/ActivityManager( 1593): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 07:47:44.295 W/ActivityManager( 1593): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 07:47:44.295 W/ActivityManager( 1593): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 07:47:44.302 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.316 D/VehicleStatisticsActivity( 6337): Checking recalculation ...
+12-09 07:47:44.317 D/VehicleStatisticsActivity( 6337): Recalculating statistics
+12-09 07:47:44.317 D/VehicleStatisticsTask( 6337): Calculation starting...
+12-09 07:47:44.323 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.338 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.344 D/AndroidRuntime( 6337): Shutting down VM
+--------- beginning of crash
+12-09 07:47:44.345 E/AndroidRuntime( 6337): FATAL EXCEPTION: main
+12-09 07:47:44.345 E/AndroidRuntime( 6337): Process: com.evancharlton.mileage, PID: 6337
+12-09 07:47:44.345 E/AndroidRuntime( 6337): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.VehicleStatisticsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.ProgressBar.setIndeterminate(boolean)' on a null object reference
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2240)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:724)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.widget.TabHost.setCurrentTab(TabHost.java:388)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:158)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.widget.TabWidget$TabClickListener.onClick(TabWidget.java:551)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.view.View.performClick(View.java:5198)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.view.View$PerformClick.run(View.java:21147)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.os.Handler.handleCallback(Handler.java:739)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.os.Looper.loop(Looper.java:148)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at java.lang.reflect.Method.invoke(Native Method)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.ProgressBar.setIndeterminate(boolean)' on a null object reference
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at com.evancharlton.mileage.VehicleStatisticsActivity.startCalculations(VehicleStatisticsActivity.java:252)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at com.evancharlton.mileage.tasks.VehicleStatisticsTask.onPreExecute(VehicleStatisticsTask.java:39)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:604)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.os.AsyncTask.execute(AsyncTask.java:551)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at com.evancharlton.mileage.VehicleStatisticsActivity.calculate(VehicleStatisticsActivity.java:208)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at com.evancharlton.mileage.VehicleStatisticsActivity.recalculate(VehicleStatisticsActivity.java:170)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at com.evancharlton.mileage.VehicleStatisticsActivity.onCreate(VehicleStatisticsActivity.java:131)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.app.Activity.performCreate(Activity.java:6237)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+12-09 07:47:44.345 E/AndroidRuntime( 6337): 	... 16 more
+12-09 07:47:44.345 W/ActivityManager( 1593): Error in app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}:
+12-09 07:47:44.346 W/ActivityManager( 1593):   java.lang.NullPointerException
+12-09 07:47:44.362 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.368 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.406 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.422 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.431 I/art     ( 6337): Background sticky concurrent mark sweep GC freed 52274(2MB) AllocSpace objects, 2(40KB) LOS objects, 29% free, 3MB/5MB, paused 12.700ms total 182.086ms
+12-09 07:47:44.432 W/ActivityManager( 1593):   java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.ProgressBar.setIndeterminate(boolean)' on a null object reference
+12-09 07:47:44.432 I/ActivityManager( 1593): Force stopping com.evancharlton.mileage appid=10119 user=0: finished inst
+12-09 07:47:44.432 I/ActivityManager( 1593): Killing 6337:com.evancharlton.mileage/u0a119 (adj 0): stop com.evancharlton.mileage
+12-09 07:47:44.438 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.451 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.502 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9691104 , only wrote 9690260
+12-09 07:47:44.503 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9690267 , only wrote 9690260
+12-09 07:47:44.512 W/InputDispatcher( 1593): channel 'd6356ed com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+12-09 07:47:44.512 E/InputDispatcher( 1593): channel 'd6356ed com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 07:47:44.543 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9692056 , only wrote 9690921
+12-09 07:47:44.544 W/InputDispatcher( 1593): channel '469d18a com.evancharlton.mileage/com.evancharlton.mileage.FillupInfoActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+12-09 07:47:44.544 E/InputDispatcher( 1593): channel '469d18a com.evancharlton.mileage/com.evancharlton.mileage.FillupInfoActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 07:47:44.588 W/InputDispatcher( 1593): Attempted to unregister already unregistered input channel '469d18a com.evancharlton.mileage/com.evancharlton.mileage.FillupInfoActivity (server)'
+12-09 07:47:44.601 W/ActivityManager( 1593): Force removing ActivityRecord{4c7bad4 u0 com.evancharlton.mileage/.Mileage t353}: app died, no saved state
+12-09 07:47:44.651 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9695679 , only wrote 9695548
+12-09 07:47:44.651 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9695556 , only wrote 9695548
+12-09 07:47:44.652 W/InputDispatcher( 1593): Attempted to unregister already unregistered input channel 'd6356ed com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)'
+12-09 07:47:44.665 W/WindowManager( 1593): Failed looking up window
+12-09 07:47:44.665 W/WindowManager( 1593): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@64afff5 does not exist
+12-09 07:47:44.665 W/WindowManager( 1593): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8733)
+12-09 07:47:44.665 W/WindowManager( 1593): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8724)
+12-09 07:47:44.665 W/WindowManager( 1593): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1209)
+12-09 07:47:44.665 W/WindowManager( 1593): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:558)
+12-09 07:47:44.665 I/WindowState( 1593): WIN DEATH: null
+12-09 07:47:44.668 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9696278 , only wrote 9696209
+12-09 07:47:44.668 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.670 W/WindowManager( 1593): Failed looking up window
+12-09 07:47:44.670 W/WindowManager( 1593): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@cb98104 does not exist
+12-09 07:47:44.670 W/WindowManager( 1593): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8733)
+12-09 07:47:44.670 W/WindowManager( 1593): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8724)
+12-09 07:47:44.670 W/WindowManager( 1593): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1209)
+12-09 07:47:44.670 W/WindowManager( 1593): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:558)
+12-09 07:47:44.670 I/WindowState( 1593): WIN DEATH: null
+12-09 07:47:44.700 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.714 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.730 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.746 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.819 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.852 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:44.974 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9709706 , only wrote 9708107
+12-09 07:47:44.975 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9708130 , only wrote 9708107
+12-09 07:47:44.989 E/SurfaceFlinger( 1226): ro.sf.lcd_density must be defined as a build property
+12-09 07:47:45.027 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9710420 , only wrote 9708768
+12-09 07:47:45.031 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:45.062 D/        ( 6461): HostConnection::get() New Host Connection established 0x7f6828ad2480, tid 6461
+12-09 07:47:45.162 E/EGL_emulation( 1226): tid 1226: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:47:45.272 W/art     ( 1593): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3103 waiters=0 for 258ms
+12-09 07:47:45.277 D/EGL_emulation( 1931): eglMakeCurrent: 0x7f276feb4dc0: ver 2 0 (tinfo 0x7f276fe82ce0)
+12-09 07:47:45.329 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9722087 , only wrote 9721988
+12-09 07:47:45.329 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9721995 , only wrote 9721988
+12-09 07:47:45.350 I/AccountManagerService( 1593): getTypesVisibleToCaller: isPermitted? true
+12-09 07:47:45.354 W/InputMethodManagerService( 1593): Got RemoteException sending setActive(false) notification to pid 6337 uid 10119
+12-09 07:47:45.662 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9736669 , only wrote 9736530
+12-09 07:47:46.048 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9753568 , only wrote 9747767
+12-09 07:47:46.049 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9747774 , only wrote 9747767
+12-09 07:47:46.095 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9749824 , only wrote 9748428
+12-09 07:47:46.141 W/OpenGLRenderer( 1931): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+12-09 07:47:46.205 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.206 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9753290 , only wrote 9752394
+12-09 07:47:46.206 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9752404 , only wrote 9752394
+12-09 07:47:46.206 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.220 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.220 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.248 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.294 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9756289 , only wrote 9755038
+12-09 07:47:46.294 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9755045 , only wrote 9755038
+12-09 07:47:46.294 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.311 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9755786 , only wrote 9755699
+12-09 07:47:46.311 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.312 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.389 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.410 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.443 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.476 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9762952 , only wrote 9762309
+12-09 07:47:46.476 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9762316 , only wrote 9762309
+12-09 07:47:46.506 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9763642 , only wrote 9762970
+12-09 07:47:46.555 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9765112 , only wrote 9764292
+12-09 07:47:46.593 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9765989 , only wrote 9764953
+12-09 07:47:46.593 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9764960 , only wrote 9764953
+12-09 07:47:46.617 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9765980 , only wrote 9765614
+12-09 07:47:46.672 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9768073 , only wrote 9767597
+12-09 07:47:46.673 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9767604 , only wrote 9767597
+12-09 07:47:46.691 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9768419 , only wrote 9768258
+12-09 07:47:46.714 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.733 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.768 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.778 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:46.793 E/SurfaceFlinger( 1226): ro.sf.lcd_density must be defined as a build property
+12-09 07:47:46.909 D/gralloc_ranchu( 1226): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 07:47:46.924 D/        ( 6468): HostConnection::get() New Host Connection established 0x7f63eb652480, tid 6468
+12-09 07:47:46.965 E/EGL_emulation( 1226): tid 1226: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 07:47:47.154 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9788665 , only wrote 9788088
+12-09 07:47:47.185 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 07:47:47.400 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 9809367 , only wrote 9798664
