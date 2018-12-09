@@ -1,0 +1,346 @@
+--------- beginning of main
+12-09 08:26:24.800 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37300480 , only wrote 37300230
+12-09 08:26:24.804 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37300419 , only wrote 37300230
+12-09 08:26:24.824 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37301124 , only wrote 37300891
+12-09 08:26:25.105 E/BluetoothAdapter( 1592): Bluetooth binder is null
+--------- beginning of system
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): Failed to read cpu-freq
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): java.io.FileNotFoundException: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state: open failed: ENOENT (No such file or directory)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at libcore.io.IoBridge.open(IoBridge.java:452)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at java.io.FileReader.<init>(FileReader.java:66)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at com.android.internal.os.KernelCpuSpeedReader.readDelta(KernelCpuSpeedReader.java:49)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at com.android.internal.os.BatteryStatsImpl.updateCpuTimeLocked(BatteryStatsImpl.java:8002)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at com.android.server.am.BatteryStatsService.updateExternalStats(BatteryStatsService.java:1366)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at com.android.server.am.BatteryStatsService$BatteryStatsHandler.handleMessage(BatteryStatsService.java:125)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at libcore.io.Posix.open(Native Method)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	at libcore.io.IoBridge.open(IoBridge.java:438)
+12-09 08:26:25.106 E/KernelCpuSpeedReader( 1592): 	... 11 more
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): Failed to read uid_cputime
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): java.io.FileNotFoundException: /proc/uid_cputime/show_uid_stat: open failed: ENOENT (No such file or directory)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at libcore.io.IoBridge.open(IoBridge.java:452)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at java.io.FileReader.<init>(FileReader.java:66)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at com.android.internal.os.KernelUidCpuTimeReader.readDelta(KernelUidCpuTimeReader.java:71)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at com.android.internal.os.BatteryStatsImpl.updateCpuTimeLocked(BatteryStatsImpl.java:8031)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at com.android.server.am.BatteryStatsService.updateExternalStats(BatteryStatsService.java:1366)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at com.android.server.am.BatteryStatsService$BatteryStatsHandler.handleMessage(BatteryStatsService.java:125)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at android.os.Looper.loop(Looper.java:148)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at libcore.io.Posix.open(Native Method)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	at libcore.io.IoBridge.open(IoBridge.java:438)
+12-09 08:26:25.106 E/KernelUidCpuTimeReader( 1592): 	... 11 more
+12-09 08:26:25.226 D/AndroidRuntime(16940): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-09 08:26:25.230 D/AndroidRuntime(16940): CheckJNI is ON
+12-09 08:26:25.249 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37319597 , only wrote 37319399
+12-09 08:26:25.271 D/gralloc_ranchu( 1218): gralloc_alloc: Creating ashmem region of size 708608
+12-09 08:26:25.284 D/ICU     (16940): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-09 08:26:25.385 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37325434 , only wrote 37325348
+12-09 08:26:25.386 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37325356 , only wrote 37325348
+12-09 08:26:25.426 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 08:26:25.428 E/EGL_emulation( 1218): tid 1218: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 08:26:25.442 W/audio_hw_generic( 1307): Hardware backing HAL too slow, could only write 0 of 661 frames
+12-09 08:26:25.495 E/memtrack(16940): Couldn't load memtrack module (No such file or directory)
+12-09 08:26:25.495 E/android.os.Debug(16940): failed to load memtrack module: -2
+12-09 08:26:25.497 I/Radio-JNI(16940): register_android_hardware_Radio DONE
+12-09 08:26:25.511 D/AndroidRuntime(16940): Calling main entry com.android.commands.am.Am
+12-09 08:26:25.523 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10137 user=0: start instr
+12-09 08:26:25.523 I/ActivityManager( 1592): Killing 16896:com.evancharlton.mileage/u0a137 (adj 0): stop com.evancharlton.mileage
+12-09 08:26:25.588 W/InputDispatcher( 1592): channel '1260a05 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+12-09 08:26:25.588 E/InputDispatcher( 1592): channel '1260a05 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)' ~ Channel is unrecoverably broken and will be disposed!
+12-09 08:26:25.628 I/WindowState( 1592): WIN DEATH: Window{1260a05 u0 com.evancharlton.mileage/com.evancharlton.mileage.Mileage}
+12-09 08:26:25.628 W/InputDispatcher( 1592): Attempted to unregister already unregistered input channel '1260a05 com.evancharlton.mileage/com.evancharlton.mileage.Mileage (server)'
+12-09 08:26:25.629 W/ActivityManager( 1592): Crash of app com.evancharlton.mileage running instrumentation ComponentInfo{com.evancharlton.mileage.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner}
+12-09 08:26:25.629 I/ActivityManager( 1592): Force stopping com.evancharlton.mileage appid=10137 user=0: finished inst
+12-09 08:26:25.672 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37337980 , only wrote 37336585
+12-09 08:26:25.685 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37337134 , only wrote 37336585
+12-09 08:26:25.702 I/ActivityManager( 1592): Start proc 16949:com.evancharlton.mileage/u0a137 for added application com.evancharlton.mileage
+12-09 08:26:25.703 D/AndroidRuntime(16940): Shutting down VM
+12-09 08:26:25.716 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37337992 , only wrote 37337907
+12-09 08:26:25.731 D/EGL_emulation( 1949): eglMakeCurrent: 0x7f1b08134640: ver 2 0 (tinfo 0x7f1b08102800)
+12-09 08:26:25.762 W/InputMethodManagerService( 1592): Got RemoteException sending setActive(false) notification to pid 16896 uid 10137
+12-09 08:26:25.810 W/System  (16949): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage.test-1/lib/x86_64
+12-09 08:26:25.810 W/System  (16949): ClassLoader referenced unknown path: /data/app/com.evancharlton.mileage-1/lib/x86_64
+12-09 08:26:25.841 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37343404 , only wrote 37343195
+12-09 08:26:25.841 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37343202 , only wrote 37343195
+12-09 08:26:25.864 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37344190 , only wrote 37343856
+12-09 08:26:25.877 I/System.out(16949): Main activity name automatically set to: com.evancharlton.mileage.Mileage
+12-09 08:26:25.878 I/System.out(16949): Calabash did not load Mono. This is only a problem if you are trying to test a Mono application
+12-09 08:26:25.878 I/calabash(16949): Test server port: 7102
+12-09 08:26:25.879 I/InstrumentationBackend(16949): Added:'GetPreferences', with key:'get_preferences'
+12-09 08:26:25.945 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 173ms
+12-09 08:26:25.973 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37348657 , only wrote 37347822
+12-09 08:26:26.137 I/art     (16949): Background partial concurrent mark sweep GC freed 3507(273KB) AllocSpace objects, 0(0B) LOS objects, 51% free, 955KB/1979KB, paused 27.112ms total 153.357ms
+12-09 08:26:26.183 I/InstrumentationBackend(16949): Added:'SetPreferences', with key:'set_preferences'
+12-09 08:26:26.188 I/InstrumentationBackend(16949): Added:'ClearPreferences', with key:'clear_preferences'
+12-09 08:26:26.189 I/InstrumentationBackend(16949): Added:'PressElement', with key:'press_l10n_element'
+12-09 08:26:26.189 I/InstrumentationBackend(16949): Added:'WaitForElement', with key:'wait_for_l10n_element'
+12-09 08:26:26.189 I/InstrumentationBackend(16949): Added:'NullAction', with key:'nullAction'
+12-09 08:26:26.189 I/InstrumentationBackend(16949): Added:'PressKey', with key:'press_key'
+12-09 08:26:26.190 I/InstrumentationBackend(16949): Added:'SetActivityOrientation', with key:'set_activity_orientation'
+12-09 08:26:26.190 I/InstrumentationBackend(16949): Added:'GetActivityOrientation', with key:'get_activity_orientation'
+12-09 08:26:26.190 I/InstrumentationBackend(16949): Added:'FakeGPSLocation', with key:'set_gps_coordinates'
+12-09 08:26:26.190 I/InstrumentationBackend(16949): Added:'SetPropertyByCssSelector', with key:'set_property_by_css_selector'
+12-09 08:26:26.190 I/InstrumentationBackend(16949): Added:'GetUrl', with key:'get_url'
+12-09 08:26:26.191 I/InstrumentationBackend(16949): Added:'ScrollTo', with key:'scroll_to'
+12-09 08:26:26.191 I/InstrumentationBackend(16949): Added:'GetLoadProgress', with key:'get_load_progress'
+12-09 08:26:26.192 I/InstrumentationBackend(16949): Added:'DumpHtml', with key:'dump_html'
+12-09 08:26:26.192 I/InstrumentationBackend(16949): Added:'DumpBodyHtml', with key:'dump_body_html'
+12-09 08:26:26.210 I/InstrumentationBackend(16949): Added:'EnterTextByCssSelector', with key:'enter_text_by_selector'
+12-09 08:26:26.212 I/InstrumentationBackend(16949): Added:'AndroidSDKVersion', with key:'android_sdk_version'
+12-09 08:26:26.212 I/InstrumentationBackend(16949): Added:'Version', with key:'version'
+12-09 08:26:26.212 I/InstrumentationBackend(16949): Added:'Drag', with key:'drag'
+12-09 08:26:26.212 I/InstrumentationBackend(16949): Added:'TouchCoordinates', with key:'touch_coordinate'
+12-09 08:26:26.212 I/InstrumentationBackend(16949): Added:'LongPressCoordinate', with key:'long_press_coordinate'
+12-09 08:26:26.213 I/InstrumentationBackend(16949): Added:'DragCoordinates', with key:'drag_coordinates'
+12-09 08:26:26.213 I/InstrumentationBackend(16949): Added:'ResumeApplication', with key:'resume_application'
+12-09 08:26:26.213 I/InstrumentationBackend(16949): Added:'Swipe', with key:'swipe'
+12-09 08:26:26.213 I/InstrumentationBackend(16949): Added:'DoubleTapCoordinate', with key:'double_tap_coordinate'
+12-09 08:26:26.214 I/InstrumentationBackend(16949): Added:'ClickOnScreen', with key:'click_on_screen'
+12-09 08:26:26.214 I/InstrumentationBackend(16949): Added:'GetActivityName', with key:'get_activity_name'
+12-09 08:26:26.214 I/InstrumentationBackend(16949): Added:'ScrollToView', with key:'scroll_to_view'
+12-09 08:26:26.214 I/InstrumentationBackend(16949): Added:'ViewConfiguration', with key:'view_configuration'
+12-09 08:26:26.214 I/InstrumentationBackend(16949): Added:'IsCurrentActivityFocused', with key:'is_current_activity_focused'
+12-09 08:26:26.215 I/InstrumentationBackend(16949): Added:'SendTcp', with key:'send_tcp'
+12-09 08:26:26.215 I/InstrumentationBackend(16949): Added:'DpToDevicePixel', with key:'dp_to_device_pixel'
+12-09 08:26:26.215 I/InstrumentationBackend(16949): Added:'KeyboardEnterText', with key:'keyboard_enter_text'
+12-09 08:26:26.215 I/InstrumentationBackend(16949): Added:'DeleteSurroundingText', with key:'delete_surrounding_text'
+12-09 08:26:26.216 I/InstrumentationBackend(16949): Added:'SetComposingRegion', with key:'set_composing_region'
+12-09 08:26:26.216 I/InstrumentationBackend(16949): Added:'SetSelection', with key:'set_selection'
+12-09 08:26:26.216 W/audio_hw_generic( 1307): Not supplying enough data to HAL, expected position 37368348 , only wrote 37358398
+12-09 08:26:26.225 I/InstrumentationBackend(16949): Added:'KeyboardKeyEvent', with key:'keyboard_key_event'
+12-09 08:26:26.263 I/InstrumentationBackend(16949): Added:'PressUserActionButton', with key:'press_user_action_button'
+12-09 08:26:26.264 I/InstrumentationBackend(16949): Added:'HideSoftKeyboard', with key:'hide_soft_keyboard'
+12-09 08:26:26.264 I/InstrumentationBackend(16949): Added:'ListActions', with key:'list_actions'
+12-09 08:26:26.264 I/calabash(16949): Instantiating http server at 7102
+12-09 08:26:26.265 I/System.out(16949): HTTP Daemon listening on: 7102
+12-09 08:26:26.343 I/System.out(16949): URI: //ping
+12-09 08:26:26.351 I/System.out(16949): params: {json={}
+12-09 08:26:26.351 I/System.out(16949): }
+12-09 08:26:26.489 I/System.out(16949): URI: //ping
+12-09 08:26:26.489 I/System.out(16949): params: {json={}
+12-09 08:26:26.489 I/System.out(16949): }
+12-09 08:26:26.544 I/System.out(16949): URI: //ready
+12-09 08:26:26.544 I/System.out(16949): params: {json={}
+12-09 08:26:26.545 I/System.out(16949): }
+12-09 08:26:26.605 I/System.out(16949): URI: //
+12-09 08:26:26.605 I/System.out(16949): params: {json={"command":"version","arguments":[]}
+12-09 08:26:26.605 I/System.out(16949): }
+12-09 08:26:26.605 I/System.out(16949): header: {date=Sun, 09 Dec 2018 08:26:26 GMT, accept=*/*, content-length=36, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:26:26.605 I/System.out(16949): params: {json={"command":"version","arguments":[]}
+12-09 08:26:26.605 I/System.out(16949): }
+12-09 08:26:26.605 I/System.out(16949): ProP json = {"command":"version","arguments":[]}
+12-09 08:26:26.605 I/System.out(16949): files: {}
+12-09 08:26:26.606 I/System.out(16949): command: {"command":"version","arguments":[]}
+12-09 08:26:26.618 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 216ms
+12-09 08:26:26.664 I/InstrumentationBackend(16949): Got command:'Command:'Line:null,version', arguments:'[]'
+12-09 08:26:26.716 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 206ms
+12-09 08:26:26.841 I/System.out(16949): result:{"bonusInformation":[],"message":"0.9.8","success":true}
+12-09 08:26:26.904 I/art     (16949): Background sticky concurrent mark sweep GC freed 4134(497KB) AllocSpace objects, 11(220KB) LOS objects, 10% free, 1775KB/1979KB, paused 5.295ms total 229.705ms
+12-09 08:26:27.045 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 329ms
+12-09 08:26:27.094 I/System.out(16949): URI: //start-application
+12-09 08:26:27.094 I/System.out(16949): params: {json={"intent":null}
+12-09 08:26:27.094 I/System.out(16949): }
+12-09 08:26:27.186 I/art     (16949): Background sticky concurrent mark sweep GC freed 11896(528KB) AllocSpace objects, 1(20KB) LOS objects, 1% free, 1958KB/1979KB, paused 7.645ms total 110.603ms
+12-09 08:26:27.188 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 144ms
+12-09 08:26:27.239 I/art     (16949): Background sticky concurrent mark sweep GC freed 17256(820KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1411KB/1979KB, paused 13.490ms total 45.690ms
+12-09 08:26:27.278 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 207ms
+12-09 08:26:27.394 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=1 for 205ms
+12-09 08:26:27.510 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 232ms
+12-09 08:26:27.889 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 196ms
+12-09 08:26:28.261 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 202ms
+12-09 08:26:28.489 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 312ms
+12-09 08:26:28.490 I/Choreographer( 1949): Skipped 162 frames!  The application may be doing too much work on its main thread.
+12-09 08:26:28.491 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=2 for 148ms
+12-09 08:26:28.495 I/ActivityManager( 1592): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.evancharlton.mileage/.Mileage} from uid 10137 on display 0
+12-09 08:26:28.511 W/OpenGLRenderer( 1949): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+12-09 08:26:28.652 W/WindowState( 1592): Failed to report 'resized' to the client of Window{1260a05 u0 com.evancharlton.mileage/com.evancharlton.mileage.Mileage EXITING}, removing this window.
+12-09 08:26:29.178 I/calabash(16949): newActivity1
+12-09 08:26:29.179 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=0 for 423ms
+12-09 08:26:29.197 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6439 waiters=1 for 440ms
+12-09 08:26:29.199 D/gralloc_ranchu( 1218): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:26:29.224 I/calabash(16949): newActivity1
+12-09 08:26:29.227 W/ActivityManager( 1592): Bad activity token: android.os.BinderProxy@599ae0a
+12-09 08:26:29.227 W/ActivityManager( 1592): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:26:29.227 W/ActivityManager( 1592): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:26:29.227 W/ActivityManager( 1592): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:26:29.227 W/ActivityManager( 1592): 	at com.android.server.am.ActivityRecord.getStackLocked(ActivityRecord.java:1126)
+12-09 08:26:29.227 W/ActivityManager( 1592): 	at com.android.server.am.ActivityManagerService.getActivityDisplayId(ActivityManagerService.java:8889)
+12-09 08:26:29.227 W/ActivityManager( 1592): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2338)
+12-09 08:26:29.227 W/ActivityManager( 1592): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:26:29.227 W/ActivityManager( 1592): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:26:29.228 W/ActivityManager( 1592): Bad activity token: android.os.BinderProxy@599ae0a
+12-09 08:26:29.228 W/ActivityManager( 1592): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:26:29.228 W/ActivityManager( 1592): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:26:29.228 W/ActivityManager( 1592): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:26:29.228 W/ActivityManager( 1592): 	at com.android.server.am.ActivityManagerService.setTaskDescription(ActivityManagerService.java:8547)
+12-09 08:26:29.228 W/ActivityManager( 1592): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:2410)
+12-09 08:26:29.228 W/ActivityManager( 1592): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:26:29.228 W/ActivityManager( 1592): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:26:29.513 W/ActivityManager( 1592): Bad activity token: android.os.BinderProxy@599ae0a
+12-09 08:26:29.513 W/ActivityManager( 1592): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:26:29.513 W/ActivityManager( 1592): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:26:29.513 W/ActivityManager( 1592): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:26:29.513 W/ActivityManager( 1592): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 08:26:29.513 W/ActivityManager( 1592): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 08:26:29.513 W/ActivityManager( 1592): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:26:29.513 W/ActivityManager( 1592): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:26:29.515 W/ActivityManager( 1592): Bad activity token: android.os.BinderProxy@599ae0a
+12-09 08:26:29.515 W/ActivityManager( 1592): java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token
+12-09 08:26:29.515 W/ActivityManager( 1592): 	at com.android.server.am.ActivityRecord.forTokenLocked(ActivityRecord.java:424)
+12-09 08:26:29.515 W/ActivityManager( 1592): 	at com.android.server.am.ActivityRecord.isInStackLocked(ActivityRecord.java:1121)
+12-09 08:26:29.515 W/ActivityManager( 1592): 	at com.android.server.am.ActivityManagerService.getActivityOptions(ActivityManagerService.java:11038)
+12-09 08:26:29.515 W/ActivityManager( 1592): 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1734)
+12-09 08:26:29.515 W/ActivityManager( 1592): 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2443)
+12-09 08:26:29.515 W/ActivityManager( 1592): 	at android.os.Binder.execTransact(Binder.java:453)
+12-09 08:26:29.680 V/PhoneStatusBar( 1706): setLightsOn(true)
+12-09 08:26:29.693 I/art     (16949): Background partial concurrent mark sweep GC freed 2631(216KB) AllocSpace objects, 3(60KB) LOS objects, 39% free, 1844KB/3MB, paused 9.754ms total 66.217ms
+12-09 08:26:29.715 I/Choreographer( 1592): Skipped 30 frames!  The application may be doing too much work on its main thread.
+12-09 08:26:29.817 D/EGL_emulation( 1949): eglMakeCurrent: 0x7f1b08134640: ver 2 0 (tinfo 0x7f1b08102800)
+12-09 08:26:29.867 E/Surface ( 1949): getSlotFromBufferLocked: unknown buffer: 0x7f1b046d6c40
+12-09 08:26:30.224 D/gralloc_ranchu( 1218): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:26:30.295 D/        (16949): HostConnection::get() New Host Connection established 0x7f1b0473d0a0, tid 16949
+12-09 08:26:30.545 W/art     ( 1592): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.doFrame(long) from WindowAnimator.java:121 waiters=0 for 137ms
+12-09 08:26:30.773 D/gralloc_ranchu( 1218): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:26:30.811 I/ActivityManager( 1592): Displayed com.evancharlton.mileage/.Mileage: +2s58ms
+12-09 08:26:32.757 I/System.out(16949): URI: //map
+12-09 08:26:32.757 I/System.out(16949): params: {json={"query":"android.widget.EditText id:'price'","operation":{"method_name":"query","arguments":[]}}
+12-09 08:26:32.757 I/System.out(16949): }
+12-09 08:26:32.850 W/ResourceType(16949): No package identifier when getting name for resource number 0x00000001
+12-09 08:26:32.939 I/art     (16949): Background sticky concurrent mark sweep GC freed 27219(1242KB) AllocSpace objects, 2(40KB) LOS objects, 24% free, 2MB/3MB, paused 2.738ms total 160.594ms
+12-09 08:26:33.094 I/art     (16949): Background sticky concurrent mark sweep GC freed 30658(1441KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 2MB/3MB, paused 1.429ms total 127.581ms
+12-09 08:26:33.096 I/System.out(16949): URI: //gesture
+12-09 08:26:33.096 I/System.out(16949): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'price'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 08:26:33.096 I/System.out(16949): }
+12-09 08:26:33.147 W/ResourceType(16949): No package identifier when getting name for resource number 0x00000001
+12-09 08:26:33.667 I/LatinIME( 1884): Starting input. Cursor position = 0,0
+12-09 08:26:33.684 W/art     (16949): Suspending all threads took: 6.606ms
+12-09 08:26:33.764 I/art     (16949): Background sticky concurrent mark sweep GC freed 17391(783KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 3MB/3MB, paused 8.004ms total 102.003ms
+12-09 08:26:34.017 D/EGL_emulation( 1884): eglMakeCurrent: 0x7f1b08138e20: ver 2 0 (tinfo 0x7f1b040237c0)
+12-09 08:26:34.227 I/art     (16949): Background partial concurrent mark sweep GC freed 15160(943KB) AllocSpace objects, 5(100KB) LOS objects, 39% free, 2MB/3MB, paused 71.896ms total 173.742ms
+12-09 08:26:34.236 D/gralloc_ranchu( 1218): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:26:34.382 I/System.out(16949): URI: //
+12-09 08:26:34.382 I/System.out(16949): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:34.382 I/System.out(16949): }
+12-09 08:26:34.382 I/System.out(16949): header: {date=Sun, 09 Dec 2018 08:26:34 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:26:34.382 I/System.out(16949): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:34.382 I/System.out(16949): }
+12-09 08:26:34.382 I/System.out(16949): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:34.382 I/System.out(16949): files: {}
+12-09 08:26:34.382 I/System.out(16949): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:34.383 I/InstrumentationBackend(16949): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 08:26:34.647 I/System.out(16949): result:{"bonusInformation":[],"message":"","success":true}
+12-09 08:26:34.909 I/System.out(16949): URI: //
+12-09 08:26:34.909 I/System.out(16949): params: {json={"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
+12-09 08:26:34.909 I/System.out(16949): }
+12-09 08:26:34.909 I/System.out(16949): header: {date=Sun, 09 Dec 2018 08:26:34 GMT, accept=*/*, content-length=75, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:26:34.909 I/System.out(16949): params: {json={"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
+12-09 08:26:34.909 I/System.out(16949): }
+12-09 08:26:34.909 I/System.out(16949): ProP json = {"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
+12-09 08:26:34.909 I/System.out(16949): files: {}
+12-09 08:26:34.910 I/System.out(16949): command: {"command":"keyboard_enter_text","arguments":["-321ßå∂˚¡–ºß123"]}
+12-09 08:26:34.911 I/InstrumentationBackend(16949): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[-321ßå∂˚¡–ºß123]'
+12-09 08:26:35.047 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:35.047 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:35.131 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:35.132 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:35.186 I/System.out(16949): result:{"bonusInformation":[],"message":"","success":true}
+12-09 08:26:35.903 E/SurfaceFlinger( 1218): ro.sf.lcd_density must be defined as a build property
+12-09 08:26:36.028 D/gralloc_ranchu( 1218): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:26:36.054 D/        (16980): HostConnection::get() New Host Connection established 0x7f2435812480, tid 16980
+12-09 08:26:36.074 E/EGL_emulation( 1218): tid 1218: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 08:26:37.071 I/System.out(16949): URI: //map
+12-09 08:26:37.071 I/System.out(16949): params: {json={"query":"android.widget.EditText id:'volume'","operation":{"method_name":"query","arguments":[]}}
+12-09 08:26:37.071 I/System.out(16949): }
+12-09 08:26:37.109 W/ResourceType(16949): No package identifier when getting name for resource number 0x00000001
+12-09 08:26:37.406 I/System.out(16949): URI: //gesture
+12-09 08:26:37.406 I/System.out(16949): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'volume'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 08:26:37.406 I/System.out(16949): }
+12-09 08:26:37.432 W/ResourceType(16949): No package identifier when getting name for resource number 0x00000001
+12-09 08:26:37.459 I/art     (16949): Background sticky concurrent mark sweep GC freed 44993(2024KB) AllocSpace objects, 2(40KB) LOS objects, 11% free, 2MB/3MB, paused 1.185ms total 325.544ms
+12-09 08:26:37.757 I/LatinIME( 1884): Starting input. Cursor position = 0,0
+12-09 08:26:37.910 I/art     (16949): Background sticky concurrent mark sweep GC freed 29633(1412KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 2MB/3MB, paused 1.165ms total 112.848ms
+12-09 08:26:38.358 I/System.out(16949): URI: //
+12-09 08:26:38.358 I/System.out(16949): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:38.358 I/System.out(16949): }
+12-09 08:26:38.358 I/System.out(16949): header: {date=Sun, 09 Dec 2018 08:26:38 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:26:38.359 I/System.out(16949): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:38.359 I/System.out(16949): }
+12-09 08:26:38.359 I/System.out(16949): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:38.359 I/System.out(16949): files: {}
+12-09 08:26:38.359 I/System.out(16949): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:38.360 I/InstrumentationBackend(16949): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 08:26:38.398 I/System.out(16949): result:{"bonusInformation":[],"message":"","success":true}
+12-09 08:26:38.712 I/System.out(16949): URI: //
+12-09 08:26:38.712 I/System.out(16949): params: {json={"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
+12-09 08:26:38.712 I/System.out(16949): }
+12-09 08:26:38.713 I/System.out(16949): header: {date=Sun, 09 Dec 2018 08:26:38 GMT, accept=*/*, content-length=92, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:26:38.713 I/System.out(16949): params: {json={"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
+12-09 08:26:38.713 I/System.out(16949): }
+12-09 08:26:38.713 I/System.out(16949): ProP json = {"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
+12-09 08:26:38.713 I/System.out(16949): files: {}
+12-09 08:26:38.713 I/System.out(16949): command: {"command":"keyboard_enter_text","arguments":["åß9∂º–ç¬  ß29å∂˚¡–ºß123"]}
+12-09 08:26:38.714 I/InstrumentationBackend(16949): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[åß9∂º–ç¬  ß29å∂˚¡–ºß123]'
+12-09 08:26:38.764 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:38.764 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:38.784 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:38.784 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:38.794 I/System.out(16949): result:{"bonusInformation":[],"message":"","success":true}
+12-09 08:26:39.410 E/SurfaceFlinger( 1218): ro.sf.lcd_density must be defined as a build property
+12-09 08:26:39.473 D/gralloc_ranchu( 1218): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:26:39.483 D/        (16990): HostConnection::get() New Host Connection established 0x7fc880f92480, tid 16990
+12-09 08:26:39.533 E/EGL_emulation( 1218): tid 1218: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
+12-09 08:26:40.083 D/hwcomposer( 1218): hw_composer sent 460 syncs in 60s
+12-09 08:26:40.417 I/System.out(16949): URI: //map
+12-09 08:26:40.417 I/System.out(16949): params: {json={"query":"android.widget.EditText id:'odometer'","operation":{"method_name":"query","arguments":[]}}
+12-09 08:26:40.417 I/System.out(16949): }
+12-09 08:26:40.507 W/ResourceType(16949): No package identifier when getting name for resource number 0x00000001
+12-09 08:26:40.581 I/art     (16949): Background sticky concurrent mark sweep GC freed 25571(1085KB) AllocSpace objects, 2(40KB) LOS objects, 0% free, 4MB/4MB, paused 1.166ms total 161.723ms
+12-09 08:26:40.777 I/System.out(16949): URI: //gesture
+12-09 08:26:40.777 I/System.out(16949): params: {json={"query_timeout":5.0,"gestures":[{"query_string":"android.widget.EditText id:'odometer'","touches":[{"x":50,"y":50,"offset_x":0,"offset_y":0,"wait":0.0,"time":0.2,"release":true,"query_string":null}]}]}
+12-09 08:26:40.777 I/System.out(16949): }
+12-09 08:26:40.792 W/ResourceType(16949): No package identifier when getting name for resource number 0x00000001
+12-09 08:26:40.799 I/art     (16949): Background partial concurrent mark sweep GC freed 35077(1871KB) AllocSpace objects, 6(120KB) LOS objects, 40% free, 2MB/4MB, paused 1.236ms total 204.776ms
+12-09 08:26:41.197 I/LatinIME( 1884): Starting input. Cursor position = 0,0
+12-09 08:26:41.777 I/System.out(16949): URI: //
+12-09 08:26:41.777 I/System.out(16949): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:41.777 I/System.out(16949): }
+12-09 08:26:41.777 I/System.out(16949): header: {date=Sun, 09 Dec 2018 08:26:41 GMT, accept=*/*, content-length=47, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:26:41.777 I/System.out(16949): params: {json={"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:41.777 I/System.out(16949): }
+12-09 08:26:41.777 I/System.out(16949): ProP json = {"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:41.777 I/System.out(16949): files: {}
+12-09 08:26:41.777 I/System.out(16949): command: {"command":"set_selection","arguments":[-1,-1]}
+12-09 08:26:41.778 I/InstrumentationBackend(16949): Got command:'Command:'Line:null,set_selection', arguments:'[-1, -1]'
+12-09 08:26:41.810 I/System.out(16949): result:{"bonusInformation":[],"message":"","success":true}
+12-09 08:26:41.934 I/System.out(16949): URI: //
+12-09 08:26:41.934 I/System.out(16949): params: {json={"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
+12-09 08:26:41.934 I/System.out(16949): }
+12-09 08:26:41.934 I/System.out(16949): header: {date=Sun, 09 Dec 2018 08:26:42 GMT, accept=*/*, content-length=93, host=127.0.0.1:34777, user-agent=HTTPClient/1.0 (2.8.3, ruby 2.3.1 (2016-04-26)), content-type=application/json;charset=utf-8}
+12-09 08:26:41.934 I/System.out(16949): params: {json={"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
+12-09 08:26:41.934 I/System.out(16949): }
+12-09 08:26:41.934 I/System.out(16949): ProP json = {"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
+12-09 08:26:41.934 I/System.out(16949): files: {}
+12-09 08:26:41.934 I/System.out(16949): command: {"command":"keyboard_enter_text","arguments":["=+œå∑ß≈´∂ç®ƒ√†©∫¡™£"]}
+12-09 08:26:41.935 I/InstrumentationBackend(16949): Got command:'Command:'Line:null,keyboard_enter_text', arguments:'[=+œå∑ß≈´∂ç®ƒ√†©∫¡™£]'
+12-09 08:26:41.936 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:41.936 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:41.965 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:41.965 E/SpannableStringBuilder(16949): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+12-09 08:26:41.972 I/System.out(16949): result:{"bonusInformation":[],"message":"","success":true}
+12-09 08:26:42.453 E/SurfaceFlinger( 1218): ro.sf.lcd_density must be defined as a build property
+12-09 08:26:42.479 D/gralloc_ranchu( 1218): gralloc_alloc: Creating ashmem region of size 3686400
+12-09 08:26:42.532 D/        (17000): HostConnection::get() New Host Connection established 0x7fda0a792480, tid 17000
+12-09 08:26:42.568 E/EGL_emulation( 1218): tid 1218: eglCreateSyncKHR(1881): error 0x3004 (EGL_BAD_ATTRIBUTE)
